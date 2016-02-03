@@ -1,28 +1,598 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		  <link rel="stylesheet" type="text/css" href ="style.css" />
-		  <title> Raymond Arevalo</title>
-	</head>
-	<body>
 
-		<img class="whole" src="blur-3.jpg" />
-		<div id ="textbox">
-			<h1>COMING SOON</h1>
-			<h2><b>About: </b> </h2>
-			<h3> Hello! My name is Raymond Arevalo. I'm a 2nd year undergraduate at University of California, San Diego. I'm currently majoring in Cognitive Science with a specialization in Human-Computer Interaction and minoring in Computer Science.</h3>
-			<h2>Resume: </h2>
-			<h3> <a href="raymondarevalo.pdf">raymondarevalo.pdf</a></h3>
-			<h2>Contact: </h2>
-			<h3>email: arevalo.raymond@gmail.com
-				<br>
-				mobile: (323) 806 - 3932
-				<br>
-				linkedin: linkedin.com/in/raymondarevalo
-			</h3>
-		</div>
+<head>
+
+<meta charset="UTF-8">
+
+<style>
+	body{
+	margin: 0px; 
+	text-align: center;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	
+	}
+
+	#pagetop{
+		/*
+		width:100%;
+		height:100vh;
+		*/
+		
+		
+		width:100wh;
+		overflow: hidden;
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+		
+		
+	}
+
+	img.whole {
+
+	
+	height:100vh;
+
+
+	
+	top:0;
+	margin-left: auto;
+	margin-right: auto;
+		display: block;
+
+	
+}
+form{
+
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	line-height: 26.4px;
+	font-size: 20px	;
+	color: #8e8e8e;
+}
+input {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	line-height: 20.4px;
+	font-size: 3vw	;
+	color: #8e8e8e;
+}
+
+	nav {
+
+		position: absolute;
+		bottom:0;
+		left: 0;
+		width: 100%;
+		background: rgb(255, 255, 255);
+		background: rgba(255, 255, 255, .2);
+
+		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-size: 24px;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: bold;
+		line-height: 26.4px;
+
+	}
+	nav.scrolled {
+ 		top:0;
+ 		
+		background: rgb(255, 255, 255);
+		background: rgba(255, 255, 255, 1.0);
+
+
+		position: fixed;
+		height: 80px;
+		border-bottom: 1px groove #8e8e8e;
+		z-index: 3;
+		/*
+	    -webkit-box-shadow: 0 8px 6px -6px #999;
+    	-moz-box-shadow: 0 8px 6px -6px #999;
+    	box-shadow: 0 8px 6px -6px #999;
+    	*/
+		}
+	
+	ul {
+	  height:30px;
+	  line-height:30px;
+
+	  list-style: none;
+	  text-align: center;
+	}
 
 
 
-	</body>
+	li {
+	  display: inline-block;
+	}
+
+	a {
+	  display: block;
+	  text-decoration: none;
+	  color: #FFFFFF;
+	  font-size:1.1rem;
+	  padding: 	0 2em;	/* Space between nav elements*/
+	  /*border-left: 1px groove #8e8e8e;*/
+	}
+	a.nothing {
+		padding: 0 0;
+
+	}
+	/*  Changes the padding between nav elements */
+	@media screen and (max-width: 750px) {
+		a{
+
+			padding:  0 1em;
+			}
+
+	}
+	/* Changes the padding between val elements */
+	@media screen and (max-width: 540px) {
+		a{
+			font-size: 1.0rem;
+			padding:  0 0.2em;
+			}
+
+	}
+
+	a:hover{
+
+		color:#990000;
+	}
+	/* Color for the text for the second nav */
+	a.move {
+
+		color:#8e8e8e;
+
+	}
+	/* Color for the hover for the second nav */
+	a.move:hover{
+
+		color:#990000;
+	}
+
+	#about {
+		width: 100%;
+		height: 100%;
+		color: BLUE;
+		background-color: WHITE;
+	}
+
+	#hello{
+	width: 90%;
+	overflow: hidden; 
+
+	margin: 50px auto; 
+	padding: 20px;
+	margin-bottom: -50px;
+
+	color: #000000;
+
+	}
+
+
+	ul.aboutbar {
+	  
+	  height:200px;
+	  line-height:30px;
+	
+	  list-style: none;
+	  /*
+	  border-bottom:1px groove #8e8e8e;
+	  border-top: 1px groove #8e8e8e;
+	  */
+	  overflow: hidden;
+
+
+	}
+		ul.aboutimages {
+	  
+	  height:500px;
+	  line-height:30px;
+	
+	  list-style: none;
+
+	  /*
+	  border-bottom:1px groove #8e8e8e;
+	  border-top: 1px groove #8e8e8e;
+	  */
+	  
+
+	}		
+	ul.aboutnavtext {  
+	  height:500px;
+	  line-height:30px;
+	
+	  list-style: none;
+	  /*
+	  border-bottom:1px groove #8e8e8e;
+	  border-top: 1px groove #8e8e8e;
+	  */
+	  
+
+	}
+	ul.aboutbar li {
+	padding-top: 160px;
+	float: left; 
+  	width:33.33%;
+  	text-align:center;
+  	
+
+
+	}
+
+	ul.aboutimages li {
+	padding-top: 60px;
+	float: left; 
+  	width:33.33%;
+  	text-align:center;
+
+
+	}
+	ul.aboutnavtext li {
+	padding-top: 60px;
+	float: left; 
+  	width:33.33%;
+  	text-align:center;
+  	position: relative;
+  	top: -600px;
+
+
+	}
+	ul.aboutbar a {
+
+	  display: block;
+	  text-decoration: none;
+	  color: #8e8e8e;
+	  font-size:2.5rem;
+	  padding:10;
+	  border-left: 0;
+	}
+		ul.aboutimages a {
+
+	  display: block;
+	  text-decoration: none;
+	  color: #8e8e8e;
+	  font-size:2.5rem;
+	  padding:10;
+	  border-left: 0;
+	}
+
+	ul.aboutimages li.images {
+
+		position: relative;
+		top:-300px;
+		z-index: 2;
+		overflow: hidden;
+	
+	}
+
+	ul img {
+		height:120px;
+	}
+
+	ul.aboutbar li.abouttext{
+		position: relative;
+		top:-420px;
+		font-size: 15px;
+		color: #000000;
+		
+	}
+	ul.aboutbar li.abouttext b {
+		font-size: 24px;
+	}
+	ul.aboutbar li.abouttext h1 {
+		font-size: 15px;
+		color: #000000;
+	}
+	/*
+	img.one:hover {
+		background-color: BLUE;
+		width: 300px;
+		opacity: 0.0;
+		
+		
+
+
+	}
+	*/
+/*
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 150px;
+  left: 0;
+
+  top: 0;
+  width: 150px;
+  visibility: hidden;
+}
+
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+*/ 
+	/*
+	ul.aboutbar img {
+		float:left;
+		width:33.33%;
+		height: 100px;
+	}
+	*/
+
+	#projects {
+	width: 100%;
+	height: 100%;	
+	color: BLACK;
+	background-color: #f2f2f2;
+	}
+
+	#projectstext{
+	width: 45%;
+	overflow: hidden; 
+
+	margin: 50px auto; 
+	padding: 20px;
+
+	color: #000000;
+
+	}
+	#email{
+	width: 90%;
+	overflow: hidden; 
+
+	margin: 50px auto; 
+	padding: 20px;
+
+	color: #000000;
+
+	}
+
+	img.projectpicture {
+		margin-top: 30px;
+		
+		width: 100%;
+		margin-bottom: -60px;
+		
+	}
+
+	#contact {
+	width: 100%;
+	height: 100%;
+	color: BLUE;
+	background-color: WHITE;
+	}
+	#footer {
+	width: 100%;
+	height: 100%;
+	color: BLUE;
+	background-color: #8e8e8e;
+	}
+	/*
+	#juan:hover {
+
+		background-color: BLUE;
+	}
+	*/
+
+	#juan {
+		left:30px;
+	}
+
+	p {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:2.0rem;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	line-height: 36.4px;
+	color:#8e8e8e;
+	}
+	b{
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:2.0rem;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 36.4px;
+	color:#8e8e8e;
+	}
+
+	b.projectname {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	line-height: 26.4px;
+	font-size: 50px	;
+	color: #8e8e8e;
+	float:left;
+	}
+	b.projectname1 {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	line-height: 26.4px;
+	font-size: 50px	;
+	color: #8e8e8e;
+	
+	}
+	b.projectname2 {
+	font-size: 50px	;
+	color: #8e8e8e;
+
+	}
+	/* Used to float text to the left
+		<p class="floatleft"><b>SKILLS:</b> C/C++, Java, JavaScript, HTML, CSS, Photoshop, Lightroom, SPARC Assembly</p>
+		<p class="floatleft"><b>WORKING ON:</b> jQuery, AngularJS, PHP</p>
+		<p class="floatleft"><b>TONGUE:</b> English, Spanish</p>
+	 */
+	p.floatleft {
+		text-align: left;
+		width: 90%;
+	margin: 50px auto; 
+	margin-top: -60px;
+	margin-bottom: 35px;
+	margin-right: 0px;
+	padding: 20px;
+
+
+	}
+	b.projectname3 {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	line-height: 26.4px;
+	font-size: 3vw	;
+	color: #8e8e8e;
+	float:left;
+	}
+
+	p.footercolor {
+		margin-top: -11px;
+		color:#FFFFFF;
+		font-size: 13px;	
+	}
+
+
+
+</style>
+
+ <script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+	   $(window).bind('scroll', function() {
+	   var height = window.innerHeight;
+	   var distance = height;
+			 if ($(window).scrollTop() > distance) {
+				 $('nav').addClass('scrolled');
+            $('pagetop').addClass('scrolled');
+            $('a').addClass('move');
+			 }
+			 else {
+				 $('nav').removeClass('scrolled');
+            $('pagetop').removeClass('scrolled');
+            $('a').removeClass('move');
+			 }
+		});
+	});
+
+
+
+</script>
+
+
+
+</head>
+
+
+
+
+<body>
+
+
+
+
+<div id="pagetop">
+
+	<img class="whole" src="blur-22222.jpg">
+
+</div>
+
+<nav role='navigation'>
+		<ul>
+			<li> <a href="#about">ABOUT</a></li>
+			<li> <a href="#projects"> PROJECTS</a></li>
+			<li> <a href="resume.pdf"> RESUME</a></li>
+			<li> <a href="#contact">CONTACT</a></li>
+		</ul>
+</nav>
+
+<div id="about">
+	
+	<div id="hello">
+		<br> <br> <br>
+		<p><b>Hello</b>, my name is <b>Raymond Arevalo</b>. I'm an undergrad at UCSD. I'm currently sutdying 
+			 cognitive science and computer science. I like music, photography, and <b>design & UX/UI</b>.
+			 I'm looking forward in combing cog sci with comp sci to create <b>good</b> UX/UI.</p>
+		<p> <b>SKILLS</b> <br> C/C++, Java, JavaScript, HTML, CSS, Photoshop, Lightroom, SPARC Assembly</p>
+		<p> <b>WORKING ON</b> <br>jQuery, AngularJS, PHP</p>
+		<p> <b>SPOKEN LANGUAGES</b> <br> English, Spanish</p>
+
+
+
+	</div>
+
+
+</div>
+
+<div id="projects">
+
+
+
+	<div id="projectstext">
+
+		<br> <br> <br>
+		<p><b class="projectname1">past</b>  <b class="projectname2">projects</b></p>
+		<br>
+		
+		<p><b class="projectname">rotaract</b></p>
+		<a class="nothing" href="http://rotaract.ucsd.edu"><img class="projectpicture" src="rotaractproject3.png"> </a>
+		<br> <br> <br>
+
+		<p> Programmed a <b>simple</b> and well <b>planned</b> website to guide users to frequently used pages for <b>Rotaract at UCSD</b>.</p>
+
+
+	</div>
+</div>
+
+<div id="contact">
+		<div id="projectstext">
+
+		<br> <br> <br>
+		<p><b class="projectname1">contact me</b> <br> <b class="projectname2">email or media</b></p>
+
+		<form action="MAILTO:arevalo.raymond@gmail.com" method="post" enctype="text/plain" float="">
+		NAME: <br>
+		<input type="text" name="name" value="" size="20"><br>
+		EMAIL: <br>
+		<input type="text" name="mail" value="" size="20"><br>
+		MESSAGE: <br>
+		<input type="text" name="comment" value="" size="20" ><br><br>
+		<input type="submit" value="Send">
+		<input type="reset" value="Reset">
+		</form>
+		
+
+
+	</div>
+
+</div>
+
+
+<div id="footer">
+		<div id="hello">
+		
+		<p class="footercolor">&copy; Raymond Arevalo. Custom built.</p>
+		<br>
+
+
+
+	</div>
+
+</div>
+</body>
+
 </html>
