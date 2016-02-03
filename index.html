@@ -140,6 +140,15 @@ input {
 			}
 
 	}
+	/*
+	@media screen and (max-width: 740px) {
+		nav {
+			position: fixed;
+
+		}
+
+	}
+	*/
 
 	a:hover{
 
@@ -476,7 +485,7 @@ $(document).ready(function(){
 	   $(window).bind('scroll', function() {
 	   var height = window.innerHeight;
 	   var distance = height;
-			 if ($(window).scrollTop() > distance) {
+			 if ($(window).scrollTop() > distance ||window.innerWidth<500) {
 				 $('nav').addClass('scrolled');
             $('pagetop').addClass('scrolled');
             $('a').addClass('move');
