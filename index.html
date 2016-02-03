@@ -485,7 +485,7 @@ $(document).ready(function(){
 	   $(window).bind('scroll', function() {
 	   var height = window.innerHeight;
 	   var distance = height;
-			 if ($(window).scrollTop() > distance ||window.innerWidth<500) {
+			 if ($(window).scrollTop() > distance ||window.innerWidth<=640) {
 				 $('nav').addClass('scrolled');
             $('pagetop').addClass('scrolled');
             $('a').addClass('move');
