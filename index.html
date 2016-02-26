@@ -10,6 +10,7 @@
 	margin: 0px; 
 	text-align: center;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	background-color:#262626;
 	
 	}
 
@@ -51,7 +52,7 @@ form{
 	font-weight: 100;
 	line-height: 26.4px;
 	font-size: 20px	;
-	color: #8e8e8e;
+	color: #ffffff;
 }
 input {
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -60,7 +61,7 @@ input {
 	font-weight: 100;
 	line-height: 20.4px;
 	font-size: 3vw	;
-	color: #8e8e8e;
+	color: #ffffff;
 }
 
 	nav {
@@ -69,27 +70,27 @@ input {
 		bottom:0;
 		left: 0;
 		width: 100%;
-		background: rgb(255, 255, 255);
-		background: rgba(255, 255, 255, .2);
-
+		background: rgb(33, 33, 33);
+		background: rgba(33, 33, 33, 1.0);
 		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 		font-size: 24px;
 		font-style: normal;
 		font-variant: normal;
-		font-weight: bold;
+		font-weight: normal;
 		line-height: 26.4px;
+		height:54px;
 
 	}
 	nav.scrolled {
  		top:0;
  		
-		background: rgb(255, 255, 255);
-		background: rgba(255, 255, 255, 1.0);
+		background: rgb(33, 33, 33);
+		background: rgba(33, 33, 33, 1.0);
 
 
 		position: fixed;
-		height: 80px;
-		border-bottom: 1px groove #8e8e8e;
+		height: 50px;
+		/*border-bottom: 1px groove #000000e;*/
 		z-index: 3;
 		/*
 	    -webkit-box-shadow: 0 8px 6px -6px #999;
@@ -100,25 +101,32 @@ input {
 	
 	ul {
 	  height:30px;
-	  line-height:30px;
+	  line-height:0px;
 
 	  list-style: none;
-	  text-align: center;
+	  text-align: left;
 	}
 
 
 
 	li {
 	  display: inline-block;
+	  position: relative;
+	  bottom: 109px;
+	  left: -20px;
 	}
 
 	a {
 	  display: block;
 	  text-decoration: none;
 	  color: #FFFFFF;
-	  font-size:1.1rem;
-	  padding: 	0 2em;	/* Space between nav elements*/
-	  /*border-left: 1px groove #8e8e8e;*/
+	  font-size:1.3rem;
+	  	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	left: 100px;
+	  padding: 	0 10px;	/* Space between nav elements*/
+	  /*border-left: 1px groove #000000e;*/
 	}
 	a.nothing {
 		padding: 0 0;
@@ -157,7 +165,7 @@ input {
 	/* Color for the text for the second nav */
 	a.move {
 
-		color:#8e8e8e;
+		color:WHITE;
 
 	}
 	/* Color for the hover for the second nav */
@@ -165,23 +173,27 @@ input {
 
 		color:#990000;
 	}
+	a.nohighlight:hover{
+		color: #FFFFFF;
+
+	}
 
 	#about {
 		width: 100%;
 		height: 100%;
 		color: BLUE;
-		background-color: WHITE;
+		background-color: #262626;
 	}
 
 	#hello{
-	width: 90%;
+	width: 70%;
 	overflow: hidden; 
 
 	margin: 50px auto; 
 	padding: 20px;
 	margin-bottom: -50px;
 
-	color: #000000;
+	color: #ffffff;
 
 	}
 
@@ -193,8 +205,8 @@ input {
 	
 	  list-style: none;
 	  /*
-	  border-bottom:1px groove #8e8e8e;
-	  border-top: 1px groove #8e8e8e;
+	  border-bottom:1px groove #000000e;
+	  border-top: 1px groove #000000e;
 	  */
 	  overflow: hidden;
 
@@ -208,8 +220,8 @@ input {
 	  list-style: none;
 
 	  /*
-	  border-bottom:1px groove #8e8e8e;
-	  border-top: 1px groove #8e8e8e;
+	  border-bottom:1px groove #000000e;
+	  border-top: 1px groove #000000e;
 	  */
 	  
 
@@ -220,8 +232,8 @@ input {
 	
 	  list-style: none;
 	  /*
-	  border-bottom:1px groove #8e8e8e;
-	  border-top: 1px groove #8e8e8e;
+	  border-bottom:1px groove #000000e;
+	  border-top: 1px groove #000000e;
 	  */
 	  
 
@@ -258,7 +270,7 @@ input {
 
 	  display: block;
 	  text-decoration: none;
-	  color: #8e8e8e;
+	  color: #000000e;
 	  font-size:2.5rem;
 	  padding:10;
 	  border-left: 0;
@@ -267,7 +279,7 @@ input {
 
 	  display: block;
 	  text-decoration: none;
-	  color: #8e8e8e;
+	  color: #000000e;
 	  font-size:2.5rem;
 	  padding:10;
 	  border-left: 0;
@@ -343,7 +355,7 @@ span.text-content span {
 	width: 100%;
 	height: 100%;	
 	color: BLACK;
-	background-color: #f2f2f2;
+	background-color: #333333;
 	}
 
 	#projectstext{
@@ -353,7 +365,7 @@ span.text-content span {
 	margin: 50px auto; 
 	padding: 20px;
 
-	color: #000000;
+	color: #ffffff;
 
 	}
 	#email{
@@ -363,7 +375,7 @@ span.text-content span {
 	margin: 50px auto; 
 	padding: 20px;
 
-	color: #000000;
+	color: #262626;
 
 	}
 
@@ -374,18 +386,24 @@ span.text-content span {
 		margin-bottom: -60px;
 		
 	}
+	img.navpic {
+
+		position: relative;
+		bottom: -53px;
+		left: -20px;
+	}
 
 	#contact {
 	width: 100%;
 	height: 100%;
 	color: BLUE;
-	background-color: WHITE;
+	background-color: #262626;
 	}
 	#footer {
 	width: 100%;
 	height: 100%;
 	color: BLUE;
-	background-color: #8e8e8e;
+	background-color: #262626;
 	}
 	/*
 	#juan:hover {
@@ -400,21 +418,21 @@ span.text-content span {
 
 	p {
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size:2.0rem;
+	font-size:1.7rem;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 100;
 	line-height: 36.4px;
-	color:#8e8e8e;
+	color:#ffffff;
 	}
 	b{
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size:2.0rem;
+	font-size:1.5rem;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: bold;
 	line-height: 36.4px;
-	color:#8e8e8e;
+	color:#ffffff;
 	}
 
 	b.projectname {
@@ -424,7 +442,7 @@ span.text-content span {
 	font-weight: 100;
 	line-height: 26.4px;
 	font-size: 50px	;
-	color: #8e8e8e;
+	color: #ffffff;
 	float:left;
 	}
 	b.projectname1 {
@@ -433,13 +451,13 @@ span.text-content span {
 	font-variant: normal;
 	font-weight: 100;
 	line-height: 26.4px;
-	font-size: 50px	;
-	color: #8e8e8e;
+	font-size: 40px	;
+	color: #ffffff;
 	
 	}
 	b.projectname2 {
-	font-size: 50px	;
-	color: #8e8e8e;
+	font-size: 40px	;
+	color: #ffffff;
 
 	}
 	/* Used to float text to the left
@@ -465,7 +483,7 @@ span.text-content span {
 	font-weight: 100;
 	line-height: 26.4px;
 	font-size: 3vw	;
-	color: #8e8e8e;
+	color: #ffffff;
 	float:left;
 	}
 
@@ -474,6 +492,9 @@ span.text-content span {
 		color:#FFFFFF;
 		font-size: 13px;	
 	}
+	.column-left{ float: left; width: 33%; }
+	.column-right{ float: right; width: 33%; }
+	.column-center{ display: inline-block; width: 33%; }
 
 
 
@@ -516,15 +537,17 @@ $(document).ready(function(){
 
 <div id="pagetop">
 
-	<img class="whole" src="blur-22222.jpg">
+	<img class="whole" src="blur-small.jpg">
 
 </div>
 
 <nav role='navigation'>
 		<ul>
+			<li> <a href="http://www.raymondarevalo.me" > <img class="navpic" src="glasses.png"> </a> <li>
+			<li> <a class= "nohighlight" >|</a></li>
 			<li> <a href="#about">ABOUT</a></li>
 			<li> <a href="#projects"> PROJECTS</a></li>
-			<li> <a href="resume.pdf"> RESUME</a></li>
+			<li> <a href="raymondarevalo.pdf"> RESUME</a></li>
 			<li> <a href="#contact">CONTACT</a></li>
 		</ul>
 </nav>
@@ -533,12 +556,15 @@ $(document).ready(function(){
 	
 	<div id="hello">
 		<br> <br> <br>
-		<p><b>Hello</b>, my name is <b>Raymond Arevalo</b>. I'm an undergrad at UCSD. I'm currently sutdying 
+		<p><b>Hello</b>, my name is <b>Raymond Arevalo</b>. I'm an undergrad at UCSD. I'm currently studying 
 			 cognitive science and computer science. I like music, photography, and <b>design & UX/UI</b>.
-			 I'm looking forward in combing cog sci with comp sci to create <b>good</b> UX/UI.</p>
-		<p> <b>SKILLS</b> <br> C/C++, Java, JavaScript, HTML, CSS, Photoshop, Lightroom, SPARC Assembly</p>
-		<p> <b>WORKING ON</b> <br>jQuery, AngularJS, PHP</p>
-		<p> <b>SPOKEN LANGUAGES</b> <br> English, Spanish</p>
+			 I'm looking forward in combining cog sci with comp sci to create <b>good</b> UX/UI.</p>
+
+		<div class="container">
+		   <div class="column-center"><p> <b>SKILLS</b> <br> C/C++, Java, JavaScript, HTML, CSS, Photoshop, Lightroom, SPARC Assembly</p></div>
+		   <div class="column-left"><p> <b>WORKING ON</b> <br>jQuery, AngularJS, PHP</p></div>
+		   <div class="column-right"><p> <b>SPOKEN LANGUAGES</b> <br> English, Spanish</p></div>
+		</div>
 
 
 
@@ -568,25 +594,7 @@ $(document).ready(function(){
 </div>
 
 <div id="contact">
-		<div id="projectstext">
-
-		<br> <br> <br>
-		<p><b class="projectname1">contact me</b> <br> <b class="projectname2">email or media</b></p>
-
-		<form action="MAILTO:arevalo.raymond@gmail.com" method="post" enctype="text/plain" float="">
-		NAME: <br>
-		<input type="text" name="name" value="" size="20"><br>
-		EMAIL: <br>
-		<input type="text" name="mail" value="" size="20"><br>
-		MESSAGE: <br>
-		<input type="text" name="comment" value="" size="20" ><br><br>
-		<input type="submit" value="Send">
-		<input type="reset" value="Reset">
-		</form>
-		
-
-
-	</div>
+<p> Coming soon. </p>
 
 </div>
 
