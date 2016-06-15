@@ -1,615 +1,275 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-
-<meta charset="UTF-8">
-
-<style>
-	body{
-	margin: 0px; 
-	text-align: center;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	background-color:#262626;
 	
-	}
+    <head>
+		<title> </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">	<!-- Displays mobile on mobile -->
+		<link href = "css/bootstrap.min.css" rel = "stylesheet">
+        <script src="https://use.fontawesome.com/501a4c64e1.js"></script>
+		<link href = "css/styles.css" rel = "stylesheet">
+		<!-- Why do we need a google API?  -->
+		<!-- What is jQuery? It's a feature-rich JavaScript library -->
+		<!-- The Google Hosted Libraries is a stable, reliable, high-speed, globally avaiable content distribution
+			 network for the most popular, open-source JavaScript libraries -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"> </script>	<!-- google API -->
+		<script src="js/bootstrap.js"></script>	<!-- Bootstrap api -->
 
-	#pagetop{
-		/*
-		width:100%;
-		height:100vh;
-		*/
-		
-		
-		width:100wh;
-		overflow: hidden;
-		margin-right: auto;
-		margin-left: auto;
-		display: block;
-		
-		
-	}
 
-	img.whole {
-
+        
+    </head>
+	<body>
 	
-	height:100vh;
-
-
-	
-	top:0;
-	margin-left: auto;
-	margin-right: auto;
-		display: block;
-
-	
-}
-form{
-
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 100;
-	line-height: 26.4px;
-	font-size: 20px	;
-	color: #ffffff;
-}
-input {
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 100;
-	line-height: 20.4px;
-	font-size: 3vw	;
-	color: #ffffff;
-}
-
-	nav {
-
-		position: absolute;
-		bottom:0;
-		left: 0;
-		width: 100%;
-		background: rgb(33, 33, 33);
-		background: rgba(33, 33, 33, 1.0);
-		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-		font-size: 24px;
-		font-style: normal;
-		font-variant: normal;
-		font-weight: normal;
-		line-height: 26.4px;
-		height:54px;
-
-	}
-	nav.scrolled {
- 		top:0;
- 		
-		background: rgb(33, 33, 33);
-		background: rgba(33, 33, 33, 1.0);
-
-
-		position: fixed;
-		height: 50px;
-		/*border-bottom: 1px groove #000000e;*/
-		z-index: 3;
-		/*
-	    -webkit-box-shadow: 0 8px 6px -6px #999;
-    	-moz-box-shadow: 0 8px 6px -6px #999;
-    	box-shadow: 0 8px 6px -6px #999;
-    	*/
-		}
-	
-	ul {
-	  height:30px;
-	  line-height:0px;
-
-	  list-style: none;
-	  text-align: left;
-	}
-
-
-
-	li {
-	  display: inline-block;
-	  position: relative;
-	  bottom: 109px;
-	  left: -20px;
-	}
-
-	a {
-	  display: block;
-	  text-decoration: none;
-	  color: #FFFFFF;
-	  font-size:1.3rem;
-	  	font-style: normal;
-	font-variant: normal;
-	font-weight: 100;
-	left: 100px;
-	  padding: 	0 10px;	/* Space between nav elements*/
-	  /*border-left: 1px groove #000000e;*/
-	}
-	a.nothing {
-		padding: 0 0;
-
-	}
-	/*  Changes the padding between nav elements */
-	@media screen and (max-width: 750px) {
-		a{
-
-			padding:  0 1em;
-			}
-
-	}
-	/* Changes the padding between val elements */
-	@media screen and (max-width: 540px) {
-		a{
-			font-size: 1.0rem;
-			padding:  0 0.2em;
-			}
-
-	}
-	/*
-	@media screen and (max-width: 740px) {
-		nav {
-			position: fixed;
-
-		}
-
-	}
-	*/
-
-	a:hover{
-
-		color:#990000;
-	}
-	/* Color for the text for the second nav */
-	a.move {
-
-		color:WHITE;
-
-	}
-	/* Color for the hover for the second nav */
-	a.move:hover{
-
-		color:#990000;
-	}
-	a.nohighlight:hover{
-		color: #FFFFFF;
-
-	}
-
-	#about {
-		width: 100%;
-		height: 100%;
-		color: BLUE;
-		background-color: #262626;
-	}
-
-	#hello{
-	width: 70%;
-	overflow: hidden; 
-
-	margin: 50px auto; 
-	padding: 20px;
-	margin-bottom: -50px;
-
-	color: #ffffff;
-
-	}
-
-
-	ul.aboutbar {
-	  
-	  height:200px;
-	  line-height:30px;
-	
-	  list-style: none;
-	  /*
-	  border-bottom:1px groove #000000e;
-	  border-top: 1px groove #000000e;
-	  */
-	  overflow: hidden;
-
-
-	}
-		ul.aboutimages {
-	  
-	  height:500px;
-	  line-height:30px;
-	
-	  list-style: none;
-
-	  /*
-	  border-bottom:1px groove #000000e;
-	  border-top: 1px groove #000000e;
-	  */
-	  
-
-	}		
-	ul.aboutnavtext {  
-	  height:500px;
-	  line-height:30px;
-	
-	  list-style: none;
-	  /*
-	  border-bottom:1px groove #000000e;
-	  border-top: 1px groove #000000e;
-	  */
-	  
-
-	}
-	ul.aboutbar li {
-	padding-top: 160px;
-	float: left; 
-  	width:33.33%;
-  	text-align:center;
-  	
-
-
-	}
-
-	ul.aboutimages li {
-	padding-top: 60px;
-	float: left; 
-  	width:33.33%;
-  	text-align:center;
-
-
-	}
-	ul.aboutnavtext li {
-	padding-top: 60px;
-	float: left; 
-  	width:33.33%;
-  	text-align:center;
-  	position: relative;
-  	top: -600px;
-
-
-	}
-	ul.aboutbar a {
-
-	  display: block;
-	  text-decoration: none;
-	  color: #000000e;
-	  font-size:2.5rem;
-	  padding:10;
-	  border-left: 0;
-	}
-		ul.aboutimages a {
-
-	  display: block;
-	  text-decoration: none;
-	  color: #000000e;
-	  font-size:2.5rem;
-	  padding:10;
-	  border-left: 0;
-	}
-
-	ul.aboutimages li.images {
-
-		position: relative;
-		top:-300px;
-		z-index: 2;
-		overflow: hidden;
-	
-	}
-
-	ul img {
-		height:120px;
-	}
-
-	ul.aboutbar li.abouttext{
-		position: relative;
-		top:-420px;
-		font-size: 15px;
-		color: #000000;
-		
-	}
-	ul.aboutbar li.abouttext b {
-		font-size: 24px;
-	}
-	ul.aboutbar li.abouttext h1 {
-		font-size: 15px;
-		color: #000000;
-	}
-	/*
-	img.one:hover {
-		background-color: BLUE;
-		width: 300px;
-		opacity: 0.0;
-		
-		
-
-
-	}
-	*/
-/*
-span.text-content {
-  background: rgba(0,0,0,0.5);
-  color: white;
-  cursor: pointer;
-  display: table;
-  height: 150px;
-  left: 0;
-
-  top: 0;
-  width: 150px;
-  visibility: hidden;
-}
-
-span.text-content span {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-}
-*/ 
-	/*
-	ul.aboutbar img {
-		float:left;
-		width:33.33%;
-		height: 100px;
-	}
-	*/
-
-	#projects {
-	width: 100%;
-	height: 100%;	
-	color: BLACK;
-	background-color: #333333;
-	}
-
-	#projectstext{
-	width: 45%;
-	overflow: hidden; 
-
-	margin: 50px auto; 
-	padding: 20px;
-
-	color: #ffffff;
-
-	}
-	#email{
-	width: 90%;
-	overflow: hidden; 
-
-	margin: 50px auto; 
-	padding: 20px;
-
-	color: #262626;
-
-	}
-
-	img.projectpicture {
-		margin-top: 30px;
-		
-		width: 100%;
-		margin-bottom: -60px;
-		
-	}
-	img.navpic {
-
-		position: relative;
-		bottom: -53px;
-		left: -20px;
-	}
-
-	#contact {
-	width: 100%;
-	height: 100%;
-	color: BLUE;
-	background-color: #262626;
-	}
-	#footer {
-	width: 100%;
-	height: 100%;
-	color: BLUE;
-	background-color: #262626;
-	}
-	/*
-	#juan:hover {
-
-		background-color: BLUE;
-	}
-	*/
-
-	#juan {
-		left:30px;
-	}
-
-	p {
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size:1.7rem;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 100;
-	line-height: 36.4px;
-	color:#ffffff;
-	}
-	b{
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size:1.5rem;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: bold;
-	line-height: 36.4px;
-	color:#ffffff;
-	}
-
-	b.projectname {
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 100;
-	line-height: 26.4px;
-	font-size: 50px	;
-	color: #ffffff;
-	float:left;
-	}
-	b.projectname1 {
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 100;
-	line-height: 26.4px;
-	font-size: 40px	;
-	color: #ffffff;
-	
-	}
-	b.projectname2 {
-	font-size: 40px	;
-	color: #ffffff;
-
-	}
-	/* Used to float text to the left
-		<p class="floatleft"><b>SKILLS:</b> C/C++, Java, JavaScript, HTML, CSS, Photoshop, Lightroom, SPARC Assembly</p>
-		<p class="floatleft"><b>WORKING ON:</b> jQuery, AngularJS, PHP</p>
-		<p class="floatleft"><b>TONGUE:</b> English, Spanish</p>
-	 */
-	p.floatleft {
-		text-align: left;
-		width: 90%;
-	margin: 50px auto; 
-	margin-top: -60px;
-	margin-bottom: 35px;
-	margin-right: 0px;
-	padding: 20px;
-
-
-	}
-	b.projectname3 {
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 100;
-	line-height: 26.4px;
-	font-size: 3vw	;
-	color: #ffffff;
-	float:left;
-	}
-
-	p.footercolor {
-		margin-top: -11px;
-		color:#FFFFFF;
-		font-size: 13px;	
-	}
-	.column-left{ float: left; width: 33%; }
-	.column-right{ float: right; width: 33%; }
-	.column-center{ display: inline-block; width: 33%; }
-
-
-
-</style>
-
- <script src="jquery.js"></script>
-<script>
-$(document).ready(function(){
-	   $(window).bind('scroll', function() {
-	   var height = window.innerHeight;
-	   var distance = height;
-			 if ($(window).scrollTop() > distance ||window.innerWidth<=750) {
-				 $('nav').addClass('scrolled');
-            $('pagetop').addClass('scrolled');
-            $('a').addClass('move');
-			 }
-			 else {
-				 $('nav').removeClass('scrolled');
-            $('pagetop').removeClass('scrolled');
-            $('a').removeClass('move');
-			 }
-		});
-	});
-
-
-
-</script>
-
-
-
-</head>
-
-
-
-
-<body>
-
-
-
-
-<div id="pagetop">
-
-	<img class="whole" src="blur-small.jpg">
-
-</div>
-
-<nav role='navigation'>
-		<ul>
-			<li> <a href="http://www.raymondarevalo.me" > <img class="navpic" src="glasses.png"> </a> <li>
-			<li> <a class= "nohighlight" >|</a></li>
-			<li> <a href="#about">ABOUT</a></li>
-			<li> <a href="#projects"> PROJECTS</a></li>
-			<li> <a href="raymondarevalo.pdf"> RESUME</a></li>
-			<li> <a href="#contact">CONTACT</a></li>
-		</ul>
-</nav>
-
-<div id="about">
-	
-	<div id="hello">
-		<br> <br> <br>
-		<p><b>Hello</b>, my name is <b>Raymond Arevalo</b>. I'm an undergrad at UCSD. I'm currently studying 
-			 cognitive science and computer science. I like music, photography, and <b>design & UX/UI</b>.
-			 I'm looking forward in combining cog sci with comp sci to create <b>good</b> UX/UI.</p>
-
-		<div class="container">
-		   <div class="column-center"><p> <b>SKILLS</b> <br> C/C++, Java, JavaScript, HTML, CSS, Photoshop, Lightroom, SPARC Assembly</p></div>
-		   <div class="column-left"><p> <b>WORKING ON</b> <br>jQuery, AngularJS, PHP</p></div>
-		   <div class="column-right"><p> <b>SPOKEN LANGUAGES</b> <br> English, Spanish</p></div>
-		</div>
-
-
-
-	</div>
-
-
-</div>
-
-<div id="projects">
-
-
-
-	<div id="projectstext">
-
-		<br> <br> <br>
-		<p><b class="projectname1">past</b>  <b class="projectname2">projects</b></p>
-		<br>
-		
-		<p><b class="projectname">rotaract</b></p>
-		<a class="nothing" href="http://rotaract.ucsd.edu"><img class="projectpicture" src="rotaractproject3.png"> </a>
-		<br> <br> <br>
-
-		<p> Programmed a <b>simple</b> and well <b>planned</b> website to guide users to frequently used pages for <b>Rotaract at UCSD</b>.</p>
-
-
-	</div>
-</div>
-
-<div id="contact">
-<p> Coming soon. </p>
-
-</div>
-
-
-<div id="footer">
-		<div id="hello">
-		
-		<p class="footercolor">&copy; Raymond Arevalo. Custom built.</p>
-		<br>
-
-
-
-	</div>
-
-</div>
-</body>
-
+        <!-- Navigation bar || Does the magic-->
+        <!-- first: name    second: color   third: location -->
+        <div class = "navbar navbar-default navbar-fixed-top">
+            <!-- centers and pad navbar content -->
+            <div clas = "container">
+                
+                
+                <!-- FIRST : This is the button for the mobile display. It calls navHeaderCollapse id with data-target -->
+                <div class = "navbar-header">
+                    <button type ="button" class = "navbar-toggle collapsed" data-toggle = "collapse" data-target = "#navHeaderCollapse" aria-expanded= "false">
+                        <span class = "sr-only"> Toggle Navigation</span>
+                        <span class = "icon-bar"></span>
+                        <span class = "icon-bar"></span>
+                        <span class = "icon-bar"></span>
+                    </button>
+                    
+                    <a href = "#" class = "navbar-brand"> <img alt = "Brand" src="img/glasses2.png"> </a>
+                </div>
+                
+                <!-- SECOND : This is a container (navigation) that will only be seen when you're on mobile
+                     and you have pressed the button-->
+                <div class = "collapse navbar-collapse" id = "navHeaderCollapse">
+                    <ul class = "nav navbar-nav">
+                        <li> <a href = "#projects">Projects</a></li>
+                        <li><a href= "#about">About me</a></li>
+                        <li><a href= "#extra">Extra</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+       
+        
+        <section id = "projects" class = "projects-section">
+            <br>
+            <div class = "container">
+                <h1>PROJECTS</h1>
+                <div class = "row no-gutter">
+                    <!-- Rotaract -->
+                    <div class = "col-xs-12 col-sm-6 col-md-4 col-lg-4 bg-warning pro">
+
+                        <a href="#modal-rotaract" data-toggle="modal"><img class = "projectColumn" src="img/rotaract.png"></a>
+                    </div>
+
+                    <!-- Couple Tones -->
+                    <div class = "col-xs-12 col-sm-6 col-md-4 col-lg-4 bg-warning pro"><a href="#modal-couple" data-toggle="modal"><img class = "projectColumn" src="img/coupletones1.png"></a></div>   
+
+                    <!-- Personal Website -->
+                    <div class = "col-xs-12 col-sm-6 col-md-4 col-lg-4 bg-warning pro"><a href="#modal-personal" data-toggle="modal"><img class = "projectColumn" src="img/this.png"></a></div>
+                   
+                    <!-- KSDT --> 
+                    <div class = "col-xs-12 col-sm-6 col-md-4 col-lg-4 bg-warning pro"><a href="#modal-ksdt" data-toggle="modal"><img class = "projectColumn" src="img/ksdt.png"></a></div>   
+                      
+                    <!-- Spotify -->
+                    <div class = "col-xs-12 col-sm-6 col-md-4 col-lg-4 bg-warning pro"><a href="#modal-spotify" data-toggle="modal"><img class = "projectColumn" src="img/spotify.png"></a></div>                       
+                    
+                    <!-- Extra summer project -->
+                    <div class = "col-xs-12 col-sm-6 col-md-4 col-lg-4 bg-warning pro"><a href="#modal-extra" data-toggle="modal"><img class = "projectColumn" src="img/extra.png"></a></div> 
+
+                </div>
+            </div>
+        </section>
+        
+        <section id = "about" class = "about-section">
+            <br> <!-- Bad practice, but it gets rid of wrong linking spacing -->
+            <div class = "container about-container">
+                <h1>ABOUT ME</h1>
+
+                <p> Hello, my name is <b>Raymond Arevalo</b> and I'm currently at third year at the <b>University of California, San Diego</b>. I'm majoring in <b>Cogntive Science</b> with a specializaiton in <b>Human Computer Interaction</b> and minoring in <b>Computer Science</b>. My focus consists of software development and creating good user interface. </p>
+
+                <p> If I'm not in computer lab working on my latest PA, or studying at the library, I'm volunteering at my school's radio station, ksdt.</p>
+
+                <a class="btn btn-default btn-lg" href="raymondarevalo.pdf">Resume</a>
+            </div>
+        </section>
+        
+        <section id = "extra" class = "extra-section">
+        </section>
+        
+        <!-- Navigation bar || Does the magic-->
+        <!-- first: name    second: color   third: location -->
+        <div class = "navbar navbar-default navbar-static-bottom transfoot">
+            <!-- centers and pad navbar content -->
+            <div clas = "container-fluid">
+                <div class = "navbar-text pull-left"> 
+                    <p> &copy; 2016 Raymond Arevalo.</p>
+                   
+                </div>
+                
+                <div class = "navbar-text pull-right">
+                    <a href="https://www.linkedin.com/in/raymondarevalo"><i class="fa fa-linkedin fa-1x" aria-hidden="true"></i></a>
+                    <!--<a href="#"><i class="fa fa-jsfiddle fa-2x" aria-hidden="true"></i></a>  For later use --> 
+                    <a href="https://github.com/raymondarevalo"><i class="fa fa-git fa-1x" aria-hidden="true"></i></a>
+                
+                </div>
+            </div>
+        </div>
+        
+
+
+        <!-- ********************** MODALS ************************** -->
+
+        <!-- ******************* For rotaract club ****************** -->
+        <div class = "modal fade" id = "modal-rotaract">
+            <div class = "modal-dialog">
+                <div class = "modal-content">
+                    <!-- HEADER -->
+                    <div class = "modal-header">
+                        <h4>Rotaract Club</h4>
+                    </div>
+                    
+                    <!-- BODY -->
+                    <div class = "modal-body">
+                        <p><b>Description:</b> Programmed a simple and well planned website to guide users to frequently used pages for Rotaract at UCSD.</p>
+                        <p><b>Tools Used: </b>  HTML-5, CSS, JavaScript</p>
+                        <p><b>Link: </b> <a href= "http://rotaract.ucsd.edu/" >http://rotaract.ucsd.edu/ </a></p>
+                    </div>
+                    
+                    <!-- FOOTER -->
+                    <div class = "modal-footer">
+                        <!-- data-dismiss is basically ending the data from this "modal" -->
+                        <a class = "btn btn-default" data-dismiss = "modal"> Close </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ******************* For ksdt-radio ****************** -->
+        <div class = "modal fade" id = "modal-ksdt">
+            <div class = "modal-dialog">
+                <div class = "modal-content">
+                    <!-- HEADER -->
+                    <div class = "modal-header">
+                        <h4>KSDT Trition Radio</h4>
+                    </div>
+                    
+                    <!-- BODY -->
+                    <div class = "modal-body">
+                        <p> <b>Under Construction</b> </p>
+                    </div>
+                    
+                    <!-- FOOTER -->
+                    <div class = "modal-footer">
+                        <!-- data-dismiss is basically ending the data from this "modal" -->
+                        <a class = "btn btn-default" data-dismiss = "modal"> Close </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ******************* For Couple tones ****************** -->
+        <div class = "modal fade" id = "modal-couple">
+            <div class = "modal-dialog">
+                <div class = "modal-content">
+                    <!-- HEADER -->
+                    <div class = "modal-header">
+                        <h4>Couple Tones</h4>
+                    </div>
+                    
+                    <!-- BODY -->
+                    <div class = "modal-body">
+                        <p><b>Description:</b> Built a mobile app that focuses on mainting a list of recently visited favorite locations for one's partner. This app with built for my CSE110 class.</p>
+                        <p><b>Tools Used: </b> Parse, Google API, Java</p>
+                        <p><b>Practices: </b> jUnit Tests, Agile Development, BDD Development, Design Patterns</p>
+                        <p> <b>Link: </b> <a href = "https://github.com/moizqureshi/CoupleTones">https://github.com/moizqureshi/CoupleTones</a></p>
+                    </div>
+                    
+                    <!-- FOOTER -->
+                    <div class = "modal-footer">
+                        <!-- data-dismiss is basically ending the data from this "modal" -->
+                        <a class = "btn btn-default" data-dismiss = "modal"> Close </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ******************* Personal ****************** -->
+        <div class = "modal fade" id = "modal-personal">
+            <div class = "modal-dialog">
+                <div class = "modal-content">
+                    <!-- HEADER -->
+                    <div class = "modal-header">
+                        <h4>Personal</h4>
+                    </div>
+                    
+                    <!-- BODY -->
+                    <div class = "modal-body">
+                        <p><b>Description:</b> Programmed a basic website that demonstrates use of Bootstrap and its grid system.</p>
+                        <p><b>Tools Used: </b> HTML-5, CSS, JavaScript, jQuery, Bootstrap</p>
+                    </div>
+                    
+                    <!-- FOOTER -->
+                    <div class = "modal-footer">
+                        <!-- data-dismiss is basically ending the data from this "modal" -->
+                        <a class = "btn btn-default" data-dismiss = "modal"> Close </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ******************* For extra ****************** -->
+        <div class = "modal fade" id = "modal-extra">
+            <div class = "modal-dialog">
+                <div class = "modal-content">
+                    <!-- HEADER -->
+                    <div class = "modal-header">
+                        <h4>Extra</h4>
+                    </div>
+                    
+                    <!-- BODY -->
+                    <div class = "modal-body">
+                        <p> <b>Under Construction</b> </p>
+                    </div>
+                    
+                    <!-- FOOTER -->
+                    <div class = "modal-footer">
+                        <!-- data-dismiss is basically ending the data from this "modal" -->
+                        <a class = "btn btn-default" data-dismiss = "modal"> Close </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ******************* Spotify ****************** -->
+        <div class = "modal fade" id = "modal-spotify">
+            <div class = "modal-dialog">
+                <div class = "modal-content">
+                    <!-- HEADER -->
+                    <div class = "modal-header">
+                        <h4>Spotify</h4>
+                    </div>
+                    
+                    <!-- BODY -->
+                    <div class = "modal-body">
+                        <p> <b>Under Construction</b> </p>
+                    </div>
+                    
+                    <!-- FOOTER -->
+                    <div class = "modal-footer">
+                        <!-- data-dismiss is basically ending the data from this "modal" -->
+                        <a class = "btn btn-default" data-dismiss = "modal"> Close </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Where most of the work goes
+        <div class = "container mainContainer">
+
+        </div> -->
+        
+        <!-- A space in "" defines another class -->
+
+	</body>
 </html>

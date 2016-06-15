@@ -1,0 +1,128 @@
+/* ABLE TO CHANGE THE VALUES OF DEFAULT CLASSES IN HERE */
+
+
+body {
+    /* Overrides the font and changes it */
+    /*font-family: Cooper Black, Arial Black, Sans-Serif;*/
+    font-family: Century Gothic, Arial, Sans-Serif; 
+    /* another cool font font-family: Century Gothic, Arial, Sans-Serif; */
+}
+
+
+.mainContainer {
+    height: 1000px;
+}
+
+.barContainer {
+    color: #000000;
+    background-color: white;
+}
+
+.navbar-custom {
+    color: #000000;
+    background-color: #CC3333;
+}
+
+/* Overrides bootstrap class */
+.navbar-inverse {
+    background-color: #000000;
+}
+
+.projects-section {
+    margin-top: 50px; /* Corrects margin for first section */
+    height: 100%;
+    background-color:  white;
+}
+
+
+.about-section {
+    height: 500px;
+    background-color: white;
+}
+
+.extra-section {
+    height: 100px;
+    background-color: white;  
+}
+
+.navbar-static-top {
+    top: 400px;
+}
+
+.navbar-brand img {
+    margin-top: -20px;
+}
+
+
+
+/* Changes the button's list layout */
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+/* Changes the global font size */
+* {
+   font-size: 20px;
+   line-height: 2;
+}
+
+/* Edits the navbar*/
+.navbar {
+    /*background:transparent;*/
+    background-color: white;
+    border-bottom: none;
+}
+
+/* Column */
+.pro {
+    height: 300px; /* This height will be changed */
+    overflow: hidden;
+    
+}
+
+/* On Column hover */
+.pro a:hover {
+    opacity: 0.5;
+
+}
+
+/* img property */
+.projectColumn {
+    border: none;
+    margin: none;
+    width: 100%;
+    
+}
+
+/* Row property : gets rid of padding */
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+    background-color: white;
+    
+}
+
+.transfoot{
+    margin-top: 120px;
+    border: none;
+}
+
+
+
+/* Overrides the footer logos */
+.fa {
+    color: grey;
+
+}
+a :hover {
+    color: black;
+}
+
+/* Overrides pulling to the right */
+.pull-right {
+    margin-right: 20px;
+
+}
+
+
+
