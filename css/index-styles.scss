@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+body {
+  background-color: white;
+  width: 70% !important;
+  margin:auto;
+  font-family: 'Josefin Sans', sans-serif !important;
+}
+
+.header-section {
+
+
+  display: block;
+  z-index: 1;
+  position: fixed;
+  top: 100px;
+
+
+  .brand {
+    color: #231F20;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: .1em;
+
+  }
+
+  .sections {
+    .nav-link {
+
+    }
+  }
+
+}
+
+
+.home-section {
+  display:block !important;
+  padding-top: 70px;
+
+  margin-top: 100px;
+  background-color: #f39c12;
+  height: 60vh;
+  .image {
+    text-align: right;
+    img  {
+      width: 45%;
+    }
+  }
+
+  .anchor {
+    background-color: green;
+    .anchor-link {
+
+      span {
+        position: absolute;
+        top: 87%;
+
+        //margin-left: -30px;
+        margin-left: 43px;
+        color: #231F20;
+      }
+
+      .line {
+        content: "";
+        margin-left: 60px;
+        position: absolute;
+        top: 93%;
+        height: 7%;
+        background: #231F20;
+        width: 1px;
+        -webkit-transition: all 1s cubic-bezier(.23,1,.32,1);
+        transition: all 1s cubic-bezier(.23,1,.32,1);
+      }
+    }
+  }
+}
+
+.about-section {
+  display: block !important;
+  margin-top:300px;
+  background-color: white;
+  padding-left: 17px;
+  .row {
+    margin-top: 20px;
+    .title {
+      text-align: left;
+      //background-color: red;
+      span {
+        font-weight: bolder;
+        font-size: 14px;
+      }
+    }
+    .description {
+      //background-color: blue;
+      span {
+        font-weight: lighter;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.projects-section {
+  margin-top: 300px;
+
+  background-color: white;
+
+  .item {
+    display: block !important;
+    //height: 440px;
+    margin-top: 20px;
+    background-color: #f39c12 !important;
+    text-align: center;
+    img {
+      margin-top: 80px;
+      margin-bottom: 80px;
+      width: 60%;
+    }
+  }
+  .first {
+    margin-top: 200px;
+  }
+
+}
