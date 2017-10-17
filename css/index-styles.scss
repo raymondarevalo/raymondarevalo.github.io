@@ -13,7 +13,7 @@ body {
   display: block;
   z-index: 1;
   position: fixed;
-  top: 100px;
+  top: 50px;
 
 
   .brand {
@@ -37,7 +37,7 @@ body {
   display:block !important;
   padding-top: 70px;
 
-  margin-top: 100px;
+  margin-top: 50px;
   background-color: #f39c12;
   height: 60vh;
   .image {
@@ -109,12 +109,66 @@ body {
     display: block !important;
     //height: 440px;
     margin-top: 20px;
-    background-color: #f39c12 !important;
+    background-color: white;
     text-align: center;
+    padding-top: 50px;
+    padding-bottom:50px;
+    .content {
+      margin: auto;
+      width: 70%;
+      background-color: white !important;
+      text-align: left;
+      padding: 30px;
+      .title {
+        font-size: 14px;
+        font-weight: bolder;
+      }
+
+      .description {
+        margin-top: 20px;
+        font-size: 14px;
+      }
+
+      .links {
+        margin-top: 30px;
+        a {
+          padding-right: 10px;
+          font-size: 14px;
+          color: #231F20 !important;
+        }
+      }
+
+    }
     img {
-      margin-top: 80px;
-      margin-bottom: 80px;
-      width: 60%;
+      //margin-top: 80px;
+      //margin-bottom: 80px;
+      width: 70%;
+    }
+    figure {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      width: 70%;
+      img {
+        width: 100%;
+      }
+
+      figcaption {
+        background-color: white;
+        color: black;
+        text-align: left;
+        .title {
+          font-size: 14;
+          font-weight: bolder;
+        }
+
+        .description {
+          margin-top: 20px;
+          font-size: 14px;
+        }
+        .link {
+          margin-top: 50px;
+        }
+      }
     }
   }
   .first {
