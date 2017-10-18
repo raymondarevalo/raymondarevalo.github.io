@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+	
+    <head>
+		<title> </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">	<!-- Displays mobile on mobile -->
+		<link href = "css/bootstrap.min.css" rel = "stylesheet">
+        <script src="https://use.fontawesome.com/501a4c64e1.js"></script>
+		<link href = "css/styles.css" rel = "stylesheet">
+		<!-- Why do we need a google API?  -->
+		<!-- What is jQuery? It's a feature-rich JavaScript library -->
+		<!-- The Google Hosted Libraries is a stable, reliable, high-speed, globally avaiable content distribution
+			 network for the most popular, open-source JavaScript libraries -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"> </script>	<!-- google API -->
+		<script src="js/bootstrap.js"></script>	<!-- Bootstrap api -->
+
+
+        
+    </head>
+	<body>
+	
+        <!-- Navigation bar || Does the magic-->
+        <!-- first: name    second: color   third: location -->
+        <div class = "navbar navbar-default navbar-fixed-top">
+            <!-- centers and pad navbar content -->
+            <div clas = "container">
+                
+                
+                <!-- FIRST : This is the button for the mobile display. It calls navHeaderCollapse id with data-target -->
+                <div class = "navbar-header">
+                    <button type ="button" class = "navbar-toggle collapsed" data-toggle = "collapse" data-target = "#navHeaderCollapse" aria-expanded= "false">
+                        <span class = "sr-only"> Toggle Navigation</span>
+                        <span class = "icon-bar"></span>
+                        <span class = "icon-bar"></span>
+                        <span class = "icon-bar"></span>
+                    </button>
+                    
+                    <a href = "#" class = "navbar-brand"> <img alt = "Brand" src="img/glasses2.png"> </a>
+                </div>
+                
+                <!-- SECOND : This is a container (navigation) that will only be seen when you're on mobile
+                     and you have pressed the button-->
+                <div class = "collapse navbar-collapse" id = "navHeaderCollapse">
+                    <ul class = "nav navbar-nav">
+                        <li> <a href = "#projects">Projects</a></li>
+                        <li><a href= "#about">About me</a></li>
+                        <li><a href= "#extra">Extra</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+       
+        
+        <section id = "projects" class = "projects-section">
+            <br>
+            <div class = "container">
+                <h1>PROJECTS</h1>
+                <div class = "row no-gutter">
+                    <!-- Rotaract -->
+                    <div class = "col-xs-12 col-sm-6 col-md-4 col-lg-4 bg-warning pro">
+
+                        <a href="#modal-rotaract" data-toggle="modal"><img class = "projectColumn" src="img/rotaract.png"></a>
+                    </div>
+
+                    <!-- ksdt -->
+                    <div class = "col-xs-12 col-sm-6 col-md-4 col-lg-4 bg-warning pro"><a href="#modal-ksdt" data-toggle="modal"><img class = "projectColumn" src="img/ksdt.png"></a></div>
+
+                    <!-- Couple Tones -->
+                    <div class = "col-xs-12 col-sm-6 col-md-4 col-lg-4 bg-warning pro"><a href="#modal-couple" data-toggle="modal"><img class = "projectColumn" src="img/coupletones.png"></a></div>
+
+                    <!-- Playlist Analysis -->
+                    <div class = "col-xs-12 col-sm-6 col-md-4 col-lg-4 bg-warning pro"><a href="#modal-analysis" data-toggle="modal"><img class = "projectColumn" src="img/playlistanalysis.png"></a></div>    
+
+                    <!-- songTracker -->
+                    <div class = "col-xs-12 col-sm-6 col-md-4 col-lg-4 bg-warning pro"><a href="#modal-tracker" data-toggle="modal"><img class = "projectColumn" src="img/songtracker.png"></a></div>  
+
+                    <!-- vaporMoji -->
+                    <div class = "col-xs-12 col-sm-6 col-md-4 col-lg-4 bg-warning pro"><a href="#modal-vapor" data-toggle="modal"><img class = "projectColumn" src="img/vapormoji.png"></a></div>  
+
+                    <!-- dataREACH -->
+                    <div class = "col-xs-12 col-sm-6 col-md-4 col-lg-4 bg-warning pro"><a href="#modal-reach" data-toggle="modal"><img class = "projectColumn" src="img/datareach.png"></a></div>  
+
+                    <!-- personal -->
+                    <div class = "col-xs-12 col-sm-6 col-md-4 col-lg-4 bg-warning pro"><a href="#modal-personal" data-toggle="modal"><img class = "projectColumn" src="img/personal.png"></a></div>
+
+                </div>
+            </div>
+        </section>
+        
+        <section id = "about" class = "about-section">
+            <br> <!-- Bad practice, but it gets rid of wrong linking spacing -->
+            <div class = "container about-container">
+                <h1>ABOUT ME</h1>
+
+                <p> Hello, my name is <b>Raymond Arevalo</b> and I'm currently at third year at the <b>University of California, San Diego</b>. I'm majoring in <b>Cogntive Science</b> with a specializaiton in <b>Human Computer Interaction</b> and minoring in <b>Computer Science</b>. My focus consists of software development and creating good user interface. </p>
+
+                <p> If I'm not in computer lab working on my latest PA, or studying at the library, I'm volunteering at my school's radio station, ksdt.</p>
+
+                <a class="btn btn-default btn-lg" href="raymondarevalo.pdf">Resume</a>
+            </div>
+        </section>
+        
+        <section id = "extra" class = "extra-section">
+        </section>
+        
+        <!-- Navigation bar || Does the magic-->
+        <!-- first: name    second: color   third: location -->
+        <div class = "navbar navbar-default navbar-static-bottom transfoot">
+            <!-- centers and pad navbar content -->
+            <div clas = "container-fluid">
+                <div class = "navbar-text pull-left"> 
+                    <p> &copy; 2016 Raymond Arevalo.</p>
+                   
+                </div>
+                
+                <div class = "navbar-text pull-right">
+                    <a href="https://www.linkedin.com/in/raymondarevalo"><i class="fa fa-linkedin fa-1x" aria-hidden="true"></i></a>
+                    <!--<a href="#"><i class="fa fa-jsfiddle fa-2x" aria-hidden="true"></i></a>  For later use --> 
+                    <a href="https://github.com/raymondarevalo"><i class="fa fa-git fa-1x" aria-hidden="true"></i></a>
+                
+                </div>
+            </div>
+        </div>
+        
+
+
+        <!-- ********************** MODALS ************************** -->
+
+        <!-- ******************* For rotaract club ****************** -->
+        <div class = "modal fade" id = "modal-rotaract">
+            <div class = "modal-dialog">
+                <div class = "modal-content">
+                    <!-- HEADER -->
+                    <div class = "modal-header">
+                        <h4>Rotaract Club</h4>
+                    </div>
+                    
+                    <!-- BODY -->
+                    <div class = "modal-body">
+                        <p><b>Description:</b> Programmed a simple and well planned website to guide users to frequently used pages for Rotaract at UCSD.</p>
+                        <p><b>Tools Used: </b>  HTML-5, CSS, JavaScript</p>
+                        <p><b>Link: </b> <a href= "http://rotaract.ucsd.edu/" >http://rotaract.ucsd.edu/ </a></p>
+                    </div>
+                    
+                    <!-- FOOTER -->
+                    <div class = "modal-footer">
+                        <!-- data-dismiss is basically ending the data from this "modal" -->
+                        <a class = "btn btn-default" data-dismiss = "modal"> Close </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ******************* For ksdt-radio ****************** -->
+        <div class = "modal fade" id = "modal-ksdt">
+            <div class = "modal-dialog">
+                <div class = "modal-content">
+                    <!-- HEADER -->
+                    <div class = "modal-header">
+                        <h4>KSDT Trition Radio</h4>
+                    </div>
+                    
+                    <!-- BODY -->
+                    <div class = "modal-body">
+                        <p> <b>Description: Designed and implemented wireframes for ksdt.ucsd.edu.</b> </p>
+                        <p><b>Tools Used: </b> HTML5, CSS, javaScript, PHP, wordpress, Web Audio API </p>
+                        <p><b>Disclaimer: </b> Still under construction </p>
+                        <p><b>Link: </b> <a href = "https://github.com/ksdt/new-website">https://github.com/ksdt/new-website</a></p>
+                    </div>
+                    
+                    <!-- FOOTER -->
+                    <div class = "modal-footer">
+                        <!-- data-dismiss is basically ending the data from this "modal" -->
+                        <a class = "btn btn-default" data-dismiss = "modal"> Close </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ******************* For Couple tones ****************** -->
+        <div class = "modal fade" id = "modal-couple">
+            <div class = "modal-dialog">
+                <div class = "modal-content">
+                    <!-- HEADER -->
+                    <div class = "modal-header">
+                        <h4>Couple Tones</h4>
+                    </div>
+                    
+                    <!-- BODY -->
+                    <div class = "modal-body">
+                        <p><b>Description:</b> Built a mobile app that focuses on mainting a list of recently visited favorite locations for one's partner. This app with built for my CSE110 class.</p>
+                        <p><b>Tools Used: </b> Parse, Google API, Java</p>
+                        <p><b>Practices: </b> jUnit Tests, Agile Development, BDD Development, Design Patterns</p>
+                        <p> <b>Link: </b> <a href = "https://github.com/moizqureshi/CoupleTones">https://github.com/moizqureshi/CoupleTones</a></p>
+                    </div>
+                    
+                    <!-- FOOTER -->
+                    <div class = "modal-footer">
+                        <!-- data-dismiss is basically ending the data from this "modal" -->
+                        <a class = "btn btn-default" data-dismiss = "modal"> Close </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ******************* Playlist Analysis ****************** -->
+        <div class = "modal fade" id = "modal-analysis">
+            <div class = "modal-dialog">
+                <div class = "modal-content">
+                    <!-- HEADER -->
+                    <div class = "modal-header">
+                        <h4>Playlist Analysis</h4>
+                    </div>
+                    
+                    <!-- BODY -->
+                    <div class = "modal-body">
+                        <p><b>Description:</b> Developed a web application, which analyzes playlists of current KSDT DJs in order to give the station a diverse selection of music. Currently implementing a uniqueness generator to KSDT’s playlist analysis in order to inform DJs of their level of uniqueness compare to that of the station’s.</p>
+                        <p><b>Tools Used: </b> Node.js, express, SpinPapi API, Spotify API</p>
+                        <p> <b>Link: </b> <a href = "https://github.com/ksdt/playlist-analysis">https://github.com/ksdt/playlist-analysis</a></p>
+                    </div>
+                    
+                    <!-- FOOTER -->
+                    <div class = "modal-footer">
+                        <!-- data-dismiss is basically ending the data from this "modal" -->
+                        <a class = "btn btn-default" data-dismiss = "modal"> Close </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ******************* songTracker ****************** -->
+        <div class = "modal fade" id = "modal-tracker">
+            <div class = "modal-dialog">
+                <div class = "modal-content">
+                    <!-- HEADER -->
+                    <div class = "modal-header">
+                        <h4>SongTracker</h4>
+                    </div>
+                    
+                    <!-- BODY -->
+                    <div class = "modal-body">
+                        <p><b>Description:</b> Programmed and designed a web application that tracks played songs in order to give the user a diverse selection of music.</p>
+                        <p><b>Tools Used: </b> javaScript, jQuery, Firebase, Google Authentication</p>
+                        <p> <b>Link: </b> <a href = "https://github.com/raymondarevalo/SongTracker">https://github.com/raymondarevalo/SongTracker</a></p>
+                    </div>
+                    
+                    <!-- FOOTER -->
+                    <div class = "modal-footer">
+                        <!-- data-dismiss is basically ending the data from this "modal" -->
+                        <a class = "btn btn-default" data-dismiss = "modal"> Close </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ******************* VaporMoji ****************** -->
+        <div class = "modal fade" id = "modal-vapor">
+            <div class = "modal-dialog">
+                <div class = "modal-content">
+                    <!-- HEADER -->
+                    <div class = "modal-header">
+                        <h4>VaporMoji</h4>
+                    </div>
+                    
+                    <!-- BODY -->
+                    <div class = "modal-body">
+                        <p><b>Description:</b> Built a photo editor, which combines vaporwave emojis with a picture of choice.</p>
+                        <p> <b>Link: </b> <a href = "https://github.com/raymondarevalo/vapormoji">https://github.com/raymondarevalo/vapormoji</a></p>
+                    </div>
+                    
+                    <!-- FOOTER -->
+                    <div class = "modal-footer">
+                        <!-- data-dismiss is basically ending the data from this "modal" -->
+                        <a class = "btn btn-default" data-dismiss = "modal"> Close </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ******************* for dataREACH ****************** -->
+        <div class = "modal fade" id = "modal-reach">
+            <div class = "modal-dialog">
+                <div class = "modal-content">
+                    <!-- HEADER -->
+                    <div class = "modal-header">
+                        <h4>dataREACH</h4>
+                    </div>
+                    
+                    <!-- BODY -->
+                    <div class = "modal-body">
+                        <p><b>Disclaimer: </b> Still undergoing process of development </p>
+                    </div>
+                    
+                    <!-- FOOTER -->
+                    <div class = "modal-footer">
+                        <!-- data-dismiss is basically ending the data from this "modal" -->
+                        <a class = "btn btn-default" data-dismiss = "modal"> Close </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ******************* Personal ****************** -->
+        <div class = "modal fade" id = "modal-personal">
+            <div class = "modal-dialog">
+                <div class = "modal-content">
+                    <!-- HEADER -->
+                    <div class = "modal-header">
+                        <h4>Personal</h4>
+                    </div>
+                    
+                    <!-- BODY -->
+                    <div class = "modal-body">
+                        <p><b>Description:</b> Programmed a basic website that demonstrates use of Bootstrap and its grid system.</p>
+                        <p><b>Tools Used: </b> HTML-5, CSS, JavaScript, jQuery, Bootstrap</p>
+                    </div>
+                    
+                    <!-- FOOTER -->
+                    <div class = "modal-footer">
+                        <!-- data-dismiss is basically ending the data from this "modal" -->
+                        <a class = "btn btn-default" data-dismiss = "modal"> Close </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Where most of the work goes
+        <div class = "container mainContainer">
+
+        </div> -->
+        
+        <!-- A space in "" defines another class -->
+
+	</body>
+</html>

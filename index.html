@@ -1,334 +1,244 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-	
-    <head>
-		<title> </title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">	<!-- Displays mobile on mobile -->
-		<link href = "css/bootstrap.min.css" rel = "stylesheet">
-        <script src="https://use.fontawesome.com/501a4c64e1.js"></script>
-		<link href = "css/styles.css" rel = "stylesheet">
-		<!-- Why do we need a google API?  -->
-		<!-- What is jQuery? It's a feature-rich JavaScript library -->
-		<!-- The Google Hosted Libraries is a stable, reliable, high-speed, globally avaiable content distribution
-			 network for the most popular, open-source JavaScript libraries -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"> </script>	<!-- google API -->
-		<script src="js/bootstrap.js"></script>	<!-- Bootstrap api -->
+<head>
+  <title>Raymond Arevalo</title>
+  <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/imagehover.min.css" />
+  <link rel="stylesheet" href="css/index-styles.min.css">
+  <script
+  			  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  			  crossorigin="anonymous"></script>
 
 
-        
-    </head>
-	<body>
-	
-        <!-- Navigation bar || Does the magic-->
-        <!-- first: name    second: color   third: location -->
-        <div class = "navbar navbar-default navbar-fixed-top">
-            <!-- centers and pad navbar content -->
-            <div clas = "container">
-                
-                
-                <!-- FIRST : This is the button for the mobile display. It calls navHeaderCollapse id with data-target -->
-                <div class = "navbar-header">
-                    <button type ="button" class = "navbar-toggle collapsed" data-toggle = "collapse" data-target = "#navHeaderCollapse" aria-expanded= "false">
-                        <span class = "sr-only"> Toggle Navigation</span>
-                        <span class = "icon-bar"></span>
-                        <span class = "icon-bar"></span>
-                        <span class = "icon-bar"></span>
-                    </button>
-                    
-                    <a href = "#" class = "navbar-brand"> <img alt = "Brand" src="img/glasses2.png"> </a>
-                </div>
-                
-                <!-- SECOND : This is a container (navigation) that will only be seen when you're on mobile
-                     and you have pressed the button-->
-                <div class = "collapse navbar-collapse" id = "navHeaderCollapse">
-                    <ul class = "nav navbar-nav">
-                        <li> <a href = "#projects">Projects</a></li>
-                        <li><a href= "#about">About me</a></li>
-                        <li><a href= "#extra">Extra</a></li>
-                    </ul>
-                </div>
-                
-            </div>
+
+  <script src="js/jquery.visible.min.js"></script>
+  <script src="js/visible.js"></script>
+</head>
+<body>
+  <section id="header" class ="header-section">
+    <nav class="navbar navbar-light bg-faded justify-content-between flex-nowrap flex-row">
+        <div class="container">
+            <a href="/" class="navbar-brand float-left brand pr-4">Raymond Arevalo</a>
+            <ul class="nav navbar-nav flex-row float-right sections">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
         </div>
-       
-        
-        <section id = "projects" class = "projects-section">
-            <br>
-            <div class = "container">
-                <h1>PROJECTS</h1>
-                <div class = "row no-gutter">
-                    <!-- Rotaract -->
-                    <div class = "col-xs-12 col-sm-6 col-md-4 col-lg-4 bg-warning pro">
+    </nav>
+  </section>
 
-                        <a href="#modal-rotaract" data-toggle="modal"><img class = "projectColumn" src="img/rotaract.png"></a>
-                    </div>
+  <section id="home" class="home-section idSection" style="box-shadow: none !important;">
+    <div class="image">
+      <img src="img/raymond.jpeg" />
+    </div>
+    <div class="anchor">
+      <a class="anchor-link" href="#about">
+        <span>down</span>
+        <div class="line">
 
-                    <!-- ksdt -->
-                    <div class = "col-xs-12 col-sm-6 col-md-4 col-lg-4 bg-warning pro"><a href="#modal-ksdt" data-toggle="modal"><img class = "projectColumn" src="img/ksdt.png"></a></div>
-
-                    <!-- Couple Tones -->
-                    <div class = "col-xs-12 col-sm-6 col-md-4 col-lg-4 bg-warning pro"><a href="#modal-couple" data-toggle="modal"><img class = "projectColumn" src="img/coupletones.png"></a></div>
-
-                    <!-- Playlist Analysis -->
-                    <div class = "col-xs-12 col-sm-6 col-md-4 col-lg-4 bg-warning pro"><a href="#modal-analysis" data-toggle="modal"><img class = "projectColumn" src="img/playlistanalysis.png"></a></div>    
-
-                    <!-- songTracker -->
-                    <div class = "col-xs-12 col-sm-6 col-md-4 col-lg-4 bg-warning pro"><a href="#modal-tracker" data-toggle="modal"><img class = "projectColumn" src="img/songtracker.png"></a></div>  
-
-                    <!-- vaporMoji -->
-                    <div class = "col-xs-12 col-sm-6 col-md-4 col-lg-4 bg-warning pro"><a href="#modal-vapor" data-toggle="modal"><img class = "projectColumn" src="img/vapormoji.png"></a></div>  
-
-                    <!-- dataREACH -->
-                    <div class = "col-xs-12 col-sm-6 col-md-4 col-lg-4 bg-warning pro"><a href="#modal-reach" data-toggle="modal"><img class = "projectColumn" src="img/datareach.png"></a></div>  
-
-                    <!-- personal -->
-                    <div class = "col-xs-12 col-sm-6 col-md-4 col-lg-4 bg-warning pro"><a href="#modal-personal" data-toggle="modal"><img class = "projectColumn" src="img/personal.png"></a></div>
-
-                </div>
-            </div>
-        </section>
-        
-        <section id = "about" class = "about-section">
-            <br> <!-- Bad practice, but it gets rid of wrong linking spacing -->
-            <div class = "container about-container">
-                <h1>ABOUT ME</h1>
-
-                <p> Hello, my name is <b>Raymond Arevalo</b> and I'm currently at third year at the <b>University of California, San Diego</b>. I'm majoring in <b>Cogntive Science</b> with a specializaiton in <b>Human Computer Interaction</b> and minoring in <b>Computer Science</b>. My focus consists of software development and creating good user interface. </p>
-
-                <p> If I'm not in computer lab working on my latest PA, or studying at the library, I'm volunteering at my school's radio station, ksdt.</p>
-
-                <a class="btn btn-default btn-lg" href="raymondarevalo.pdf">Resume</a>
-            </div>
-        </section>
-        
-        <section id = "extra" class = "extra-section">
-        </section>
-        
-        <!-- Navigation bar || Does the magic-->
-        <!-- first: name    second: color   third: location -->
-        <div class = "navbar navbar-default navbar-static-bottom transfoot">
-            <!-- centers and pad navbar content -->
-            <div clas = "container-fluid">
-                <div class = "navbar-text pull-left"> 
-                    <p> &copy; 2016 Raymond Arevalo.</p>
-                   
-                </div>
-                
-                <div class = "navbar-text pull-right">
-                    <a href="https://www.linkedin.com/in/raymondarevalo"><i class="fa fa-linkedin fa-1x" aria-hidden="true"></i></a>
-                    <!--<a href="#"><i class="fa fa-jsfiddle fa-2x" aria-hidden="true"></i></a>  For later use --> 
-                    <a href="https://github.com/raymondarevalo"><i class="fa fa-git fa-1x" aria-hidden="true"></i></a>
-                
-                </div>
-            </div>
         </div>
-        
+      </a>
+    </div>
+  </section>
 
-
-        <!-- ********************** MODALS ************************** -->
-
-        <!-- ******************* For rotaract club ****************** -->
-        <div class = "modal fade" id = "modal-rotaract">
-            <div class = "modal-dialog">
-                <div class = "modal-content">
-                    <!-- HEADER -->
-                    <div class = "modal-header">
-                        <h4>Rotaract Club</h4>
-                    </div>
-                    
-                    <!-- BODY -->
-                    <div class = "modal-body">
-                        <p><b>Description:</b> Programmed a simple and well planned website to guide users to frequently used pages for Rotaract at UCSD.</p>
-                        <p><b>Tools Used: </b>  HTML-5, CSS, JavaScript</p>
-                        <p><b>Link: </b> <a href= "http://rotaract.ucsd.edu/" >http://rotaract.ucsd.edu/ </a></p>
-                    </div>
-                    
-                    <!-- FOOTER -->
-                    <div class = "modal-footer">
-                        <!-- data-dismiss is basically ending the data from this "modal" -->
-                        <a class = "btn btn-default" data-dismiss = "modal"> Close </a>
-                    </div>
-                </div>
-            </div>
+  <section id="about" class="about-section idSection">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 title">
+          <span>Bio</span>
         </div>
 
-        <!-- ******************* For ksdt-radio ****************** -->
-        <div class = "modal fade" id = "modal-ksdt">
-            <div class = "modal-dialog">
-                <div class = "modal-content">
-                    <!-- HEADER -->
-                    <div class = "modal-header">
-                        <h4>KSDT Trition Radio</h4>
-                    </div>
-                    
-                    <!-- BODY -->
-                    <div class = "modal-body">
-                        <p> <b>Description: Designed and implemented wireframes for ksdt.ucsd.edu.</b> </p>
-                        <p><b>Tools Used: </b> HTML5, CSS, javaScript, PHP, wordpress, Web Audio API </p>
-                        <p><b>Disclaimer: </b> Still under construction </p>
-                        <p><b>Link: </b> <a href = "https://github.com/ksdt/new-website">https://github.com/ksdt/new-website</a></p>
-                    </div>
-                    
-                    <!-- FOOTER -->
-                    <div class = "modal-footer">
-                        <!-- data-dismiss is basically ending the data from this "modal" -->
-                        <a class = "btn btn-default" data-dismiss = "modal"> Close </a>
-                    </div>
-                </div>
-            </div>
+        <div class="col-md-10 description">
+          <span>
+            Hello, my name is Raymond Arevalo and I'm currently at third year at the University of California, San Diego. I'm majoring in Cogntive Science with a specializaiton in Human Computer Interaction and minoring in Computer Science. My focus consists of software development and creating good user interface.
+
+          </span>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 title">
+          <span>Home</span>
         </div>
 
-        <!-- ******************* For Couple tones ****************** -->
-        <div class = "modal fade" id = "modal-couple">
-            <div class = "modal-dialog">
-                <div class = "modal-content">
-                    <!-- HEADER -->
-                    <div class = "modal-header">
-                        <h4>Couple Tones</h4>
-                    </div>
-                    
-                    <!-- BODY -->
-                    <div class = "modal-body">
-                        <p><b>Description:</b> Built a mobile app that focuses on mainting a list of recently visited favorite locations for one's partner. This app with built for my CSE110 class.</p>
-                        <p><b>Tools Used: </b> Parse, Google API, Java</p>
-                        <p><b>Practices: </b> jUnit Tests, Agile Development, BDD Development, Design Patterns</p>
-                        <p> <b>Link: </b> <a href = "https://github.com/moizqureshi/CoupleTones">https://github.com/moizqureshi/CoupleTones</a></p>
-                    </div>
-                    
-                    <!-- FOOTER -->
-                    <div class = "modal-footer">
-                        <!-- data-dismiss is basically ending the data from this "modal" -->
-                        <a class = "btn btn-default" data-dismiss = "modal"> Close </a>
-                    </div>
-                </div>
-            </div>
+        <div class="col-md-10 description">
+          <span>
+            Los Angeles
+          </span>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 title">
+          <span>Education</span>
         </div>
 
-        <!-- ******************* Playlist Analysis ****************** -->
-        <div class = "modal fade" id = "modal-analysis">
-            <div class = "modal-dialog">
-                <div class = "modal-content">
-                    <!-- HEADER -->
-                    <div class = "modal-header">
-                        <h4>Playlist Analysis</h4>
-                    </div>
-                    
-                    <!-- BODY -->
-                    <div class = "modal-body">
-                        <p><b>Description:</b> Developed a web application, which analyzes playlists of current KSDT DJs in order to give the station a diverse selection of music. Currently implementing a uniqueness generator to KSDT’s playlist analysis in order to inform DJs of their level of uniqueness compare to that of the station’s.</p>
-                        <p><b>Tools Used: </b> Node.js, express, SpinPapi API, Spotify API</p>
-                        <p> <b>Link: </b> <a href = "https://github.com/ksdt/playlist-analysis">https://github.com/ksdt/playlist-analysis</a></p>
-                    </div>
-                    
-                    <!-- FOOTER -->
-                    <div class = "modal-footer">
-                        <!-- data-dismiss is basically ending the data from this "modal" -->
-                        <a class = "btn btn-default" data-dismiss = "modal"> Close </a>
-                    </div>
-                </div>
-            </div>
+        <div class="col-md-10 description">
+          <span>
+            UC San Diego
+          </span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 title">
+          <span>Degree</span>
         </div>
 
-        <!-- ******************* songTracker ****************** -->
-        <div class = "modal fade" id = "modal-tracker">
-            <div class = "modal-dialog">
-                <div class = "modal-content">
-                    <!-- HEADER -->
-                    <div class = "modal-header">
-                        <h4>SongTracker</h4>
-                    </div>
-                    
-                    <!-- BODY -->
-                    <div class = "modal-body">
-                        <p><b>Description:</b> Programmed and designed a web application that tracks played songs in order to give the user a diverse selection of music.</p>
-                        <p><b>Tools Used: </b> javaScript, jQuery, Firebase, Google Authentication</p>
-                        <p> <b>Link: </b> <a href = "https://github.com/raymondarevalo/SongTracker">https://github.com/raymondarevalo/SongTracker</a></p>
-                    </div>
-                    
-                    <!-- FOOTER -->
-                    <div class = "modal-footer">
-                        <!-- data-dismiss is basically ending the data from this "modal" -->
-                        <a class = "btn btn-default" data-dismiss = "modal"> Close </a>
-                    </div>
-                </div>
-            </div>
+        <div class="col-md-10 description">
+          <span>
+            B.S. in Cognitive Science w/ spec. HCI
+          </span>
         </div>
-        <!-- ******************* VaporMoji ****************** -->
-        <div class = "modal fade" id = "modal-vapor">
-            <div class = "modal-dialog">
-                <div class = "modal-content">
-                    <!-- HEADER -->
-                    <div class = "modal-header">
-                        <h4>VaporMoji</h4>
-                    </div>
-                    
-                    <!-- BODY -->
-                    <div class = "modal-body">
-                        <p><b>Description:</b> Built a photo editor, which combines vaporwave emojis with a picture of choice.</p>
-                        <p> <b>Link: </b> <a href = "https://github.com/raymondarevalo/vapormoji">https://github.com/raymondarevalo/vapormoji</a></p>
-                    </div>
-                    
-                    <!-- FOOTER -->
-                    <div class = "modal-footer">
-                        <!-- data-dismiss is basically ending the data from this "modal" -->
-                        <a class = "btn btn-default" data-dismiss = "modal"> Close </a>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 title">
+          <span>Course Work</span>
         </div>
 
-        <!-- ******************* for dataREACH ****************** -->
-        <div class = "modal fade" id = "modal-reach">
-            <div class = "modal-dialog">
-                <div class = "modal-content">
-                    <!-- HEADER -->
-                    <div class = "modal-header">
-                        <h4>dataREACH</h4>
-                    </div>
-                    
-                    <!-- BODY -->
-                    <div class = "modal-body">
-                        <p><b>Disclaimer: </b> Still undergoing process of development </p>
-                    </div>
-                    
-                    <!-- FOOTER -->
-                    <div class = "modal-footer">
-                        <!-- data-dismiss is basically ending the data from this "modal" -->
-                        <a class = "btn btn-default" data-dismiss = "modal"> Close </a>
-                    </div>
-                </div>
-            </div>
+        <div class="col-md-10 description">
+          <span>
+            Web Client Languages, Interaction Design, Cognitive Design Studio, Distributed Cognition, Usability and Information Architecture, Basic Data Structures and Object-Oriented Design, Advanced Data Structures, Design and Analysis of Algorithms, Software Engineering
+          </span>
         </div>
-        <!-- ******************* Personal ****************** -->
-        <div class = "modal fade" id = "modal-personal">
-            <div class = "modal-dialog">
-                <div class = "modal-content">
-                    <!-- HEADER -->
-                    <div class = "modal-header">
-                        <h4>Personal</h4>
-                    </div>
-                    
-                    <!-- BODY -->
-                    <div class = "modal-body">
-                        <p><b>Description:</b> Programmed a basic website that demonstrates use of Bootstrap and its grid system.</p>
-                        <p><b>Tools Used: </b> HTML-5, CSS, JavaScript, jQuery, Bootstrap</p>
-                    </div>
-                    
-                    <!-- FOOTER -->
-                    <div class = "modal-footer">
-                        <!-- data-dismiss is basically ending the data from this "modal" -->
-                        <a class = "btn btn-default" data-dismiss = "modal"> Close </a>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 title">
+          <span>Skills</span>
         </div>
 
-        <!-- Where most of the work goes
-        <div class = "container mainContainer">
+        <div class="col-md-10 description">
+          <span>
+            + C/C++, JavaScript, jQuery, Node.js, Express, HTML, CSS, Java, PHP, Python 3
+          </span>
 
-        </div> -->
-        
-        <!-- A space in "" defines another class -->
+          <br />
+          <span>
+            + Prototyping, wireframing, user research, interaction design/user-centered design principles
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-	</body>
+  <section id="projects" class="projects-section idSection">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-12 col-md-6">
+          <!-- fit data -->
+          <div class="item first p1" style="background-color: #ffffb3;">
+            <div class="content">
+              <div class="title">
+                Fit Data
+              </div>
+              <div class="description">
+                Led team of 3 students in building a user centered Node.js web application to further user contribution in health science research.
+                <br /> <br />
+                Conducted user research, prototyping, wireframing, and heuristic evaluations to develope the design solution.
+              </div>
+
+              <div class="links">
+                <a href="https://github.com/raymondarevalo/FitData">GitHub</a>
+                <a href="http://fitdata2016.herokuapp.com/">Website</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- CoupleTones -->
+          <div class="item p3" style="background-color: #cdeac0;">
+            <div class="content">
+              <div class="title">
+                Couple Tones
+              </div>
+              <div class="description">
+                Developed unit tests for validating functionality of a mobile app that tracks recently visited locations.
+              </div>
+
+              <div class="links">
+                <a href="https://github.com/moizqureshi/CoupleTones">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6">
+          <!-- Water Tracker -->
+          <div class="item p2" style="background-color: #ffc09f;">
+            <div class="content">
+              <div class="title">
+                Water Tracker
+              </div>
+              <div class="description">
+                Identified the design problem and design solution of a user centered water usage tracking system through the use of user research, prototyping, and wireframing.
+              </div>
+
+              <div class="links">
+                <a href="https://docs.google.com/document/d/e/2PACX-1vQOVihHog3HgPr-2D5zWuwE_PPBUQNOM-mqLG5DYKqKFKD0ABO3ZxHD6SnwTkL7S_zI_hBhdWZ39SaC/pub">Writeup</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Playlist Analysis -->
+          <div class="item p4" style="background-color: #D6EFFF;">
+            <div class="content">
+              <div class="title">
+                Playlist Analysis
+              </div>
+              <div class="description">
+                Led a team of 2 students in user centered prototyping of viewing and analyzing song data.
+                <br /> <br />
+                Implemented digital prototypes to the user interface development of a Node.js web applicaiton.
+              </div>
+
+              <div class="links">
+                <a href="https://github.com/ksdt/playlist-analysis">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div id="contact" class="footer idSection">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <a>Twitter</a>
+          <br />
+          <a>GitHub</a>
+        </div>
+        <div class="col-md-2">
+          <a>Instagram</a>
+          <br />
+          <a>LinkedIn</a>
+
+        </div>
+      </div>
+
+      <div class="row second">
+        <div class="col-md-10">
+          <div class="left">
+            Raymond Arevalo - Student
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class ="right">
+            &copy; 2017
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
 </html>
