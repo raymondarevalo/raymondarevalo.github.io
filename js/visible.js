@@ -103,7 +103,7 @@ $(window).scroll(function() {
 
   if ($(this).scrollTop() > (project1-half) && $(this).scrollTop() < (project1+one)) {
     $('.p1').clearQueue();
-    $('.p1').stop(true,false).animate({ opacity: 1 }, 400);
+    $('.p1').stop(true,false).animate({ opacity: 1 }, 200);
   } /*else {
     $('.p1').clearQueue();
     $('.p1').stop(true,false).animate({ opacity: 0 }, 200);
@@ -112,7 +112,7 @@ $(window).scroll(function() {
   /* FadeInOut for p2 */
   if ($(this).scrollTop() > (project2-half) && $(this).scrollTop() < (project2+one)) {
     $('.p2').clearQueue();
-    $('.p2').stop(true,false).animate({ opacity: 1 }, 400);
+    $('.p2').stop(true,false).animate({ opacity: 1 }, 200);
   } /*else {
     $('.p2').clearQueue();
     $('.p2').stop(true,false).animate({ opacity: 0 }, 200);
@@ -121,7 +121,7 @@ $(window).scroll(function() {
   /* FadeInOut for p3 */
   if ($(this).scrollTop() > (project3-half) && $(this).scrollTop() < (project3-one)) {
     $('.p3').clearQueue();
-    $('.p3').stop(true,false).animate({ opacity: 1 }, 400);
+    $('.p3').stop(true,false).animate({ opacity: 1 }, 200);
   } /*else {
     $('.p3').clearQueue();
     $('.p3').stop(true,false).animate({ opacity: 0 }, 200);
@@ -130,7 +130,7 @@ $(window).scroll(function() {
   /* FadeInOut for p4 */
   if ($(this).scrollTop() > (project4-half) && $(this).scrollTop() < (project4-one)) {
     $('.p4').clearQueue();
-    $('.p4').stop(true,false).animate({ opacity: 1 }, 400);
+    $('.p4').stop(true,false).animate({ opacity: 1 }, 200);
   } /*else {
     $('.p4').clearQueue();
     $('.p4').stop(true,false).animate({ opacity: 0 }, 200);
