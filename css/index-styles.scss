@@ -15,7 +15,7 @@ transition: all 0.2s ease-in;
 
   display: block;
   z-index: 1;
-  position: fixed;
+  position: absolute;
   top: 10vh;
   width: 70%;
   @media (max-width: 575px) {
@@ -216,14 +216,6 @@ transition: all 0.2s ease-in;
         }
       }
 
-      .links {
-        margin-top: 30px;
-        a {
-          padding-right: 10px;
-          font-size: 14px;
-          color: #231F20 !important;
-        }
-      }
 
     }
     img {
@@ -509,13 +501,13 @@ display: table-row;
   }
 
   .project-title {
-    font-size: 1.5em;
+    font-size: 2.0em;
   }
 
   .project-text {
-    font-size: .80em;
+    font-size: .90em;
     @media (max-width: 575px) {
-      //display: none;
+      display: none;
     }
   }
 }
@@ -556,4 +548,13 @@ display: table-row;
 
 hr {
   margin: 150px 0;
+}
+
+.links {
+  margin-top: 30px;
+  a {
+    padding-right: 10px;
+    font-size: 14px;
+    color: #231F20 !important;
+  }
 }
