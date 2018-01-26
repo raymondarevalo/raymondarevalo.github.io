@@ -7,21 +7,40 @@ var project2 = null;
 var project3 = null;
 var project4 = null;
 var sections = null;
-
+var windowHeight = null;
+var scrollArea = null;
+var scrollPercent = null;
+var scrollTop = null;
+var musicTop = null;
+var soccerTop = null;
+var fitTop = null;
+var dataTop = null;
+var waterTop = null;
+var prevOffSet = 0;
 
 /* First main */
 $(document).ready(function(){
 
-  var scrollTop     = $(window).scrollTop(),
+  scrollTop     = $(window).scrollTop(),
   elementOffset = $('.about-section').offset().top,
   distance      = (elementOffset - scrollTop-400),
   end           = distance + $('.about-section').height();
 
+  musicTop = $("#music-id").offset().top;
+  soccerTop = $("#soccer-id").offset().top;
+  fitTop = $("#fit-id").offset().top;
+  dataTop = $("#data-id").offset().top;
+  waterTop = $("#water-id").offset().top;
 
+  //prevOffSet = $("#soccer-id").offset().top;
+
+  windowHeight = window.innerHeight;
 
   aboutTop = $('.about-section').offset().top;
   headerTop = $('.header-section').offset().top;
   aboutHeight = $('.about-section').height();
+
+
 
   $('.about-section').stop(true,false).animate({ opacity: 0 }, 200);
 
@@ -97,7 +116,6 @@ $(window).scroll(function() {
 /* Third Main */
 // The user scrolls
 $(window).scroll(function(){
-  console.log("Printing here");
   // currentScroll is the number of pixels the window has been scrolled
   var currentScroll = $(this).scrollTop();
   // $currentSection is somewhere to place the section we must be looking at
@@ -129,4 +147,37 @@ $(window).scroll(function(){
   });
 
 });
+
+/* New functions */
+
+$(window).scroll(function(){
+
+
+  var scrollTops     = $(window).scrollTop();
+
+  if(scrollTops>=musicTop-200 && (scrollTops<musicTop+50)) {
+    document.getElementById("music-id").style.top = scrollTops - musicTop + "px";
+  }
+
+  if(scrollTops>=soccerTop-200 && (scrollTops<soccerTop+50)) {
+    document.getElementById("soccer-id").style.top = scrollTops - soccerTop + "px";
+  }
+
+  if(scrollTops>=fitTop-200 && (scrollTops<fitTop+50)) {
+    document.getElementById("fit-id").style.top = scrollTops - fitTop + "px";
+  }
+
+  if(scrollTops>=dataTop-200 && (scrollTops<dataTop+50)) {
+    document.getElementById("data-id").style.top = scrollTops - dataTop + "px";
+  }
+
+  if(scrollTops>=waterTop-200 && (scrollTops<waterTop+50)) {
+    document.getElementById("water-id").style.top = scrollTops - waterTop + "px";
+  }
+
+
+
+});
+
+
 /* end */

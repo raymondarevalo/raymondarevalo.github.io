@@ -2,6 +2,7 @@
 
 body {
   background-color: white;
+  overflow-x: hidden;
   width: 70%;
   margin:auto;
   font-family: 'Josefin Sans', sans-serif !important;
@@ -560,7 +561,7 @@ hr {
 }
 
 .new-row {
-  margin-top: 200px;
+  margin-top: 300px;
   .project-title {
     font-weight: 600;
   }
@@ -617,4 +618,34 @@ hr {
     }
   }
 
+}
+
+
+.section-image {
+  position: absolute !important;
+  height: 400px !important;
+}
+
+#music-id {
+  top: -200px;
+  left: 0;
+  transform: rotate(20deg);
+}
+
+#soccer-id{
+left:-200px;
+top: -200px;
+transform: rotate(-20deg);
+}
+
+#fit-id {
+  left:0px; top: -200px; transform: rotate(20deg);
+}
+
+#data-id {
+  left:-200px; top: -200px; transform: rotate(-20deg);
+}
+
+#water-id {
+  left:0px; top: -200px; transform: rotate(20deg);
 }
