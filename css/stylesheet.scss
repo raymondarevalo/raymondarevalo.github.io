@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,900');
+body {
+  width: 100% !important;
+  overflow-x: hidden;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+#navID {
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  .navbar {
+    width: 90%;
+    height: 100px;
+    margin: 0 auto;
+    background-color: white !important;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+
+  .navbar-brand {
+    font-size: 18px;
+    font-weight: 900;
+
+  }
+
+}
+
+.container {
+  padding: 0;
+  width: 90%;
+  max-width: 90%;
+}
+
+.big-text {
+  font-size: 54px;
+  font-weight: 900;
+}
+
+.small-bold-text {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.small-regular-text {
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.socials {
+  width: 100%;
+  margin-top: 50px;
+  a {
+    padding-right: 20px;
+    font-size: 17px;
+    color: white;
+    font-weight: 900;
+    line-height: 80%;
+  }
+
+  .text {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+#bodyID {
+  background-color: black;
+  width: 100%;
+  position: relative;
+  padding-top: 100px;
+  color: white;
+  .container {
+    padding: 100px 0;
+  }
+    .row {
+      margin: 0 auto;
+      .col-class {
+        padding:0;
+
+      }
+    }
+}
+
+#projectsID {
+  margin-top: 70px;
+  .heading {
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 25px;
+  }
+
+  .row {
+
+    @media (max-width: 991.98px) {
+      .project:nth-child(even) {
+        border-right: 1px solid rgba(0,0,0,.1);
+        border-left: none;
+      }
+
+      .project:nth-child(odd) {
+        border: none !important;
+      }
+
+      .project {
+        margin-bottom: 50px;
+        .text {
+          margin-top: 10px !important;
+          .about {
+
+          }
+        }
+      }
+    }
+
+      .project:nth-child(odd) {
+        border-right: 1px solid rgba(0,0,0,.1);
+        border-left: 1px solid rgba(0,0,0,.1);
+      }
+
+    .project {
+
+
+      @media (max-width: 767.98px) {
+        border: none !important;
+      }
+
+
+      .img {
+        height: 300px;
+        overflow-x: hidden;
+        text-align: center;
+      }
+      img {
+        margin: auto;
+        height: 100%;
+      }
+
+      .text {
+        margin-top: 20px;
+        font-size: 18px;
+        a {
+          display: block;
+          color: black;
+          height: 80px;
+        }
+        .title  {
+          font-weight: 900;
+        }
+        .description {
+          font-weight: 200;
+        }
+        .about {
+          text-decoration: underline;
+          margin-top: 0px;
+          font-size: 14px;
+          font-weight: 200;
+          color: rgba(0,0,0,.5);
+        }
+      }
+    }
+  }
+}
+
+#footerID {
+  margin-top: 250px;
+  background-color: black;
+  padding: 60px 0;
+  @media (max-width: 575.98px) {
+    .col-left {
+      margin-bottom: 30px;
+    }
+  }
+
+  .project {
+    font-size: 14px;
+    font-weight: 200;
+    color: rgba(255,255,255, .5);
+  }
+
+  .socials {
+    margin-top: 15px;
+    a {
+      font-size: 15px;
+    }
+  }
+}
+
+#projectDescriptionID {
+  background-color: black;
+  width: 100%;
+  position: relative;
+  padding-top: 100px;
+  color: white;
+  .container {
+    padding: 100px 0;
+  }
+    .row {
+      margin: 0 auto;
+      .col-class {
+        padding:0;
+
+        .big-text {
+          margin-bottom: 50px;
+          line-height: 100%;
+        }
+        .small-bold-text {
+          line-height: 120%;
+        }
+
+        .small-regular-text {
+          margin-bottom: 30px;
+          line-height: 120%;
+        }
+
+      }
+    }
+}
+
+#projectBodyID {
+  width: 100%;
+  position: relative;
+  .container {
+    padding: 50px 0;
+    .row {
+      margin: 0 auto;
+
+      .col-class {
+        padding: 0;
+        font-size: 18px;
+        line-height: 180%;
+        .title {
+          font-weight: 900;
+          text-transform: uppercase;
+        }
+
+        .subtitle {
+          font-weight: 900;
+          color: #F2C94C;
+        }
+
+        .content {
+          font-weight: 300;
+        }
+      }
+
+      .split {
+        width: 40px;
+        height: 3px;
+        background-color: black;
+        margin: 50px 0;
+      }
+
+      .break {
+        display: block;
+        margin-top: 50px;
+      }
+    }
+  }
+}

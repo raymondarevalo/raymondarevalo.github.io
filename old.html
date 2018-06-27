@@ -1,0 +1,291 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Raymond Arevalo</title>
+  <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="css/imagehover.min.css" />
+  <link rel="stylesheet" href="css/index-styles.min.css" />
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+  <script src="js/jquery.visible.min.js"></script>
+  <script src="js/visible.js"></script>
+
+  <script>
+  function bigImg(x) {
+    $(x.children[0].children[1]).stop(true,false).animate({ opacity: .95 },400);
+
+
+  }
+
+  function normalImg(x) {
+
+    $(x.children[0].children[1]).stop(true,false).animate({ opacity: 0 }, 200);
+
+  }
+  </script>
+</head>
+<body>
+  <section id="header" class ="header-section">
+    <nav class="navbar navbar-light bg-faded justify-content-between flex-nowrap flex-row">
+      <div class="container">
+        <a href="/" class="navbar-brand float-left brand pr-4">Raymond Arevalo<br /><div>
+          UI/UX, Front-end Developer
+        </div></a>
+        <ul class="nav navbar-nav flex-row float-right sections">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+
+  <section id="home" class="home-section idSection" style="box-shadow: none !important;">
+    <div class="anchor">
+      <a class="anchor-link" href="#about">
+        <span>down</span>
+        <div class="line">
+
+        </div>
+      </a>
+    </div>
+  </section>
+  <section id="about" class="about-section idSection">
+    <hr />
+    <div class="container">
+      <div class="section-header">
+        About
+      </div>
+
+      <div class="row">
+        <div class="col-md-2 title">
+          <span>Bio</span>
+        </div>
+
+        <div class="col-md-10 description">
+          <span>
+            I'm <b>Raymond Arevalo</b>, an undergraduate student at UC San Diego studying Cognitive Science with a specialization in Human Computer Interaction and minor in Computer Science.
+
+            I aspire to combine <b>computer science</b> and <b>human computer interaction</b> principles to develop <b>functional user centered</b> interfaces and implementation of web applications.
+
+          </span>
+
+        </div>
+      </div>
+
+      <br />
+
+      <div class="row">
+        <div class="col-md-2 title">
+          <span>Home</span>
+        </div>
+
+        <div class="col-md-10 description">
+          <span>
+            Los Angeles
+          </span>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 title">
+          <span>Education</span>
+        </div>
+
+        <div class="col-md-10 description">
+          <span>
+            UC San Diego
+          </span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 title">
+          <span>Degree</span>
+        </div>
+
+        <div class="col-md-10 description">
+          <span>
+            B.S. in Cognitive Science w/ spec. HCI  &nbsp; &nbsp; &nbsp;expected 06/18
+          </span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 title">
+          <span>Course Work</span>
+        </div>
+
+        <div class="col-md-10 description">
+          <span>
+            Web Client Languages, Interaction Design, Cognitive Design Studio, Distributed Cognition, Usability and Information Architecture, Basic Data Structures and Object-Oriented Design, Advanced Data Structures, Design and Analysis of Algorithms, Software Engineering
+          </span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 title">
+          <span>Skills</span>
+        </div>
+
+        <div class="col-md-10 description">
+          <span>
+            + C/C++, JavaScript, jQuery, HTML, CSS, Java, Python 3
+          </span>
+
+          <br />
+          <span>
+            + Usability Testing, Information Architecture (IA), User Research and Persona creation, Wireframe production, Interaction design, A/B, User Testing, Affinity Diagramming
+          </span>
+          <br />
+          <span>
+            + Experience with Firebase firestore, Photoshop, invision, axure, PHP, Node.js, Express
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects-section idSection">
+     <hr />
+     <div class="continer">
+       <div class="section-header">
+         Projects
+       </div>
+       <div class="row new-row">
+         <div class="col-lg-3 col-md-3 col-sm-12 top-col" style="height: 300px; background-color: #5DCEF2;">
+           <div style="height: 100%; width: 100%; position: relative;">
+             <img class="section-image" id="music-id" src="img/music1.png" />
+           </div>
+            <!-- <img src="img/datareach3.png" style="height: 400px; left: -50%; margin-top: -100px; transform: rotate(-20deg);"/> -->
+         </div>
+         <div class="col-lg-7 col-md-6 col-sm-12 ml-auto bot-col">
+           <div class="project-title">Music Application Redesign</div>
+           <div class="project-text">
+             This project is a prototype of a mobile music streaming application. By taking a simple approach to redesigning the information architecture of a music application, it provides a intuitive way for users to construct, manage, and search for music and playlists.
+           </div>
+            <a href="https://medium.com/@arevalo.raymond/spotify-apple-music-redesign-a63aaaed5e79">Link to writeup</a>
+
+         </div>
+       </div>
+       <div class="row new-row">
+         <div class="col-lg-3 col-md-3 col-sm-12 top-col" style="height: 300px; background-color: #F1CA55;">
+           <div style="height: 100%; width: 100%; position: relative;">
+             <img class="section-image" id="soccer-id" src="img/soccer1.png"  />
+           </div>
+            <!-- <img src="img/datareach3.png" style="height: 400px; left: -50%; margin-top: -100px; transform: rotate(-20deg);"/> -->
+         </div>
+         <div class="col-lg-7 col-md-6 col-sm-12 ml-auto bot-col">
+           <div class="project-title">Soccer App</div>
+           <div class="project-text">
+             Led a team of 3 in building a user centered designed soccer managment web application. By putting the user in mind, it allows for an intuitive way for the coach to add, delete, and edit players, events, and statistics.
+
+             <br /><br />
+             Created wire frames and prototypes in order to bring the application to implemenation.
+           </div>
+           <a href="https://teamcogs-7fa77.firebaseapp.com/cse134b-hw4/login.html">Link to website</a>
+
+         </div>
+       </div>
+       <div class="row new-row">
+         <div class="col-lg-3 col-md-3 col-sm-12 top-col" style="height: 300px; background-color: #FD8121;">
+           <div style="height: 100%; width: 100%; position: relative;">
+             <img class="section-image" id="fit-id" src="img/fitdata2.png"  />
+           </div>
+            <!-- <img src="img/datareach3.png" style="height: 400px; left: -50%; margin-top: -100px; transform: rotate(-20deg);"/> -->
+         </div>
+         <div class="col-lg-7 col-md-6 col-sm-12 ml-auto bot-col">
+           <div class="project-title">Fitdata</div>
+           <div class="project-text">
+             Led team of 3 students in building a user centered Node.js web application to further user contribution in health science research.
+             <br /><br />
+             Conducted user research, prototyping, wireframing, and heuristic evaluations to develop the design solution.
+           </div>
+           <a href="https://github.com/raymondarevalo/FitData">Link to github</a>
+           <a href="http://fitdata2016.herokuapp.com/">Link to website</a>
+
+         </div>
+       </div>
+       <div class="row new-row">
+         <div class="col-lg-3 col-md-3 col-sm-12 top-col" style="height: 300px; background-color: red;">
+           <div style="height: 100%; width: 100%; position: relative;">
+             <img class="section-image" id="data-id" src="img/datareach5.png" />
+           </div>
+            <!-- <img src="img/datareach3.png" style="height: 400px; left: -50%; margin-top: -100px; transform: rotate(-20deg);"/> -->
+         </div>
+         <div class="col-lg-7 col-md-6 col-sm-12 ml-auto bot-col">
+           <div class="project-title">DataREACH</div>
+           <div class="project-text">
+             Designed, developed, and maintained the website for DataReach.
+             <br /><br />
+             Lead in integrating front end development to the back-end of a GO web application.
+           </div>
+            <a href="http://datareach.org">Link to website</a>
+
+         </div>
+       </div>
+       <div class="row new-row">
+         <div class="col-lg-3 col-md-3 col-sm-12 top-col" style="height: 300px; background-color: rgba(0,0,0,.3)">
+           <div style="height: 100%; width: 100%; position: relative;">
+             <img class="section-image" id="water-id" src="img/water3.png" />
+           </div>
+            <!-- <img src="img/datareach3.png" style="height: 400px; left: -50%; margin-top: -100px; transform: rotate(-20deg);"/> -->
+         </div>
+         <div class="col-lg-7 col-md-6 col-sm-12 ml-auto bot-col">
+           <div class="project-title">Water Tracker</div>
+           <div class="project-text">
+             User centered prototype of a water usage tracking system for college dormitories. Displays appartment's and building's water usage against suggested amounts. Aimed at changing students behavior towards water conservation.
+             <br /> <br />
+             Identified the design problem and design solution through the use of user research, prototyping, and wireframing.
+           </div>
+            <a href="https://docs.google.com/document/d/e/2PACX-1vQOVihHog3HgPr-2D5zWuwE_PPBUQNOM-mqLG5DYKqKFKD0ABO3ZxHD6SnwTkL7S_zI_hBhdWZ39SaC/pub">Link to writeup</a>
+
+         </div>
+       </div>
+     </div>
+  </section>
+
+
+
+
+
+  <div id="contact" class="footer idSection">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <a href="https://twitter.com/RaymondFArevalo">Twitter</a>
+          <br />
+          <a href="https://github.com/raymondarevalo">GitHub</a>
+        </div>
+        <div class="col-md-2">
+          <a href="raymondarevalo.pdf">Resume</a>
+          <br />
+          <a href="https://www.linkedin.com/in/raymondarevalo/">LinkedIn</a>
+
+        </div>
+      </div>
+
+      <div class="row second">
+        <div class="col-md-10">
+          <div class="left">
+            Raymond Arevalo - Student
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class ="right">
+            &copy; 2017
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+</html>
