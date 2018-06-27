@@ -228,6 +228,9 @@ body {
       margin: 0 auto;
 
       .col-class {
+        img {
+          width: 100%;
+        }
         padding: 0;
         font-size: 18px;
         line-height: 180%;
@@ -243,6 +246,14 @@ body {
 
         .content {
           font-weight: 300;
+          .caption {
+            font-style: italic;
+            color: #3e3e3e;
+            text-align: center;
+            font-size: 14px;
+            margin-top:5px;
+            line-height: 140%;
+          }
         }
       }
 
