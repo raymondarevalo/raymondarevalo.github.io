@@ -189,13 +189,13 @@ body {
 }
 
 #projectDescriptionID {
-  background-color: black;
+  background-color: white;
   width: 100%;
   position: relative;
   padding-top: 100px;
-  color: white;
+  color: black;
   .container {
-    padding: 100px 0;
+    padding: 50px 0 0px 0;
   }
     .row {
       margin: 0 auto;
@@ -208,10 +208,11 @@ body {
         }
         .small-bold-text {
           line-height: 120%;
+          margin-top: 30px;
         }
 
         .small-regular-text {
-          margin-bottom: 30px;
+          
           line-height: 120%;
         }
 
