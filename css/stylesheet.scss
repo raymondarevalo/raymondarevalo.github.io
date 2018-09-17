@@ -7,7 +7,7 @@ body {
 
 #navID {
   z-index: 999;
-  position: fixed;
+  position: absolute;
   width: 100%;
   background-color: white;
   .navbar {
@@ -212,7 +212,7 @@ body {
         }
 
         .small-regular-text {
-          
+
           line-height: 120%;
         }
 
