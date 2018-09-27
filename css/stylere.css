@@ -2,6 +2,7 @@
 
 html {
   font-family: 'Lato', sans-serif;
+  color: rgba(0,0,0,.84);
 }
 
 #index-first, #index-second, #index-third{
@@ -32,7 +33,7 @@ html {
 .light-regular-text {
   font-size: 1.15em;
   font-weight: 300;
-  line-height: 175%;
+  line-height: 158%;
 }
 
 .tag-text {
@@ -188,5 +189,93 @@ a:hover {
 .footer-light {
   font-size: 1em;
   font-weight: 300;
-  line-height: 175%;
+  line-height: 158%;
+}
+
+
+
+/* ------------- */
+.nav-id {
+
+}
+
+.nav-header {
+  padding: 40px 0;
+  font-size: 1.15em;
+  font-weight: 300;
+  text-decoration: underline;
+}
+
+#music-first {
+  margin-top: 20px;
+  margin-bottom: 300px;
+}
+
+.project-title {
+  font-family: Futura,Trebuchet MS,Arial,sans-serif;
+  font-weight: 900;
+  font-size: 2.5em;
+  letter-spacing: 3px;
+}
+
+.project-note {
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 158%;
+  font-style: italic;
+  color: rgba(0,0,0,.6);
+}
+
+.project-subheader {
+  font-family: Futura,Trebuchet MS,Arial,sans-serif;
+  font-weight: 900;
+  font-size: 1.15em;
+}
+
+.project-text {
+  font-weight: 300;
+  font-size: 1.15em;
+  line-height: 158%;
+}
+
+ol, ul {
+  margin-top: 20px;
+}
+
+.divider {
+  font-weight: 900;
+  font-family: Futura,Trebuchet MS,Arial,sans-serif;
+  font-size: 3em;
+  margin-top: 90px;
+}
+
+.project-header {
+  font-weight: 900;
+  font-family: Futura,Trebuchet MS,Arial,sans-serif;
+  font-size: 1.15em;
+  letter-spacing: 3px;
+}
+
+.img-3 {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.caption {
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 158%;
+  font-style: italic;
+  color: rgba(0,0,0,.6);
+  text-align: center;
+
+}
+
+.project-text b {
+  font-family: Futura,Trebuchet MS,Arial,sans-serif;
+  font-weight: 900;
+}
+
+li {
+  margin: 0 0 5px 0;
 }
