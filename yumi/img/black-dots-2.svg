@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73 52">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #000;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="black-dots-2" transform="translate(-401 -270.646)">
+    <g id="Ellipse_16" data-name="Ellipse 16" class="cls-1" transform="translate(452 270.646)">
+      <circle class="cls-2" cx="8.5" cy="8.5" r="8.5"/>
+      <circle class="cls-3" cx="8.5" cy="8.5" r="7"/>
+    </g>
+    <g id="Ellipse_18" data-name="Ellipse 18" class="cls-1" transform="translate(401 311.646)">
+      <circle class="cls-2" cx="5.5" cy="5.5" r="5.5"/>
+      <circle class="cls-3" cx="5.5" cy="5.5" r="4"/>
+    </g>
+    <g id="Ellipse_96" data-name="Ellipse 96" class="cls-1" transform="translate(456 278.646)">
+      <circle class="cls-2" cx="9" cy="9" r="9"/>
+      <circle class="cls-3" cx="9" cy="9" r="7.5"/>
+    </g>
+  </g>
+</svg>

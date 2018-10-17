@@ -1,0 +1,511 @@
+@font-face {
+font-family: "Platform";
+src: url("fonts/platform-regular-webfont.ttf") format('truetype');
+font-weight: 400;
+font-style: normal;
+}
+@font-face {
+font-family: "Platform";
+src: url("fonts/platform-light-webfont.ttf") format('truetype');
+font-weight: 300;
+font-style: normal;
+}
+@font-face {
+font-family: "Platform";
+src: url("fonts/platform-medium-webfont.ttf") format('truetype');
+font-weight: 500;
+font-style: normal;
+}
+@font-face {
+font-family: "Platform";
+src: url("fonts/platform-bold-webfont.ttf") format('truetype');
+font-weight: 700;
+font-style: normal;
+}
+
+html  {
+
+  width: 100% !important;
+}
+
+#header-id {
+  height: 60px;
+  width: 100%;
+  background: white;
+  -webkit-box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.16);
+  -moz-box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.16);
+  box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.16);
+  position: fixed;
+  z-index: 2;
+}
+
+#header-id .container {
+  height: 60px;
+}
+
+.col-logo {
+  top: 20px;
+}
+
+.col-logo .logo  {
+  height: 20px;
+}
+
+.col-other {
+  bottom: -6px;
+  position: absolute;
+  height: 10px;
+}
+
+.progress {
+  margin: 0 auto;
+  height: 6px;
+  background-color: #D1D2D7;
+}
+
+.progress-1 {
+  background-color: black;
+}
+
+.progress-2 {
+  background-color: #57A85A;
+}
+
+
+
+
+.circle-box {
+  height: 30px;
+  width: 30px;
+  background-color: red;
+  position: absolute;
+  top: -12px;
+  border-radius: 3em;
+}
+
+.circle-1 {
+  background-color: black;
+}
+
+.circle-2 {
+  background-color: #57A85A;
+  left: 33.33%;
+}
+
+.circle-3 {
+  background-color: #D1D2D7;
+  left: 63.33%;
+}
+
+.circle-4 {
+  background-color: #D1D2D7;
+  left: 94.99%;
+}
+
+.inner-circle {
+  height: 6px;
+  width: 6px;
+  border-radius: 3em;
+  background-color: white;
+  margin: 12px 0 0 12px;
+}
+
+.circle-box img {
+  width: 20px;
+  margin: 5px 0 0 5px;
+  color: white;
+  fill: white;
+}
+
+.circle-text {
+  position: absolute;
+  top: -30px;
+  left: -84px;
+  font-weight: 500;
+  font-size: 14px;
+  width: 200px;
+  text-align: center;
+}
+
+.circle-welcome {
+  color: black;
+}
+
+.circle-plan {
+  color: #57A85A;
+  background-color:
+}
+
+.circle-other {
+  color:  #D1D2D7;
+}
+
+#plan-id {
+  top: 140px;
+  position: relative;
+}
+
+
+.col-plan-left {
+  margin-right: 10px;
+}
+
+.col-plan-mid {
+  margin: 0px 5px;
+}
+
+.col-plan-right {
+  margin-left: 10px;
+}
+
+@media (max-width: 991.98px) {
+
+  .col-plan {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px !important;
+  }
+
+  .review-row {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+
+
+  .page-title, .circle-1, .circle-3, .circle-4, .review-middle {
+    display: none;
+  }
+
+  .review-left, .review-right {
+    width: 45% !important;
+  }
+  .review-left {
+    margin-left: 5% !important;
+  }
+  .review-right  {
+    margin-right: 5% !important;
+  }
+
+  #message-id {
+    margin-bottom:40px!important;
+
+  }
+
+  #bottom-id {
+    height: 200px !important;
+  }
+
+  .colorful-dots {
+    width: 1000px !important;
+  }
+
+  .active-p-1 {
+
+    -webkit-box-shadow: 0px 5px 1px 0px rgba(0,0,0,0.16) !important;
+  -moz-box-shadow: 0px 5px 1px 0px rgba(0,0,0,0.16) !important;
+  box-shadow: 0px 5px 1px 0px rgba(0,0,0,0.16) !important;
+
+  }
+
+}
+
+.col-plan {
+  margin-bottom: 20px;
+  background-color: white;
+  -webkit-box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.16);
+  -moz-box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.16);
+  box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.16);
+  border-radius: 10px;
+  padding: 20px 25px 20px 25px;
+  text-align: left !important;
+  border:none;
+}
+
+
+
+.col-option {
+
+}
+
+
+.main-title {
+  font-family: 'Platform';
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.sub-title {
+  font-family: 'Platform';
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.plan-img {
+  height: 52px;
+  position: relative;
+}
+
+.jar-img {
+  margin-top: 20px;
+  height: 77.16px;
+}
+
+.jar-img img  {
+  float: right;
+  height: 77.16px;
+}
+
+.main-per {
+  font-family: 'Platform';
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.sub-per {
+  font-family: 'Platform';
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.plan-serving, .plan-total {
+  position: relative;
+  margin-top: 30px;
+  display: inline;
+  width:50%;
+  float: left;
+}
+
+.plan-total {
+  float: right;
+  text-align: right;
+}
+
+.active-p-1 {
+  background-color: black;
+  color: white;
+  -webkit-box-shadow: 0px 15px 1px 0px rgba(0,0,0,0.16);
+-moz-box-shadow: 0px 15px 1px 0px rgba(0,0,0,0.16);
+box-shadow: 0px 15px 1px 0px rgba(0,0,0,0.16);
+
+}
+
+.active-p-2 {
+  background-color: #EEC83F;
+  color: white;
+  -webkit-box-shadow: 0px 15px 1px 0px rgba(0,0,0,0.16);
+-moz-box-shadow: 0px 15px 1px 0px rgba(0,0,0,0.16);
+box-shadow: 0px 15px 1px 0px rgba(0,0,0,0.16);
+}
+
+.active-p-3 {
+  background-color: #314698;
+  color: white;
+  -webkit-box-shadow: 0px 15px 1px 0px rgba(0,0,0,0.16);
+-moz-box-shadow: 0px 15px 1px 0px rgba(0,0,0,0.16);
+box-shadow: 0px 15px 1px 0px rgba(0,0,0,0.16);
+}
+
+
+.page-title {
+  text-align: center;
+  font-family: 'Platform';
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  color: black;
+}
+
+/*  Review css   down below */
+
+#review-id {
+  margin-top: 180px;
+  position: relative;
+
+}
+
+.review-left {
+  text-align: left;
+  font-family: 'Platform';
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.review-left .regular {
+  font-weight: 500;
+}
+
+.review-left .bold {
+  font-weight: 300;
+  margin-left: 40px;
+}
+
+.review-right {
+  text-align: right;
+  letter-spacing: 1px;
+  font-family: 'Platform';
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#message-id {
+margin-top: 10px;
+margin-bottom: -100px;
+z-index: 4;
+
+position: relative;
+}
+
+.good {
+  font-family: 'Platform';
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.form-check {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.check-container {
+    font-family: 'Platform';
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: 500;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.check-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+/* On mouse-over, add a grey background color */
+.check-container:hover input ~ .checkmark {
+    background-color: black;
+
+}
+
+/* When the checkbox is checked, add a blue background */
+.check-container input:checked ~ .checkmark {
+    background-color: black;
+
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.check-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.check-container .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.continue-button {
+  margin-top: 30px;
+  padding: 15px 40px;
+  background-color: black;
+  color: white;
+  font-family: 'Platform';
+  font-size: 15px;
+  font-weight: 500;
+  border: 2px solid black;
+
+  letter-spacing: 1px;
+}
+.continue-button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+#bottom-id {
+  z-index: -1;
+  width: 100%;
+  height: 300px;
+
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.colorful-dots {
+
+  width: 1600px;
+  margin-left: -30%;
+
+}
+
+.review-row {
+  visibility:hidden;
+}
+
+/*
+.col-plan-left:hover {
+  background-color: #F1A588;
+}
+
+.col-plan-mid:hover {
+  background: #EEC83F;
+}
+
+.col-plan-right:hover {
+  background-color: #314698;
+}
+*/
+
+.col-plan {
+  border: solid 0px black;
+  transition: border-width 0.3s linear;
+  transition: all .3s ease-in-out;
+}
+
+.col-plan:hover {
+
+  border-width: 5px;
+  margin: -5px 0px;
+}

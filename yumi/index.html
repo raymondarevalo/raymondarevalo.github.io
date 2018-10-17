@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Yumi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script>
+
+  function rmActivate() {
+    document.getElementsByClassName("review-row")[0].style.visibility="visible";
+    document.getElementsByClassName("review-row")[1].style.visibility="visible";
+    document.getElementsByClassName("review-row")[2].style.visibility="visible";
+  }
+
+  function myFunction1() {
+    $(".col-plan-left").addClass("active-p-1");
+    /*
+    document.getElementById("black-dots-1").style.display="none";
+    document.getElementById("white-dots-1").style.display="block";
+    */
+    document.getElementById("1-jar-non").style.display="none";
+    document.getElementById("1-jar-active").style.display="block";
+    document.getElementById("plan-split-1").style.backgroundColor="rgba(255,255,255,.2)";
+    document.getElementById("meals-id").innerHTML = "1 meal / day";
+    document.getElementById("jars-id").innerHTML = "7 jars";
+    document.getElementById("week-total-id").innerHTML = "$41 / week";
+
+    $(".col-plan-mid").removeClass("active-p-1");
+    //document.getElementById("black-dots-2").style.display="block";
+    //document.getElementById("white-dots-2").style.display="none";
+    document.getElementById("2-jar-non").style.display="block";
+    document.getElementById("2-jar-active").style.display="none";
+    document.getElementById("plan-split-2").style.backgroundColor="rgba(0,0,0,.2)";
+
+    $(".col-plan-right").removeClass("active-p-1");
+    //document.getElementById("black-dots-3").style.display="block";
+    //document.getElementById("white-dots-3").style.display="none";
+    rmActivate();
+
+}
+
+function myFunction2() {
+  $(".col-plan-mid").addClass("active-p-1");
+  //document.getElementById("black-dots-2").style.display="none";
+  //document.getElementById("white-dots-2").style.display="block";
+  document.getElementById("2-jar-non").style.display="none";
+  document.getElementById("2-jar-active").style.display="block";
+  document.getElementById("plan-split-2").style.backgroundColor="rgba(255,255,255,.2)";
+  document.getElementById("meals-id").innerHTML = "2 meals / day";
+  document.getElementById("jars-id").innerHTML = "14 jars";
+  document.getElementById("week-total-id").innerHTML = "$76 / week";
+
+  $(".col-plan-left").removeClass("active-p-1");
+  //document.getElementById("black-dots-1").style.display="block";
+  //document.getElementById("white-dots-1").style.display="none";
+  document.getElementById("1-jar-non").style.display="block";
+  document.getElementById("1-jar-active").style.display="none";
+  document.getElementById("plan-split-1").style.backgroundColor="rgba(0,0,0,.2)";
+
+  $(".col-plan-right").removeClass("active-p-1");
+  //document.getElementById("black-dots-3").style.display="block";
+  //document.getElementById("white-dots-3").style.display="none";
+  document.getElementById("3-jar-non").style.display="block";
+  document.getElementById("3-jar-active").style.display="none";
+  document.getElementById("plan-split-3").style.backgroundColor="rgba(0,0,0,.2)";
+  rmActivate();
+}
+
+function myFunction3() {
+  $(".col-plan-right").addClass("active-p-1");
+  //document.getElementById("black-dots-3").style.display="none";
+  //document.getElementById("white-dots-3").style.display="block";
+  document.getElementById("3-jar-non").style.display="none";
+  document.getElementById("3-jar-active").style.display="block";
+  document.getElementById("plan-split-3").style.backgroundColor="rgba(255,255,255,.2)";
+  document.getElementById("meals-id").innerHTML = "3 meals / day";
+  document.getElementById("jars-id").innerHTML = "21 jars";
+  document.getElementById("week-total-id").innerHTML = "$79 / week";
+
+
+  $(".col-plan-left").removeClass("active-p-1");
+  //document.getElementById("black-dots-1").style.display="block";
+  //document.getElementById("white-dots-1").style.display="none";
+  document.getElementById("1-jar-non").style.display="block";
+  document.getElementById("1-jar-active").style.display="none";
+  document.getElementById("plan-split-1").style.backgroundColor="rgba(0,0,0,.2)";
+
+  $(".col-plan-mid").removeClass("active-p-1");
+  //document.getElementById("black-dots-2").style.display="block";
+  //document.getElementById("white-dots-2").style.display="none";
+  document.getElementById("2-jar-non").style.display="block";
+  document.getElementById("2-jar-active").style.display="none";
+  document.getElementById("plan-split-2").style.backgroundColor="rgba(0,0,0,.2)";
+  rmActivate();
+}
+
+
+</script>
+</head>
+<body>
+
+  <div id="header-id">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-lg-12 col-logo">
+          <img class="logo" src="img/black.svg">
+        </div>
+
+        <div class="col-lg-6 col-other">
+          <div class="circle-box circle-1">
+            <div class="circle-text circle-welcome">Welcome</div>
+            <img src="img/tick-2.svg">
+          </div>
+          <div class="circle-box circle-2">
+            <div class="circle-text circle-plan">Select a plan</div>
+            <img src="img/rotate.svg">
+          </div>
+          <div class="circle-box circle-3">
+            <div class="circle-text circle-other">Choose your meals</div>
+            <div class="inner-circle"></div>
+          </div>
+          <div class="circle-box circle-4">
+            <div class="circle-text circle-other">Checkout</div>
+            <div class="inner-circle"></div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar progress-1" role="progressbar" style="width: 23.33%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar bg-success progress-2" role="progressbar" style="width: 10%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <div id="plan-id">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-lg-12 page-title">Choose a Weekly Plan</div>
+        <button class="col-lg-3 col-plan col-plan-left" onclick="myFunction1()">
+          <!--
+            <img id="black-dots-1" class="plan-img" src="img/black-dots-1.svg">
+            <img id="white-dots-1" class="plan-img" style="display: none" src="img/white-dots-1.svg">
+          -->
+            <div class="main-title">1 meal per day</div>
+            <div class="sub-title">7 weekly meals</div>
+            <div class="jar-img">
+              <img id="1-jar-non" src="img/1-jar-non.svg">
+              <img id="1-jar-active" src="img/1-jar-active.svg" style="display: none;">
+            </div>
+            <div class="plan-serving">
+              <div class="main-per">$5.83</div>
+              <div class="sub-per">Per Serving</div>
+            </div>
+
+            <div class="plan-total">
+              <div class="main-per">$41</div>
+              <div class="sub-per">Weekly Total</div>
+            </div>
+
+            <div id="plan-split-1" style="position: absolute; bottom: 0; left: 50%; height: 50px; width: 1px; background-color: rgba(0,0,0,.2)"></div>
+
+        </button>
+        <button class="col-lg-3 col-plan col-plan-mid" onclick="myFunction2()">
+          <!--
+            <img id="black-dots-2" class="plan-img" src="img/black-dots-2.svg">
+            <img id="white-dots-2" class="plan-img" style="display: none" src="img/white-dots-2.svg">
+          -->
+            <div class="main-title">2 meals per day</div>
+            <div class="sub-title">14 weekly meals</div>
+            <div class="jar-img">
+              <img id="2-jar-non" src="img/2-jar-non.svg">
+              <img id="2-jar-active" src="img/2-jar-active.svg" style="display: none;">
+            </div>
+            <div class="plan-serving">
+              <div class="main-per">$5.42</div>
+              <div class="sub-per">Per Serving</div>
+            </div>
+
+            <div class="plan-total">
+              <div class="main-per">$76</div>
+              <div class="sub-per">Weekly Total</div>
+            </div>
+            <div id="plan-split-2" style="position: absolute; bottom: 0; left: 50%; height: 50px; width: 1px; background-color: rgba(0,0,0,.2)"></div>
+
+        </button>
+        <button class="col-lg-3 col-plan col-plan-right" onclick="myFunction3()">
+          <!--
+            <img id="black-dots-3" class="plan-img" src="img/black-dots-3.svg">
+            <img id="white-dots-3" class="plan-img" style="display: none" src="img/white-dots-3.svg">
+          -->
+            <div class="main-title">3 meals per day</div>
+            <div class="sub-title">21 weekly meals</div>
+            <div class="jar-img">
+              <img id="3-jar-non" src="img/3-jar-non.svg">
+              <img id="3-jar-active" src="img/3-jar-active.svg" style="display: none;">
+            </div>
+            <div class="plan-serving">
+              <div class="main-per">$3.75</div>
+              <div class="sub-per">Per Serving</div>
+            </div>
+
+            <div class="plan-total">
+              <div class="main-per">$79</div>
+              <div class="sub-per">Weekly Total</div>
+            </div>
+            <div id="plan-split-3" style="position: absolute; bottom: 0; left: 50%; height: 50px; width: 1px; background-color: rgba(0,0,0,.2)"></div>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="review-id">
+
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6 review-row"><hr></div>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col-lg-3 review-middle"></div>
+        <div class="col-lg-3 review-left review-row-l">
+          <span id="meals-id" class="regular"></span> <span id="jars-id" class="bold"></span>
+        </div>
+        <div id="week-total-id" class="col-lg-3 review-right review-row-r">
+
+        </div>
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6 review-row"><hr></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="message-id">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6 review-row good">
+          Babies eat more as they grow. Would you like us to increase the number of meals as your child grows?
+          <label class="check-container">Yes!
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+
+          <button type="submit" class="continue-button">Continue</button>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <div id="bottom-id">
+    <img class="colorful-dots" src="img/colorful-dots.svg">
+  </div>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>

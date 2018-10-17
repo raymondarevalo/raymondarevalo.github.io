@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 81.376 81.176">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #fff;
+        stroke-width: 4px;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-10, .cls-3 {
+        fill: #314698;
+      }
+
+      .cls-4 {
+        fill: #57a85a;
+      }
+
+      .cls-5 {
+        fill: #ef5f2b;
+      }
+
+      .cls-6 {
+        fill: #e797a4;
+      }
+
+      .cls-7 {
+        fill: #f1a588;
+      }
+
+      .cls-8 {
+        fill: #658ec9;
+      }
+
+      .cls-9 {
+        fill: #eec83f;
+      }
+    </style>
+  </defs>
+  <g id="_1-jar-active" data-name="1-jar-active" transform="translate(-582.107 -618.332)">
+    <g id="Group-19" transform="translate(584.173 620.346)">
+      <path id="Fill-75" class="cls-1" d="M49.758,15.8c4.994-2.432,9.5-5.8,14.459-8.315a28.8,28.8,0,0,1,10.5-3.235c.135.481.276.958.406,1.442,3.129,11.622,3.309,25.218-4.229,34.487L6.414,40.43c-6.692-8.1-7.437-19.6-5.448-30.183,2.362,1.231,4.672,2.734,6.94,4.019A45.633,45.633,0,0,0,49.758,15.8" transform="translate(0 36.728)"/>
+      <path id="Fill-77" class="cls-2" d="M41.371,24.673c-11.208,3.9-23.8-.655-33.092-8.195-2.218-1.8-4.587-3.857-7.262-4.365a86.859,86.859,0,0,0,2.9-11.1l51.519-.2A112.034,112.034,0,0,0,60.7,18.327a36.9,36.9,0,0,0-9.369,1.978c-3.394,1.266-6.537,3.179-9.957,4.368" transform="translate(8.788 7.033)"/>
+      <path id="Fill-79" class="cls-1" d="M63.335,27.134c-4.957,2.535-9.463,5.935-14.459,8.388A45.287,45.287,0,0,1,7.026,33.976c-2.268-1.3-4.578-2.813-6.937-4.054.272-1.457.594-2.9.956-4.309,2.083-8.041,5.344-15.738,7.9-23.624,2.67.506,5.029,2.562,7.24,4.356C25.442,13.874,38,18.418,49.172,14.53c3.41-1.187,6.543-3.1,9.927-4.361a36.777,36.777,0,0,1,9.34-1.975c1.9,5.192,3.881,10.363,5.4,15.676a28.524,28.524,0,0,0-10.5,3.264" transform="translate(0.764 17.192)"/>
+      <path id="Fill-109" class="cls-1" d="M62.237,11.334.928,10.9,1,0,62.314.432Z" transform="translate(8.024)"/>
+      <path id="Fill-8" class="cls-3" d="M15.852,17.108" transform="translate(-2.974 41.606)"/>
+      <circle id="Ellipse_9" data-name="Ellipse 9" class="cls-4" cx="3.5" cy="3.5" r="3.5" transform="translate(59.838 54)"/>
+      <circle id="Ellipse_10" data-name="Ellipse 10" class="cls-5" cx="2" cy="2" r="2" transform="translate(61.838 69)"/>
+      <circle id="Ellipse_11" data-name="Ellipse 11" class="cls-6" cx="2.5" cy="2.5" r="2.5" transform="translate(43.838 67)"/>
+      <circle id="Ellipse_12" data-name="Ellipse 12" class="cls-7" cx="2.5" cy="2.5" r="2.5" transform="translate(21.838 63)"/>
+      <circle id="Ellipse_13" data-name="Ellipse 13" class="cls-8" cx="2" cy="2" r="2" transform="translate(16.838 69)"/>
+      <circle id="Ellipse_14" data-name="Ellipse 14" class="cls-9" cx="1" cy="1" r="1" transform="translate(4.838 63)"/>
+      <circle id="Ellipse_15" data-name="Ellipse 15" class="cls-10" cx="2.5" cy="2.5" r="2.5" transform="translate(5.838 57)"/>
+    </g>
+  </g>
+</svg>
