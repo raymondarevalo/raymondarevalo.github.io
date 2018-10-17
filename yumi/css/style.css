@@ -24,8 +24,11 @@ font-style: normal;
 }
 
 html  {
-  font-family: 'Platform', helvetica, arial sans-serif !important;
   width: 100% !important;
+}
+
+body  {
+  font-family: 'Platform', helvetica, arial sans-serif !important;
 }
 
 #header-id {
@@ -173,9 +176,18 @@ html  {
 
 
 
-  .page-title, .circle-1, .circle-3, .circle-4, .review-middle {
+  .page-title, .circle-1, .circle-3, .circle-4, .review-middle, .circle-2 .circle-plan {
     display: none;
   }
+
+  .circle-hidden {
+    display: block !important;
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom:10px;
+
+  }
+
 
   .review-left, .review-right {
     width: 45% !important;
@@ -208,6 +220,13 @@ html  {
 
   }
 
+}
+
+.circle-hidden {
+  font-weight: 500;
+  font-size: 14px;
+  color: #57A85A;
+  display: none;
 }
 
 .col-plan {
