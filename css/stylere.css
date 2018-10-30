@@ -243,7 +243,7 @@ a:hover {
 
 ol, ul {
   margin-top: 20px;
-  margin-bottom:20px;
+
 
   padding-left:0px;
 }
@@ -278,9 +278,11 @@ ol, ul {
 }
 
 .project-text b {
-font-family: 'Lato', sans-serif;
+font-family: Futura,Trebuchet MS,Arial,sans-serif;
   font-weight: 900;
-  color: #ECCA62;
+  font-size: .81em;
+  background-color: #FFFF00;
+
 }
 
 li {
