@@ -5,6 +5,23 @@ html {
   color: rgba(0,0,0,.84);
 }
 
+.body-text {
+  font-size: 50px;
+  color: black;
+  font-family: Times, 'Times New Roman', serif;
+  line-height: 1.15;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+
+@media (max-width: 679px) {
+  
+  .body-text {
+    font-size: 40px !important;
+  }
+}
+
 #index-first, #index-second, #index-third{
   margin-top: 160px;
 }
@@ -16,7 +33,7 @@ html {
 
 
 .light-big-text {
-  font-size: 2em;
+  font-size: 
   font-weight: 300;
   line-height: normal;
 }
@@ -31,9 +48,12 @@ html {
 }
 
 .light-regular-text {
-  font-size: 1.15em;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: Arial,sans-serif;
   font-weight: 300;
   line-height: 158%;
+
 }
 
 .tag-text {
@@ -58,6 +78,7 @@ html {
 .a-link {
   color: black;
   text-decoration: underline;
+
 }
 
 .bold-regular-text {
