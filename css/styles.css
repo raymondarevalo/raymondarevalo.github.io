@@ -1,9 +1,12 @@
 
+html {
 
+}
 /* global */
 body {
     min-height: 100vh;
     font-family: 'GT America Extended', Helvetica, sans-serif;
+    
 }
 
 .responsive-container {
@@ -201,7 +204,7 @@ body {
 
 .project-breaker {
     width: 100%;
-    height: 1px;
+    height: .5px;
     background-color: black;
     margin: 48px 0;
 }
@@ -222,6 +225,10 @@ body {
 
 .img-bottom {
     margin-bottom: 20px;
+}
+
+.read-more {
+    display: none;
 }
 
 .project-section-container .section-title {
@@ -502,7 +509,7 @@ body {
 
     /* Project */
     .project-section-container .section-title {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .about-div .responsive-container .bio {
@@ -564,6 +571,10 @@ body {
         
     }
 
+    .project-breaker {
+        margin: 36px auto;
+    }
+
     .link-text {
         font-size: 14px;
     }
@@ -573,6 +584,10 @@ body {
         margin-top: 34px;
         z-index: 888;
         position: relative;
+    }
+
+    .hero-div img {
+        width: 74%;
     }
 
     .home-nav .responsive-container {
@@ -627,6 +642,85 @@ body {
         flex-basis: 100%;
         font-size: 14px;
     }
+    
+
+        /* Project */
+
+        .hero-div {
+            text-align: left;
+            width: 90%;
+            margin: 0 auto 90px auto;
+            min-height: 100vh;
+        }
+
+        .hero-div .case-study {
+            font-size: 10px;
+            line-height: 1;
+            margin-bottom: 4px;
+        }
+
+        .hero-div .title {
+            font-size: 30px;
+            line-height: 1;
+            margin-bottom: 4px;
+        }
+
+        .hero-div .info {
+            font-size: 12px;
+            width: 75%;
+            float: left;
+
+        }
+
+        .read-more {
+            font-size: 12px;
+            display: block;
+            text-transform: uppercase;
+            position: absolute;
+            bottom: 14px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            margin: 0 auto;
+            scroll-behavior: smooth;
+        }
+
+        .project-section-container .section-title {
+            font-size: 30px;
+        }
+        .project-section-container .section-body {
+            font-size: 12px;
+        }
+
+        .about-div .responsive-container {
+            font-size: 12px;
+        }
+    
+        .about-div .responsive-container .bio {
+            max-width: 100%;
+        }
+    
+        .about-div .responsive-container .groups {
+            flex-direction: column;
+            margin-top: 0;
+        }
+    
+        .about-div .responsive-container .groups .group {
+            margin-top: 48px;
+        }
+
+        .about-div .responsive-container .groups .group .title {
+            text-transform: capitalize;
+            font-size: 12px;
+        }
+
+        .psc-top {
+            margin-top: 24px;
+        }
+        
+        .psc-bottom {
+            margin-bottom: 24px;
+        }
 
     /* Me */
 
@@ -660,6 +754,8 @@ body {
     .bottom-nav .responsive-container .right-container .email {
         display: inline-block;
     }
+
+
 
 
 
