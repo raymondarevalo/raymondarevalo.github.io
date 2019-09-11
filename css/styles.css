@@ -587,7 +587,7 @@ body {
     }
 
     .hero-div img {
-        width: 74%;
+        width: 94%;
     }
 
     .home-nav .responsive-container {
@@ -666,8 +666,9 @@ body {
         }
 
         .hero-div .info {
-            width: 75%;
+            width: 80%;
             float: left;
+            font-size: 18px;
 
         }
 
@@ -688,11 +689,11 @@ body {
             font-size: 30px;
         }
         .project-section-container .section-body {
-            
+            font-size: 18px;
         }
 
         .about-div .responsive-container {
-            
+            font-size: 18px;
         }
     
         .about-div .responsive-container .bio {
