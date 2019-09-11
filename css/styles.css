@@ -587,7 +587,8 @@ body {
     }
 
     .hero-div img {
-        width: 94%;
+        width: 100%;
+        
     }
 
     .home-nav .responsive-container {
