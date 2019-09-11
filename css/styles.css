@@ -666,7 +666,6 @@ body {
         }
 
         .hero-div .info {
-            font-size: 12px;
             width: 75%;
             float: left;
 
@@ -682,18 +681,18 @@ body {
             right: 0;
             text-align: center;
             margin: 0 auto;
-            scroll-behavior: smooth;
+           
         }
 
         .project-section-container .section-title {
             font-size: 30px;
         }
         .project-section-container .section-body {
-            font-size: 12px;
+            
         }
 
         .about-div .responsive-container {
-            font-size: 12px;
+            
         }
     
         .about-div .responsive-container .bio {
