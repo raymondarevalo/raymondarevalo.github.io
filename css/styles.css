@@ -1,128 +1,666 @@
-/* ABLE TO CHANGE THE VALUES OF DEFAULT CLASSES IN HERE */
 
 
+/* global */
 body {
-    /* Overrides the font and changes it */
-    /*font-family: Cooper Black, Arial Black, Sans-Serif;*/
-    font-family: Century Gothic, Arial, Sans-Serif; 
-    /* another cool font font-family: Century Gothic, Arial, Sans-Serif; */
+    min-height: 100vh;
+    font-family: 'GT America Extended', Helvetica, sans-serif;
+}
+
+.responsive-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.link-text {
+    font-size: 14px;
+    text-transform: uppercase;
+    
+}
+
+.link-text.active {
+    text-decoration: underline;
+}
+
+.link-text:hover {
+    color: black;
+    text-decoration: underline;
 }
 
 
-.mainContainer {
-    height: 1000px;
+
+/* Home page*/
+
+.home-div {
+    margin-top: -80px;
 }
 
-.barContainer {
-    color: #000000;
-    background-color: white;
+.home-div .responsive-container .home-text {
+    width: 60%;
+    font-size: 2.7vw;
+    color: black;
+    font-family: 'FreightDisp Pro', Georgia, serif;
+    line-height: 1.15;
+    font-weight: normal;
 }
 
-.navbar-custom {
-    color: #000000;
-    background-color: #CC3333;
+.projects-div {
+    margin: 80px 0 80px 0;
 }
 
-/* Overrides bootstrap class */
-.navbar-inverse {
-    background-color: #000000;
+.projects-div .responsive-container .project {
+    display: block;
+    margin-bottom: 35px;
 }
 
-.projects-section {
-    margin-top: 50px; /* Corrects margin for first section */
-    height: 100%;
-    background-color:  white;
+.projects-div .responsive-container .project .project-content {
 }
 
-
-.about-section {
-    height: 500px;
-    background-color: white;
+.projects-div .responsive-container .project .project-content .project-link {
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    font-size: 1.15vw;
 }
 
-.extra-section {
+.projects-div .responsive-container .project .project-content .project-link .index {
+    flex-basis: 10%;
+}
+
+.projects-div .responsive-container .project .project-content .project-link .title {
+    flex-basis: 40%;
+}
+.projects-div .responsive-container .project .project-content .project-link .role {
+    flex-basis: 50%;
+}
+
+.projects-div .responsive-container .project .project-content img {
+    width: 66vh;
+    position: absolute;
+    z-index: -999;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    visibility: hidden;
+}
+
+.projects-div .responsive-container .project .project-content .project-link:hover + img {
+    visibility: visible;
+    transition: 1.0s;
+    -webkit-transition: 1.0s;
+    -moz-transition: 1.0s;
+    -ms-transition: 1.0s;
+    -o-transition: 1.0s;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.moving-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    background-color: red;
     height: 100px;
-    background-color: white;  
 }
 
-.navbar-static-top {
-    top: 400px;
+.scroll-left {
+    height: 50px;	
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+   }
+   .scroll-left p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: left;
+    text-transform: uppercase;
+    /* Starting position */
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);	
+    transform:translateX(100%);
+    /* Apply animation to this element */	
+    -moz-animation: scroll-left 20s linear infinite;
+    -webkit-animation: scroll-left 20s linear infinite;
+    animation: scroll-left 20s linear infinite;
+   }
+   /* Move it (define the animation) */
+   @-moz-keyframes scroll-left {
+    0%   { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
+   }
+   @-webkit-keyframes scroll-left {
+    0%   { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+   }
+   @keyframes scroll-left {
+    0%   { 
+    -moz-transform: translateX(100%); /* Browser bug fix */
+    -webkit-transform: translateX(100%); /* Browser bug fix */
+    transform: translateX(100%); 		
+    }
+    100% { 
+    -moz-transform: translateX(-100%); /* Browser bug fix */
+    -webkit-transform: translateX(-100%); /* Browser bug fix */
+    transform: translateX(-100%); 
+    }
+   }
+
+
+/* Case Study */
+
+.hero-div {
+    text-align: center;
+    padding-top: 100px;
+    display: block;
+    margin-bottom: 48px;
 }
 
-.navbar-brand img {
-    margin-top: -20px;
+.hero-div .case-study {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.hero-div .title {
+    font-size: 5vw;
+    font-family: 'FreightDisp Pro', Georgia, serif;
+    font-weight: 900;
+    line-height: 1;
+    z-index: 2;
+    position: relative;
+}
+
+.hero-div img {
+    width: 66vh;
+    display: block;
+    margin: 0 auto;
+   
+
+}
+.hero-div .info {
+    font-size: 16px;
+    max-width: 778px;
+    margin: 0 auto 16px auto;
 }
 
 
+.project-breaker {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin: 48px 0;
+}
 
-/* Changes the button's list layout */
-.navbar .navbar-collapse {
+
+.project-section-container {
+    width: 556px;
+    margin-left: 10vw;
+}
+
+.psc-top {
+    margin-top: 48px;
+}
+
+.psc-bottom {
+    margin-bottom: 48px;
+}
+
+.img-bottom {
+    margin-bottom: 20px;
+}
+
+.project-section-container .section-title {
+    font-family: 'FreightDisp Pro', Georgia, serif;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 24px;
+}
+
+.project-section-container .section-body {
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+/* About */
+.about-div .responsive-container {
+    display: flex;
+    flex-flow: column;
+    font-size: 16px;
+
+}
+
+.about-div .responsive-container .bio {
+    max-width: 556px;
+    margin: 0 auto;
+}
+
+.about-div .responsive-container .groups {
+    margin-top: 60px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+
+.about-div .responsive-container .group {
+}
+
+.about-div .responsive-container .group .title {
+    margin-bottom: 12px;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+/* Challenges */
+.project-responsive-container {
+    width: 96%;
+    margin: 0 auto;
+}
+.project-responsive-container img {
+    width: 100%;
+}
+
+
+/* Me */
+.me-div {
+    padding-top: 180px;
+}
+.me-div .responsive-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.me-div .responsive-container .bio {
+    flex-basis: 60%;
+    font-size: 1.7vw;
+    font-family: 'FreightDisp Pro', Georgia, serif;
+    font-weight: 400;
+}
+.me-div .responsive-container .bio b {
+    font-style: italic;
+}
+.me-div .responsive-container .bio a {
+    color: rgba(0,0,0,.5);
+}
+
+.me-div .responsive-container .skills  {
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.me-div .responsive-container .skills .group  {
+   margin-bottom: 48px;
+}
+
+.me-div .responsive-container .skills .group .title {
+    font-family: 'GT America Extended', Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: .9vw;
+    line-height: 1;
+    margin-bottom: 12px;
+}
+
+.me-div .responsive-container .skills .group .name {
+    font-size: 1.2vw;
+}
+
+.cry {
+    margin: 120px auto;
     text-align: center;
 }
 
-/* Changes the global font size */
-* {
-   font-size: 20px;
-   line-height: 2;
+.resume-div {
+    position: relative;
+    padding: 48px 100px;
+    border: 1px solid black;
+    border-radius: 100%;
+    text-transform: uppercase;
 }
 
-/* Edits the navbar*/
-.navbar {
-    /*background:transparent;*/
-    background-color: white;
-    border-bottom: none;
+.about-img {
+    text-align: center;
 }
 
-/* Column */
-.pro {
-    height: 300px; /* This height will be changed */
-    overflow: hidden;
-    
+.about-img img {
+    width: 245px;
 }
-
-/* On Column hover */
-.pro a:hover {
-    opacity: 0.5;
-
-}
-
-/* img property */
-.projectColumn {
-    border: none;
-    margin: none;
+.graphics1 {
     width: 100%;
-    
+    margin: 200px 0;
+}
+.graphics1 .responsive-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
-/* Row property : gets rid of padding */
-.no-gutter > [class*='col-'] {
-    padding-right:0;
-    padding-left:0;
-    background-color: white;
-    
+.graphics1 .responsive-container div:nth-of-type(1), .graphics1 .responsive-container div:nth-of-type(2) {
+    flex-basis: 40%;
+}
+.graphics1 .responsive-container div:nth-of-type(2) {
+    margin-top: 100px;
 }
 
-.transfoot{
-    margin-top: 120px;
-    border: none;
+.graphics1 .responsive-container div:nth-of-type(3) {
+    flex-basis: 100%;
+    margin-top: 100px;
+}
+
+.graphics1 .responsive-container div:nth-of-type(4) {
+    flex-basis: 30%;
+    margin-top: 100px;
+    margin-right: 60%;
+}
+
+.graphics1 .responsive-container div:nth-of-type(5) {
+    flex-basis: 30%;
+    margin-top: 100px;
+}
+.graphics1 .responsive-container div:nth-of-type(6) {
+    flex-basis: 40%;
+    margin-top: 160px;
+}
+
+.graphics1 .responsive-container div img, .graphics2 .responsive-container div img {
+    width: 100%;
 }
 
 
 
-/* Overrides the footer logos */
-.fa {
-    color: grey;
+
+/* Navigation Bars */
+.home-nav {
+    margin-top: 80px;
+}
+.home-nav .responsive-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    margin: 0 auto;
 
 }
-a :hover {
+
+.home-nav .responsive-container .home-text {
+    flex-basis: 60%;
+    font-size: 2vw;
     color: black;
+    font-family: 'FreightDisp Pro', Georgia, serif;
+    line-height: 1.15;
+    font-weight: normal;
+}
+.home-nav .responsive-container a {
+    display: inline;
+    width: auto;
+
 }
 
-/* Overrides pulling to the right */
-.pull-right {
-    margin-right: 20px;
+.project-nav .responsive-container a {
+    display: inline-block;
+    margin: 34px 0;
+    font-size: 14px;
+    width: auto;
+}
 
+.project-nav {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.project-nav .responsive-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.project-nav .responsive-container a {
+    margin: 34px 0px;
+}
+
+.project-nav .responsive-container .logo {
+    font-family: 'FreightDisp Pro', Georgia, serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 20px;
 }
 
 
 
+.bottom-nav {
+    
+    width: 100%;
+    padding: 14px 0 14px 0;
+    position: fixed;
+    bottom: 0;
+}
+
+.bottom-nav-relative {
+    position: relative !important;
+}
+
+.bottom-nav .responsive-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.bottom-nav .responsive-container .left-container {
+    display: block;
+}
+
+.bottom-nav .responsive-container .right-container .email {
+    display: none;
+}
+
+
+
+
+@media(max-width: 980px){
+
+    /* Universal */
+    .responsive-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* Home */
+    .home-nav .responsive-container .home-text {
+        font-size: 2.5vw;
+        
+    }
+    .projects-div .responsive-container .project .project-content .project-link {
+        font-size: 2vw;
+    }
+    .project-section-container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Project */
+    .project-section-container .section-title {
+        font-size: 40px;
+    }
+
+    .about-div .responsive-container .bio {
+        max-width: 100%;
+    }
+
+    .about-div .responsive-container .groups {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .about-div .responsive-container .groups .group {
+        margin-top: 48px;
+    }
+
+
+
+
+    /* Me page */
+    .me-div .responsive-container {
+        flex-direction: column;
+        
+    }
+    .me-div {
+        padding-top: 120px;
+    }
+    .me-div .responsive-container {
+        width: 90%;
+    }
+    .me-div .responsive-container .bio {
+        font-size: 20px;
+        flex-basis: 100%;
+    }
+
+    .me-div .responsive-container .skills .group .title {
+        font-size: 14px;
+    }
+    .me-div .responsive-container .skills .group .name {
+        font-size: 16px;
+    }
+
+    .me-div .responsive-container .skills {
+        flex-direction: row;
+        justify-content: start;
+        margin-top: 48px;
+    }
+
+    .me-div .responsive-container .skills .group {
+        margin-bottom: 0;
+        margin-right: 48px;
+    }
+    
+}
+
+@media(max-width: 767px) {
+
+    /* Universal */
+    .responsive-container {
+        
+    }
+
+    .link-text {
+        font-size: 14px;
+    }
+
+    /* Home */
+    .home-nav {
+        margin-top: 34px;
+        z-index: 888;
+        position: relative;
+    }
+
+    .home-nav .responsive-container {
+        flex-flow: column-reverse;
+
+    }
+    .home-nav .responsive-container .home-text {
+        font-size: 28px;
+        margin-top: 34px;
+    }
+    .home-nav .responsive-container a {
+        float: right;
+        text-align: right;
+    }
+
+    .scroll-left {
+        position: absolute;
+        bottom: auto;
+
+    }
+
+    .scroll-left p {
+        -moz-animation: scroll-left 10s linear infinite;
+        -webkit-animation: scroll-left 10s linear infinite;
+        animation: scroll-left 10s linear infinite;
+        width: 100%;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .projects-div .responsive-container .project .project-content {
+        
+    }
+
+    .projects-div .responsive-container .project .project-content img {
+        width: 90%;
+    }
+    
+    .projects-div .responsive-container .project .project-content .project-link {
+        flex-direction: column;
+    }
+    .projects-div .responsive-container .project .project-content .project-link .index {
+        flex-basis: 100%;
+        font-size: 10px;
+    }
+    
+    .projects-div .responsive-container .project .project-content .project-link .title {
+        flex-basis: 100%;
+        font-size: 18px;
+    }
+    .projects-div .responsive-container .project .project-content .project-link .role {
+        flex-basis: 100%;
+        font-size: 14px;
+    }
+
+    /* Me */
+
+    .me-div .responsive-container .skills {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .me-div .responsive-container .skills .group {
+        margin-top: 48px; 
+    }
+
+
+    /* Nav Bars */
+    .bottom-nav .responsive-container {
+        flex-direction: column;
+    }
+
+    .bottom-nav {
+        position: relative;
+        background-color: white;
+    }
+
+    .bottom-nav .responsive-container .left-container {
+        display: none;
+    }
+
+    .bottom-nav .responsive-container .right-container {
+        margin: 20px auto;
+    }
+    .bottom-nav .responsive-container .right-container .email {
+        display: inline-block;
+    }
+
+
+
+}
