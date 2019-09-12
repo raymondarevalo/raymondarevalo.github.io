@@ -13,6 +13,29 @@
 
 @font-face {
   font-family: 'FreightDisp Pro';
+  src: url('..fonts/FreightDispProMedium-Regular.eot'); /* IE9 Compat Modes */
+  src: url('..fonts/FreightDispProMedium-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/FreightDispProMedium-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/FreightDispProMedium-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/FreightDispProMedium-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FreightDisp Pro';
+  src: url('..fonts/FreightDispProSemibold-Regular.eot'); /* IE9 Compat Modes */
+  src: url('..fonts/FreightDispProSemibold-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/FreightDispProSemibold-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/FreightDispProSemibold-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/FreightDispProSemibold-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'FreightDisp Pro';
   src: url('..fonts/FreightDispProBook-Regular.eot'); /* IE9 Compat Modes */
   src: url('..fonts/FreightDispProBook-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
        url('../fonts/FreightDispProBook-Regular.woff2') format('woff2'), /* Super Modern Browsers */
