@@ -571,9 +571,7 @@ body {
         
     }
 
-    .project-breaker {
-        margin: 36px auto;
-    }
+
 
     .link-text {
         font-size: 14px;
@@ -720,6 +718,7 @@ body {
             
             font-size: 12px;
             margin-bottom: 8px;
+            text-transform: capitalize;
         }
 
 
