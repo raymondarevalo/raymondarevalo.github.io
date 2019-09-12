@@ -674,7 +674,7 @@ body {
             width: 82%;
         }
         .hero-div .title br {
-            
+            display: block;
         }
         .hero-div {
             text-align: left;
