@@ -176,7 +176,7 @@ body {
 
 .hero-div .case-study {
     font-size: 14px;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .hero-div .title {
@@ -658,11 +658,11 @@ body {
         .hero-div .case-study {
             font-size: 12px;
             line-height: 1;
-            margin-bottom: 4px;
+            margin-bottom: 16px;
         }
 
         .hero-div .title {
-            font-size: 30px;
+            font-size: 40px;
             line-height: 1;
             margin-bottom: 4px;
         }
@@ -686,6 +686,11 @@ body {
             text-align: center;
             margin: 0 auto;
            
+        }
+
+        .read-more:hover {
+            color: black;
+            text-decoration: underline;
         }
 
         .project-section-container .section-title {
