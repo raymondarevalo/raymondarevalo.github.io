@@ -645,7 +645,7 @@ body {
 
         /* Project */
         .project-responsive-container {
-            width: 90%;
+            width: 82%;
         }
         .hero-div {
             text-align: left;
@@ -693,9 +693,13 @@ body {
             text-decoration: underline;
         }
 
+        .challenges-div, .solutions-div, .outcome-div {
+            margin-top: 48px;
+        }
+
         .project-section-container .section-title {
             font-size: 24px;
-            margin-bottom: 8px;
+            margin-bottom: 48px;
         }
         .project-section-container .section-body {
             font-size: 18px;
