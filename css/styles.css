@@ -349,7 +349,7 @@ body {
 
 .me-div .responsive-container .skills .group .title {
     font-family: 'GT America Extended', Helvetica, sans-serif;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-size: .9vw;
     line-height: 1;
     margin-bottom: 12px;
@@ -564,10 +564,10 @@ body {
         
     }
     .me-div {
-        padding-top: 120px;
+        padding-top: 80px;
     }
     .me-div .responsive-container {
-        width: 90%;
+        width: 82%;
     }
     .me-div .responsive-container .bio {
         font-size: 20px;
@@ -575,7 +575,8 @@ body {
     }
 
     .me-div .responsive-container .skills .group .title {
-        font-size: 14px;
+        font-size: 12px;
+        
     }
     .me-div .responsive-container .skills .group .name {
         font-size: 16px;
