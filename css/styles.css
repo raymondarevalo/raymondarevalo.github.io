@@ -655,7 +655,7 @@ body {
         }
 
         .hero-div .case-study {
-            font-size: 10px;
+            font-size: 12px;
             line-height: 1;
             margin-bottom: 4px;
         }
@@ -667,14 +667,14 @@ body {
         }
 
         .hero-div .info {
-            width: 80%;
+            width: 90%;
             float: left;
             font-size: 18px;
 
         }
 
         .read-more {
-            font-size: 12px;
+            font-size: 14px;
             display: block;
             text-transform: uppercase;
             position: absolute;
@@ -687,7 +687,8 @@ body {
         }
 
         .project-section-container .section-title {
-            font-size: 30px;
+            font-size: 24px;
+            margin-bottom: 8px;
         }
         .project-section-container .section-body {
             font-size: 18px;
@@ -712,7 +713,7 @@ body {
 
         .about-div .responsive-container .groups .group .title {
             text-transform: capitalize;
-            font-size: 12px;
+            font-size: 18px;
         }
 
         .psc-top {
