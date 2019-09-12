@@ -670,6 +670,7 @@ body {
             width: 90%;
             float: left;
             font-size: 18px;
+            line-height: 1.15;
 
         }
 
@@ -692,6 +693,7 @@ body {
         }
         .project-section-container .section-body {
             font-size: 18px;
+            line-height: 1.8;
         }
 
         .about-div .responsive-container {
@@ -712,8 +714,8 @@ body {
         }
 
         .about-div .responsive-container .groups .group .title {
-            text-transform: capitalize;
-            font-size: 18px;
+            
+            font-size: 12px;
         }
 
         .psc-top {
