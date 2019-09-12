@@ -694,12 +694,12 @@ body {
         }
 
         .challenges-div, .solutions-div, .outcome-div {
-            margin-top: 96px;
+            margin-top: 30px;
         }
 
         .project-section-container .section-title {
-            font-size: 24px;
-            margin-bottom: 16px;
+            font-size: 28px;
+            margin-bottom: 20px;
         }
         .project-section-container .section-body {
             font-size: 16px;
