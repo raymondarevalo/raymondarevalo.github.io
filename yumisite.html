@@ -25,13 +25,17 @@ $(document).ready(function(){
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top-100
-      }, 800, function(){
+      }, 1000, function(){
    
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
     } // End if
   });
+});
+$(window).scroll(function() {
+var theta = $(window).scrollTop() / 300 % Math.PI;
+$('#hero-site').css({ transform: 'rotate(' + theta + 'rad)' });
 });
 </script>
 </head>
@@ -47,9 +51,9 @@ $(document).ready(function(){
 
 <div class="hero-div">
     <div class="case-study">case study</div>
-    <div class="title">Yumi - Helloyumi.com</div>
+    <div class="title">Yumi -<Br>Helloyumi.com</div>
     <div class="info">Yumi is a fresh, organic, and nutritious baby food delivery service.</div>
-    <img src="img/YumiWebsiteProjectImg.png"/>
+    <img id="hero-site" src="img/YumiWebsiteProjectImg.png"/>
 </div>
 
 <a class="read-more" href="#about-div-site">Read more</a>
@@ -79,7 +83,6 @@ $(document).ready(function(){
         </div>
     </div>
 </div>
-<div class="project-breaker">&nbsp;</div>
 
 <div class="challenges-div">
         <div class="project-section-container psc-bottom">
@@ -89,7 +92,7 @@ $(document).ready(function(){
             </div>
         </div>
         <div class="project-responsive-container">
-                <img src="img/box.png">
+                <img src="img/sitechallenge1.png">
         </div>
 
         <div class="project-section-container psc-top psc-bottom">
@@ -98,7 +101,7 @@ $(document).ready(function(){
                 </div>
         </div>
         <div class="project-responsive-container">
-                <img src="img/box.png">
+                <img src="img/sitechallenge2.png">
         </div>
         <div class="project-section-container psc-top psc-bottom">
                         <div class="section-body">
@@ -106,11 +109,9 @@ $(document).ready(function(){
                         </div>
                 </div>
                 <div class="project-responsive-container">
-                                <img src="img/box.png">
+                                <img src="img/sitechallenge3.png">
                         </div>
 </div>
-
-<div class="project-breaker">&nbsp;</div>
 
 <div class="solutions-div">
         <div class="project-section-container psc-bottom">
@@ -120,7 +121,7 @@ $(document).ready(function(){
             </div>
         </div>
         <div class="project-responsive-container">
-                <img src="img/box.png">
+                <img src="img/sitesolution1.png">
         </div>
 
         <div class="project-section-container psc-top psc-bottom">
@@ -129,13 +130,13 @@ $(document).ready(function(){
                 </div>
         </div>
         <div class="project-responsive-container">
-                <img class="img-bottom" src="img/box.png">
+                <img class="img-bottom" src="img/sitesolution2a.png">
         </div>
         <div class="project-responsive-container">
-                        <img class="img-bottom" src="img/box.png">
+                        <img class="img-bottom" src="img/sitesolution2b.png">
                 </div>
                 <div class="project-responsive-container">
-                                <img class="img-bottom" src="img/box.png">
+                                <img class="img-bottom" src="img/sitesolution2c.png">
                         </div>
         <div class="project-section-container psc-top psc-bottom">
                         <div class="section-body">
@@ -143,21 +144,20 @@ $(document).ready(function(){
                         </div>
                 </div>
                 <div class="project-responsive-container">
-                                <img class="img-bottom" src="img/box.png">
-                                <img class="img-bottom" src="img/box.png">
-                                <img src="img/box.png">
+                                <img class="img-bottom" src="img/sitesolution3a.png">
+                                <img class="img-bottom" src="img/sitesolution3b.png">
+                                <img src="img/sitesolution3c.png">
                         </div>
 </div>
 
-<div class="project-breaker">&nbsp;</div>
 
 <div class="outcome-div">
         <div class="project-section-container psc-bottom">
             <div class="section-title">Outcome</div>
         </div>
         <div class="project-responsive-container">
-                <img class="img-bottom" src="img/box.png">
-                <img src="img/box.png">
+                <img class="img-bottom" src="img/sitesolution3c.png">
+                <img src="img/sitesolution3c.png">
         </div>
         <div class="project-section-container psc-top psc-bottom">
                 <div class="section-body">

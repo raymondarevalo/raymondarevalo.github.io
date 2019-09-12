@@ -25,7 +25,7 @@
         // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
         $('html, body').animate({
           scrollTop: $(hash).offset().top-100
-        }, 800, function(){
+        }, 1000, function(){
      
           // Add hash (#) to URL when done scrolling (default click behavior)
           window.location.hash = hash;
@@ -33,6 +33,10 @@
       } // End if
     });
   });
+  $(window).scroll(function() {
+var theta = $(window).scrollTop() / 300 % Math.PI;
+$('#hero-account').css({ transform: 'rotate(' + theta + 'rad)' });
+});
   </script>
 </head>
 <body>
@@ -47,9 +51,9 @@
 
 <div class="hero-div">
     <div class="case-study">case study</div>
-    <div class="title">Yumi - Account</div>
+    <div class="title">Yumi -<br>Account</div>
     <div class="info">In order to provide a better purchasing experience, we created a dashboard that was composed of all of Yumi's e-commerce needs.</div>
-    <img src="img/YumiAccountProjectImg.png"/>
+    <img id="hero-account" src="img/YumiAccountProjectImg.png"/>
 </div>
 
 <a class="read-more" href="#about-div-account">Read more</a>
@@ -79,7 +83,6 @@
         </div>
     </div>
 </div>
-<div class="project-breaker">&nbsp;</div>
 
 <div class="challenges-div">
         <div class="project-section-container psc-bottom">
@@ -89,7 +92,7 @@
             </div>
         </div>
         <div class="project-responsive-container">
-                <img src="img/box.png">
+                <img src="img/accountchallenge1.png">
         </div>
 
         <div class="project-section-container psc-top psc-bottom">
@@ -98,11 +101,10 @@
                 </div>
         </div>
         <div class="project-responsive-container">
-                <img src="img/box.png">
+                <img src="img/accountchallenge2.png">
         </div>
 </div>
 
-<div class="project-breaker">&nbsp;</div>
 
 <div class="solutions-div">
         <div class="project-section-container psc-bottom">
@@ -112,7 +114,7 @@
             </div>
         </div>
         <div class="project-responsive-container">
-                <img src="img/box.png">
+                <img src="img/accountsolution1.png">
         </div>
 
         <div class="project-section-container psc-top psc-bottom">
@@ -121,19 +123,18 @@
                 </div>
         </div>
         <div class="project-responsive-container">
-                <img src="img/box.png">
+                <img src="img/accountsolution2.png">
         </div>
 </div>
 
-<div class="project-breaker">&nbsp;</div>
 
 <div class="outcome-div">
         <div class="project-section-container psc-bottom">
             <div class="section-title">Outcome</div>
         </div>
         <div class="project-responsive-container">
-                <img class="img-bottom" src="img/box.png">
-                <img src="img/box.png">
+                <img class="img-bottom" src="img/accountoutcome1.png">
+                <img src="img/accountoutcome2.png">
         </div>
         <div class="project-section-container psc-top psc-bottom">
                 <div class="section-body">

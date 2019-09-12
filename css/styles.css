@@ -694,11 +694,11 @@ body {
         }
 
         .challenges-div, .solutions-div, .outcome-div {
-            margin-top: 30px;
+            margin-top: 48px;
         }
 
         .project-section-container .section-title {
-            font-size: 28px;
+            font-size: 32px;
             margin-bottom: 20px;
         }
         .project-section-container .section-body {
@@ -729,6 +729,14 @@ body {
             font-size: 12px;
             margin-bottom: 8px;
             text-transform: capitalize;
+        }
+
+        .psc-top {
+            margin-top: 32px;
+        }
+        
+        .psc-bottom {
+            margin-bottom: 32px;
         }
 
 

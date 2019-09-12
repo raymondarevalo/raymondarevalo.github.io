@@ -25,13 +25,17 @@ $(document).ready(function(){
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top-100
-      }, 800, function(){
+      }, 1000, function(){
    
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
     } // End if
   });
+});
+$(window).scroll(function() {
+var theta = $(window).scrollTop() / 300 % Math.PI;
+$('#hero-branding').css({ transform: 'rotate(' + theta + 'rad)' });
 });
 </script>
 </head>
@@ -47,9 +51,9 @@ $(document).ready(function(){
 
 <div class="hero-div">
     <div class="case-study">case study</div>
-    <div class="title">Yumi - Checkout</div>
+    <div class="title">Yumi - <br>Branding</div>
     <div class="info">To elevate the Yumi brand, I designed several assets that applied and pushed the Yumi brand guidelines.</div>
-    <img src="img/YumiBrandingProjectImg.png"/>
+    <img id="hero-branding" src="img/YumiBrandingProjectImg.png"/>
 </div>
 <a class="read-more" href="#about-div-branding">Read more</a>
 
@@ -80,19 +84,19 @@ $(document).ready(function(){
 </div>
 
 
-<div class="project-breaker">&nbsp;</div>
 
 <div class="outcome-div">
         <div class="project-section-container psc-bottom">
             <div class="section-title">Outcome</div>
         </div>
         <div class="project-responsive-container">
-                <img class="img-bottom" src="img/box.png">
-                <img class="img-bottom" src="img/box.png">
-                <img class="img-bottom" src="img/box.png">
-                <img class="img-bottom" src="img/box.png">
-                <img class="img-bottom" src="img/box.png">
-                <img src="img/box.png">
+                <img class="img-bottom" src="img/branding1.png">
+                <img class="img-bottom" src="img/branding2.png">
+                <img class="img-bottom" src="img/branding3.png">
+                <img class="img-bottom" src="img/branding4.png">
+                <img class="img-bottom" src="img/branding5.png">
+                <img class="img-bottom" src="img/branding6.png">
+                <img src="img/branding7.png">
         </div>
         <div class="project-section-container psc-top psc-bottom">
                 <div class="section-body">
