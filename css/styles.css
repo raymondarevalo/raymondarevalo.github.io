@@ -250,7 +250,7 @@ body {
 .project-section-container .section-title {
     font-family: 'FreightDisp Pro', Georgia, serif;
     font-size:40px;
-    font-weight: 400;
+    font-weight: 700;
 
     line-height: 1;
     margin-bottom: 80px;
@@ -263,6 +263,9 @@ body {
 }
 
 /* About */
+.about-div {
+    padding-top: 50px;
+}
 .about-div .responsive-container {
     display: flex;
     flex-flow: column;
@@ -273,6 +276,7 @@ body {
 .about-div .responsive-container .bio {
     max-width: 556px;
     margin: 0 auto 48px auto;
+    text-align: center;
 }
 
 .about-div .responsive-container .groups {
@@ -747,6 +751,7 @@ body {
         .about-div .responsive-container .bio {
             max-width: 100%;
             margin-bottom: 0;
+            text-align: left;
         }
     
         .about-div .responsive-container .groups {
