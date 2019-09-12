@@ -646,12 +646,15 @@ body {
     
 
         /* Project */
-
+        .project-responsive-container {
+            width: 90%;
+        }
         .hero-div {
             text-align: left;
             width: 90%;
             margin: 0 auto 90px auto;
             min-height: 100vh;
+            padding-top: 12px;
         }
 
         .hero-div .case-study {
@@ -669,8 +672,8 @@ body {
         .hero-div .info {
             width: 90%;
             float: left;
-            font-size: 18px;
-            line-height: 1.15;
+            font-size: 16px;
+            line-height: 1.45;
 
         }
 
@@ -716,15 +719,10 @@ body {
         .about-div .responsive-container .groups .group .title {
             
             font-size: 12px;
+            margin-bottom: 8px;
         }
 
-        .psc-top {
-            margin-top: 24px;
-        }
-        
-        .psc-bottom {
-            margin-bottom: 24px;
-        }
+
 
     /* Me */
 
@@ -739,6 +737,9 @@ body {
 
 
     /* Nav Bars */
+    .project-nav {
+        position: relative;
+    }
     .bottom-nav .responsive-container {
         flex-direction: column;
     }
