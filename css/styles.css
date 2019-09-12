@@ -671,7 +671,7 @@ body {
             width: 82%;
             float: left;
             font-size: 16px;
-            line-height: 1.63;
+            line-height: 1.625;
             margin-bottom: 30px;
         }
 
@@ -702,12 +702,13 @@ body {
             margin-bottom: 48px;
         }
         .project-section-container .section-body {
-            font-size: 18px;
-            line-height: 1.8;
+            font-size: 16px;
+            line-height: 1.625;
         }
 
         .about-div .responsive-container {
-            font-size: 18px;
+            font-size: 16px;
+            
         }
     
         .about-div .responsive-container .bio {
