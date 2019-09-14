@@ -303,7 +303,7 @@ body {
 
 /* Challenges */
 .project-responsive-container {
-    width: 96%;
+    width: 80%;
     margin: 0 auto;
 }
 .project-responsive-container img {
@@ -325,15 +325,19 @@ body {
 
 .me-div .responsive-container .bio {
     flex-basis: 60%;
-    font-size: 1.7vw;
-    font-family: 'FreightDisp Pro', Georgia, serif;
+    font-size: 1.2vw;
     font-weight: 400;
 }
 .me-div .responsive-container .bio b {
+    font-weight: 400;
     font-style: italic;
+    color: red;
+    
 }
 .me-div .responsive-container .bio a {
-    color: rgba(0,0,0,.5);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 
 .me-div .responsive-container .skills  {

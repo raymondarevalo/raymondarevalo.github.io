@@ -1,125 +1,163 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title> Raymond Arevalo - Yumi Checkout</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:image" content="https://raymondarevalo.github.io/img/linkedin.png">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/stylere.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+  <head>
+    <title>Raymond Arevalo - Yumi Checkout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:image"
+      content="https://raymondarevalo.github.io/img/linkedin.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/stylere.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        // Add smooth scrolling to all links
+        $("a").on("click", function(event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+            // Store hash
+            var hash = this.hash;
 
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top-100
-      }, 1000, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top - 100
+              },
+              1000,
+              function() {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
       });
-    } // End if
-  });
-});
-$(window).scroll(function() {
-var theta = $(window).scrollTop() / 300 % Math.PI;
-$('#hero-branding').css({ transform: 'rotate(' + theta + 'rad)' });
-});
-</script>
-</head>
-<body>
-<div class="project-nav">
-<div class="responsive-container">
-<a class="link-text" href="indexsecret.html">Work</a>
-<a class="link-text" href="indexsecret.html">Raymond Arevalo</a>
-<a class="link-text" href="about.html">ME</a>
-</div>
-</div>
+      $(window).scroll(function() {
+        var theta = ($(window).scrollTop() / 300) % Math.PI;
+        $("#hero-branding").css({ transform: "rotate(" + theta + "rad)" });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="project-nav">
+      <div class="responsive-container">
+        <a class="link-text" href="indexsecret.html">Work</a>
+        <a class="link-text" href="indexsecret.html">Raymond Arevalo</a>
+        <a class="link-text" href="about.html">ME</a>
+      </div>
+    </div>
 
+    <div class="hero-div">
+      <div class="case-study">case study</div>
+      <div class="title">Yumi - <br />Branding</div>
+      <div class="info">
+        To elevate the Yumi brand, I designed several assets that applied and
+        pushed the Yumi brand guidelines.
+      </div>
+      <img id="hero-branding" src="img/blackberries.jpg" />
+    </div>
+    <a class="read-more" href="#about-div-branding">Read more</a>
 
-<div class="hero-div">
-    <div class="case-study">case study</div>
-    <div class="title">Yumi - <br>Branding</div>
-    <div class="info">To elevate the Yumi brand, I designed several assets that applied and pushed the Yumi brand guidelines.</div>
-    <img id="hero-branding" src="img/blackberries.jpg"/>
-</div>
-<a class="read-more" href="#about-div-branding">Read more</a>
-
-<div class="about-div" id="about-div-branding">
-    <div class="responsive-container">
+    <div class="about-div" id="about-div-branding">
+      <div class="responsive-container">
         <div class="bio">
-                        While my time at Yumi I was able to tell stories by applying brand guidelines to Yumi's Chef Series Banners, Future Journal, City Postcards Postcards, Future baby hand bag, 4 tray box, 8 tray box, and shipper box.
+          While my time at Yumi I was able to tell stories by applying brand
+          guidelines to Yumi's Chef Series Banners, Future Journal, City
+          Postcards Postcards, Future baby hand bag, 4 tray box, 8 tray box, and
+          shipper box.
         </div>
         <div class="groups">
-                <div class="group">
-                        <div class="title">Role</div>
-                        <div class="name">UX Design</div>
-                </div>
-                <div class="group">
-                        <div class="title">Credits</div>
-                        <div class="name">Elinor Shram, UX Director</div>
-                        <div class="name">Tiffannie Wilcox, Photographer</div>
-                        <div class="name">Susie Hammer, Illustrator</div>
-                </div>
-                <div class="group">
-                                <div class="title">Table of contents</div>
-                                <div class="name">Challenges</div>
-                                
-                </div>
+          <div class="group">
+            <div class="title">Role</div>
+            <div class="name">Graphic Designer</div>
+          </div>
+          <div class="group">
+            <div class="title">Credits</div>
+            <div class="name">Elinor Shram, UX Director</div>
+            <div class="name">
+              Tiffannie Wilcox, Photographer, Graphic Designer
+            </div>
+            <div class="name">Susie Hammer, Illustrator</div>
+          </div>
+          <div class="group">
+            <div class="title">Table of contents</div>
+            <div class="name">Outcome</div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-<div class="project-breaker"></div>
+    <div class="project-breaker"></div>
 
-<div class="outcome-div">
-        <div class="project-section-container psc-bottom">
-            <div class="section-number">01.</div>
-            <div class="section-title">Outcome</div>
+    <div class="outcome-div">
+      <div class="project-section-container psc-bottom">
+        <div class="section-number">01.</div>
+        <div class="section-title">Outcome</div>
+      </div>
+      <div class="project-responsive-container">
+        <img class="img-bottom" src="img/branding1.png" />
+        <img class="img-bottom" src="img/branding2.png" />
+        <img class="img-bottom" src="img/branding3.png" />
+        <img class="img-bottom" src="img/branding4.png" />
+        <img class="img-bottom" src="img/branding5.png" />
+        <img class="img-bottom" src="img/branding6.png" />
+        <img src="img/branding7.png" />
+      </div>
+      <div class="project-section-container psc-top psc-bottom">
+        <div class="section-body">
+          Working on implementing and improving Yumi's branding was my favorite
+          part of the job. Although most of my ideas never saw a light of day,
+          working on branding gave me the opportunity to explore my creative
+          side. I dove deeper into a love of typography and stretched towards areas
+          I was not comfortable in. Being adaptive was very important as I
+          needed to learn how to work with fun and whimsical visual elements.
+          <br /><br />
+          Most importantly, I learned how important telling stories,
+          communication, trust, and perception was in branding.
         </div>
-        <div class="project-responsive-container">
-                <img class="img-bottom" src="img/branding1.png">
-                <img class="img-bottom" src="img/branding2.png">
-                <img class="img-bottom" src="img/branding3.png">
-                <img class="img-bottom" src="img/branding4.png">
-                <img class="img-bottom" src="img/branding5.png">
-                <img class="img-bottom" src="img/branding6.png">
-                <img src="img/branding7.png">
+      </div>
+    </div>
+
+    <div class="bottom-nav bottom-nav-relative">
+      <div class="responsive-container">
+        <div class="left-container">
+          <a class="link-text" href="mailto:arevalo.raymond@gmail.com"
+            >arevalo.raymond@gmail.com</a
+          >
         </div>
-        <div class="project-section-container psc-top psc-bottom">
-                <div class="section-body">
-                                something something something something something something something something something something something something something something something something something something something something something something something something something something something something something something something something something something something something something something something something something something something something something something something something something something 
-                </div>
+        <div class="right-container">
+          <a class="link-text email" href="mailto:arevalo.raymond@gmail.com"
+            >em&nbsp;/&nbsp;</a
+          >
+          <a
+            class="link-text"
+            href="https://twitter.com/RaymondFArevalo"
+            target="_blank"
+            >tw</a
+          >&nbsp;/&nbsp;
+          <a
+            class="link-text"
+            href="https://www.instagram.com/raymondfrankarevalo/"
+            >ig</a
+          >&nbsp;/&nbsp;
+          <a
+            class="link-text"
+            href="https://www.linkedin.com/in/raymondarevalo/"
+            >linkedin</a
+          >
         </div>
-
-</div>
-
-<div class="bottom-nav bottom-nav-relative">
-                <div class="responsive-container">
-                  <div class="left-container"> 
-                    <a class="link-text" href="mailto:arevalo.raymond@gmail.com">arevalo.raymond@gmail.com</a>
-                  </div>
-                  <div class="right-container">
-                    <a class="link-text email" href="mailto:arevalo.raymond@gmail.com">email&nbsp;/&nbsp;</a>
-                    <a class="link-text" href="https://twitter.com/RaymondFArevalo" target="_blank">twitter</a>&nbsp;/&nbsp;
-                    <a class="link-text" href="https://www.instagram.com/raymondfrankarevalo/">instgram</a>&nbsp;/&nbsp;
-                    <a class="link-text" href="https://www.linkedin.com/in/raymondarevalo/">linkedin</a>
-                  </div>
-                </div>
-              </div>
-
-
-</body>
+      </div>
+    </div>
+  </body>
 </html>
