@@ -327,17 +327,18 @@ body {
     flex-basis: 60%;
     font-size: 1.2vw;
     font-weight: 400;
+
 }
 .me-div .responsive-container .bio b {
-    font-weight: 400;
+    font-weight: 700;
     font-style: italic;
-    color: red;
+    letter-spacing: -1px;
+
     
 }
 .me-div .responsive-container .bio a {
-    letter-spacing: 1px;
+    color: rgba(0,0,0,.5);
     text-transform: uppercase;
-    text-decoration: underline;
 }
 
 .me-div .responsive-container .skills  {
@@ -445,7 +446,7 @@ body {
 }
 
 .home-nav .responsive-container .home-text {
-    flex-basis: 60%;
+    flex-basis: 58%;
     font-size: 2vw;
     color: black;
     font-family: 'FreightDisp Pro', Georgia, serif;
@@ -574,7 +575,7 @@ body {
         width: 82%;
     }
     .me-div .responsive-container .bio {
-        font-size: 20px;
+        font-size: 16px;
         flex-basis: 100%;
     }
 
@@ -794,6 +795,34 @@ body {
 
     .me-div .responsive-container .skills .group {
         margin-top: 48px; 
+    }
+
+    .graphics1 .responsive-container div:nth-of-type(1), .graphics1 .responsive-container div:nth-of-type(2) {
+        flex-basis: 60%;
+    }
+    .graphics1 .responsive-container div:nth-of-type(2) {
+        margin-top: 50px;
+        flex-basis: 90%;
+    }
+    
+    .graphics1 .responsive-container div:nth-of-type(3) {
+        flex-basis: 100%;
+        margin-top: 40px;
+    }
+    
+    .graphics1 .responsive-container div:nth-of-type(4) {
+        flex-basis: 30%;
+        margin-top: 70px;
+        margin-right: 60%;
+    }
+    
+    .graphics1 .responsive-container div:nth-of-type(5) {
+        flex-basis: 30%;
+        margin-top: 100px;
+    }
+    .graphics1 .responsive-container div:nth-of-type(6) {
+        flex-basis: 40%;
+        margin-top: 160px;
     }
 
 
