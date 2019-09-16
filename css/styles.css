@@ -29,6 +29,24 @@ body {
     text-decoration: underline;
 }
 
+.gif {
+    width: 80%;
+    height: 600px;
+    background-color: black;
+    text-align: center;
+    margin: auto auto;
+    display: block;
+}
+
+.gif img {
+    position: relative;
+    vertical-align: center;
+    margin: auto 0;
+    height: 80%;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: 0;
+}
 
 
 /* Home page*/
@@ -369,6 +387,21 @@ body {
     text-align: center;
 }
 
+.prototype {
+    margin: 100px auto;
+    text-align: center;
+
+    height: auto;
+}
+
+.plink {
+    position: relative;
+    padding: 48px 100px;
+    border: 1px solid black;
+    border-radius: 100%;
+    text-transform: uppercase;
+}
+
 .resume-div {
     position: relative;
     padding: 48px 100px;
@@ -605,6 +638,10 @@ body {
     /* Universal */
     .responsive-container {
         
+    }
+
+    .gif {
+        width: 82%;
     }
 
 
