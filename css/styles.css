@@ -87,15 +87,19 @@ body {
     flex-basis: 10%;
 }
 
+.projects-div .responsive-container .project .project-content .project-link .company {
+    flex-basis: 20%;
+}
+
 .projects-div .responsive-container .project .project-content .project-link .title {
-    flex-basis: 40%;
+    flex-basis: 30%;
 }
 .projects-div .responsive-container .project .project-content .project-link .role {
-    flex-basis: 50%;
+    flex-basis: 40%;
 }
 
 .projects-div .responsive-container .project .project-content img {
-    width: 66vh;
+    height: 70vh;
     position: absolute;
     z-index: -999;
     left: 0;
@@ -258,11 +262,29 @@ body {
     text-transform: uppercase;
     position: absolute;
     bottom: 14px;
-    left: 0;
-    right: 0;
+
+    right: 20%;
     text-align: center;
     margin: 0 auto;
+
+    text-transform: uppercase;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 100%; 
+
+
+
+}
+
+.read-more:hover {
+    border-radius: 0;
     text-decoration: underline;
+    color: black;
+}
+
+.inside {
 }
 
 .project-section-container .section-title {
@@ -271,7 +293,7 @@ body {
     font-weight: 700;
 
     line-height: 1;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     
 }
 
@@ -283,6 +305,7 @@ body {
 /* About */
 .about-div {
     padding-top: 50px;
+    margin-bottom: 120px;
 }
 .about-div .responsive-container {
     display: flex;
@@ -314,10 +337,14 @@ body {
     text-transform: capitalize;
     line-height: 1;
 }
-/*
+
+.about-div .link-text {
+    display: block;
+}
+
 .challenges-div, .solutions-div, .outcome-div {
-    margin-top: 48px;
-}*/
+    margin-top: 60px;
+}
 
 /* Challenges */
 .project-responsive-container {
@@ -387,7 +414,7 @@ body {
     text-align: center;
 }
 
-.prototype {    
+.prototype, .inside {    
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -397,12 +424,18 @@ body {
     position: relative;
     text-transform: uppercase;
     display: block;
-    margin: 56px auto;
+    margin: 48px auto;
     text-align: center;
     width: 100%;
     height: 150px;
     border: 1px solid black;
     border-radius: 100%;
+}
+
+.plink:hover {
+    border-radius: 0;
+    color: black;
+    text-decoration: underline;
 }
 
 .resume-div {
@@ -411,6 +444,12 @@ body {
     border: 1px solid black;
     border-radius: 100%;
     text-transform: uppercase;
+}
+
+.resume-div:hover {
+    color: black;
+    border-radius: 0;
+    text-decoration: underline;
 }
 
 .about-img {
@@ -698,11 +737,13 @@ body {
     }
 
     .projects-div .responsive-container .project .project-content img {
-        width: 70%;
+        width: 60vw;
+        height: auto;
     }
     
     .projects-div .responsive-container .project .project-content .project-link {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
     .projects-div .responsive-container .project .project-content .project-link .index {
         flex-basis: 100%;
@@ -710,9 +751,16 @@ body {
     }
     
     .projects-div .responsive-container .project .project-content .project-link .title {
-        flex-basis: 100%;
+        flex-basis: auto;
         font-size: 16px;
     }
+
+    .projects-div .responsive-container .project .project-content .project-link .company {
+        flex-basis: auto;
+        padding-top: 6px;
+        margin-left: 10px;
+    }
+
     .projects-div .responsive-container .project .project-content .project-link .role {
         flex-basis: 100%;
         font-size: 14px;
@@ -765,6 +813,7 @@ body {
             right: 0;
             text-align: center;
             margin: 0 auto;
+            
            
         }
 
