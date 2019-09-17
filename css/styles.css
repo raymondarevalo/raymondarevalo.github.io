@@ -340,6 +340,7 @@ body {
 
 .about-div .link-text {
     display: block;
+    
 }
 
 .challenges-div, .solutions-div, .outcome-div {
@@ -758,7 +759,7 @@ body {
     .projects-div .responsive-container .project .project-content .project-link .company {
         flex-basis: auto;
         padding-top: 6px;
-        margin-left: 10px;
+        margin-left: 4px;
     }
 
     .projects-div .responsive-container .project .project-content .project-link .role {
@@ -770,6 +771,10 @@ body {
         /* Project */
         .project-responsive-container {
             width: 82%;
+        }
+
+        .about-div .link-text {
+            margin-top: 10px;
         }
         .hero-div .title br {
             display: block;
