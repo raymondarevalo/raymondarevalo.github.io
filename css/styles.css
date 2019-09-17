@@ -42,7 +42,7 @@ body {
     position: relative;
     vertical-align: center;
     margin: auto 0;
-    height: 80%;
+    height: 90%;
     top: 50%;
     transform: translateY(-50%);
     bottom: 0;
@@ -387,19 +387,22 @@ body {
     text-align: center;
 }
 
-.prototype {
-    margin: 100px auto;
-    text-align: center;
-
-    height: auto;
+.prototype {    
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .plink {
     position: relative;
-    padding: 48px 100px;
+    text-transform: uppercase;
+    display: block;
+    margin: 56px auto;
+    text-align: center;
+    width: 100%;
+    height: 150px;
     border: 1px solid black;
     border-radius: 100%;
-    text-transform: uppercase;
 }
 
 .resume-div {
