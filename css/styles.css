@@ -40,6 +40,15 @@ ol li, ul li {
     text-decoration: underline;
 }
 
+.project-link:hover {
+    color: black;
+    background-image: linear-gradient(to right, yellow, rgba(255,255,255,0));
+    background-blend-mode: screen;
+    margin: -10px;
+    padding: 10px;
+    text-decoration: underline;
+}
+
 .gif {
     width: 80%;
     height: 600px;
@@ -91,7 +100,7 @@ ol li, ul li {
     display: flex;
     flex-direction: row;
     z-index: 1;
-    font-size: 1.15vw;
+    font-size: 1.1vw;
 }
 
 .projects-div .responsive-container .project .project-content .project-link .index {
@@ -99,14 +108,14 @@ ol li, ul li {
 }
 
 .projects-div .responsive-container .project .project-content .project-link .company {
-    flex-basis: 20%;
+    flex-basis: 23%;
 }
 
 .projects-div .responsive-container .project .project-content .project-link .title {
     flex-basis: 30%;
 }
 .projects-div .responsive-container .project .project-content .project-link .role {
-    flex-basis: 40%;
+    flex-basis: 37%;
 }
 
 .projects-div .responsive-container .project .project-content img {
@@ -252,7 +261,8 @@ ol li, ul li {
 
 .project-section-container {
     width: 556px;
-    margin-left: 10vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .psc-top {
@@ -334,27 +344,27 @@ ol li, ul li {
 
 .about-div .responsive-container .bio {
     max-width: 556px;
-    margin: 0 auto 48px auto;
-    text-align: center;
+    margin: 0 auto 0 auto;
+    text-align: left;
 }
 
 .about-div .responsive-container .groups {
 
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     justify-content: space-around;
 }
 
-#music-div-account .responsive-container {
+.about-div .responsive-container, #belowabout .responsive-container {
     max-width: 556px;
 
 }
 
-#music-div-account .responsive-container .groups {
+#musicabout .responsive-container .groups, #belowabout .responsive-container .groups {
     flex-flow: column;
 }
 
-#music-div-account .responsive-container .groups .group {
+.about-div .responsive-container .groups .group, #belowabout .responsive-container .groups .group {
     margin-top: 48px;
 }
 
@@ -560,7 +570,7 @@ ol li, ul li {
     width: 100%;
 }
 
-.music-app .project-section-container {
+.music-app .project-section-container, .below .project-section-container {
     margin-left: auto;
     margin-right: auto;
 }
@@ -675,7 +685,7 @@ ol li, ul li {
         
     }
     .projects-div .responsive-container .project .project-content .project-link {
-        font-size: 2vw;
+        font-size: 1.7vw;
     }
     .project-section-container {
         width: 82%;
