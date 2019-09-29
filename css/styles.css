@@ -83,7 +83,7 @@ ol li, ul li {
 }
 
 .projects-div {
-    margin: 80px 0 80px 0;
+    margin: 14vh 0 80px 0;
 }
 
 .projects-div .responsive-container .project {
@@ -109,8 +109,8 @@ ol li, ul li {
 
 .projects-div .responsive-container .project .project-content .project-link .company {
     flex-basis: auto;
-    font-size: .5vw;
-    padding-top: .7%;
+    font-size: .6vw;
+    padding-top: .6%;
         margin-left: .7%;
 }
 
@@ -611,13 +611,34 @@ ol li, ul li {
 }
 
 .home-nav .responsive-container .home-text {
-    flex-basis: 57%;
-    font-size: 2vw;
+    flex-basis: 69%;
+    font-size: 2.4vw;
     color: black;
     font-family: 'FreightDisp Pro', Georgia, serif;
     line-height: 1.15;
     font-weight: normal;
 }
+
+.home-nav .responsive-container .home-text img {
+    position: absolute;
+    z-index: -200;
+    visibility: hidden;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    width: auto;
+    margin: auto auto;
+    height: 70vh;
+    background-color:red;
+}
+
+.home-nav .responsive-container .home-text u:hover + img {
+    visibility: visible;
+   
+}
+
 .home-nav .responsive-container a {
     display: inline;
     width: auto;
@@ -697,6 +718,10 @@ ol li, ul li {
     .home-nav .responsive-container .home-text {
         font-size: 2.5vw;
         
+    }
+    .home-nav .responsive-container .home-text img {
+        height: auto;
+        width: 50vw;
     }
     .projects-div .responsive-container .project .project-content .project-link {
         font-size: 1.7vw;
