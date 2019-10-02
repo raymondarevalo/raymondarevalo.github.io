@@ -83,7 +83,7 @@ ol li, ul li {
 }
 
 .projects-div {
-    margin: 14vh 0 80px 0;
+    margin: 4vh 0 80px 0;
 }
 
 .projects-div .responsive-container .project {
@@ -109,9 +109,10 @@ ol li, ul li {
 
 .projects-div .responsive-container .project .project-content .project-link .company {
     flex-basis: auto;
-    font-size: .6vw;
-    padding-top: .6%;
-        margin-left: .7%;
+    font-size: 1.1vw;
+        margin-left: .5%;
+        font-family: 'FreightDisp Pro', Georgia, serif;
+        text-transform: capitalize; 
 }
 
 .projects-div .responsive-container .project .project-content .project-link .title {
@@ -120,7 +121,9 @@ ol li, ul li {
 }
 .projects-div .responsive-container .project .project-content .project-link .role {
     flex-basis: 100%;
-    font-size: .9vw;
+    font-size: 1.1vw;
+    font-family: 'FreightDisp Pro', Georgia, serif;
+    text-transform: capitalize; 
 }
 
 .projects-div .responsive-container .project .project-content img {
@@ -133,25 +136,13 @@ ol li, ul li {
     bottom: 0;
     margin: auto;
     visibility: hidden;
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    transform: rotate(180deg);
+
 }
 
 .projects-div .responsive-container .project .project-content .project-link:hover + img {
     visibility: visible;
-    transition: 1.0s;
-    -webkit-transition: 1.0s;
-    -moz-transition: 1.0s;
-    -ms-transition: 1.0s;
-    -o-transition: 1.0s;
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
+
+
 }
 
 .moving-text {
@@ -872,9 +863,9 @@ ol li, ul li {
 
     .projects-div .responsive-container .project .project-content .project-link .company {
         flex-basis: auto;
-        padding-top: 6px; 
+        padding-top: 2px; 
         margin-left: 4px;
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .projects-div .responsive-container .project .project-content .project-link .role {
