@@ -86,9 +86,19 @@ ol li, ul li {
     margin: 4vh 0 80px 0;
 }
 
+.projects-div .responsive-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+
+
+}
+
 .projects-div .responsive-container .project {
-    display: block;
     margin-bottom: 35px;
+    flex-basis: auto;
+    margin-right: 7%;
 }
 
 .projects-div .responsive-container .project .project-content {
@@ -96,48 +106,75 @@ ol li, ul li {
 
 .projects-div .responsive-container .project .project-content .project-link {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     z-index: 1;
+    font-weight: 200;
     
 }
 
 .projects-div .responsive-container .project .project-content .project-link .index {
-    flex-basis: 100%;
+    flex-basis: 10%;
     font-size: .6vw;
+
 }
 
 .projects-div .responsive-container .project .project-content .project-link .company {
-    flex-basis: auto;
-    font-size: 1.1vw;
-        margin-left: .5%;
-        font-family: 'FreightDisp Pro', Georgia, serif;
-        text-transform: capitalize; 
+    flex-basis: 30%;
+    font-size: 1.9vw;
+    text-transform: capitalize;
 }
 
 .projects-div .responsive-container .project .project-content .project-link .title {
-    flex-basis: auto;
-    font-size: 1.1vw;
+    flex-basis: 30%;
+    font-size: 1.9vw;
+    line-height: 1.15;
+    font-family: 'FreightDisp Pro', Georgia, serif;
+    font-weight:200;
+    text-transform: capitalize;
+    font-style: italic;
+
 }
 .projects-div .responsive-container .project .project-content .project-link .role {
-    flex-basis: 100%;
-    font-size: 1.1vw;
-    font-family: 'FreightDisp Pro', Georgia, serif;
+    flex-basis: 30%;
+    font-size:  .9vw;
     text-transform: capitalize; 
 }
 
 .projects-div .responsive-container .project .project-content img {
     height: 60vh;
-    position: absolute;
+    position: fixed;
     z-index: -999;
-    left: 0;
-    right: 0;
     top: 0;
     bottom: 0;
     margin: auto;
     visibility: hidden;
 
 }
+
+.projects-div .responsive-container .project:nth-of-type(1) .project-content img {
+    left:5%;
+    top:5%;
+    bottom: auto;
+}
+
+.projects-div .responsive-container .project:nth-of-type(2) .project-content img {
+    left:15%;
+}
+.projects-div .responsive-container .project:nth-of-type(3) .project-content img {
+    left:35%;
+    top:0%;
+    bottom: auto;
+}
+
+.projects-div .responsive-container .project:nth-of-type(5) .project-content img {
+    right: 5%;
+    top: 10%;
+    bottom: auto;
+}
+
+
+
 
 .projects-div .responsive-container .project .project-content .project-link:hover + img {
     visibility: visible;
@@ -590,7 +627,8 @@ ol li, ul li {
 
 /* Navigation Bars */
 .home-nav {
-    margin-top: 80px;
+    padding-top: 14vw;
+    margin-bottom: 10vw;
 }
 .home-nav .responsive-container {
     display: flex;
@@ -598,16 +636,17 @@ ol li, ul li {
     position: relative;
     justify-content: space-between;
     margin: 0 auto;
+    width:90%;
 
 }
 
 .home-nav .responsive-container .home-text {
-    flex-basis: 69%;
-    font-size: 2.4vw;
+    flex-basis: 100%;
+    font-size: 4.2vw;
     color: black;
     font-family: 'FreightDisp Pro', Georgia, serif;
     line-height: 1.15;
-    font-weight: normal;
+    font-weight: 200;
 }
 
 .home-nav .responsive-container .home-text img {
@@ -618,14 +657,20 @@ ol li, ul li {
     left: 0;
     right: 0;
     top: 0;
-
+    bottom:0;
     width: auto;
     margin: auto auto;
     height: 70vh;
     background-color:red;
 }
 
-.home-nav .responsive-container .home-text u:hover + img {
+.home-nav .responsive-container .home-text span {
+    border-bottom: 1px solid black;
+    font-style: italic;
+    
+}
+
+.home-nav .responsive-container .home-text span:hover + img {
     visibility: visible;
    
 }
@@ -656,6 +701,10 @@ ol li, ul li {
     
 }
 
+.project-nav.home .responsive-container {
+    width:90%;
+}
+
 .project-nav .responsive-container a {
     margin: 34px 0px;
 }
@@ -673,7 +722,7 @@ ol li, ul li {
     
     width: 100%;
     padding: 14px 0 14px 0;
-    position: fixed;
+    position: relative;
     bottom: 0;
 }
 
@@ -686,6 +735,11 @@ ol li, ul li {
     flex-direction: row;
     justify-content: space-between;
 }
+
+.bottom-nav.home .responsive-container {
+    width: 90%;
+}
+
 .bottom-nav .responsive-container .left-container {
     display: block;
 }
@@ -703,11 +757,12 @@ ol li, ul li {
     .responsive-container {
         width: 82%;
         margin: 0 auto;
+
     }
 
     /* Home */
     .home-nav .responsive-container .home-text {
-        font-size: 2.5vw;
+        font-size: 4.5vw;
         
     }
     .home-nav .responsive-container .home-text img {
@@ -722,6 +777,37 @@ ol li, ul li {
         margin-left: auto;
         margin-right: auto;
     }
+
+    .projects-div .responsive-container .project {
+        flex-basis: 33%;
+        margin-right: 0;
+    }
+
+    .projects-div .responsive-container .project .project-content .project-link .index {
+        flex-basis: 10%;
+        font-size: 1.5vw;
+    
+    }
+    
+    .projects-div .responsive-container .project .project-content .project-link .title {
+        flex-basis: 30%;
+        font-size: 2.9vw;
+        line-height: 1.15;
+        font-family: 'FreightDisp Pro', Georgia, serif;
+        font-weight:200;
+        text-transform: capitalize;
+        font-style: italic;
+    
+    }
+    .projects-div .responsive-container .project .project-content .project-link .role {
+        flex-basis: 33%;
+        font-size:  1.5vw;
+        text-transform: capitalize; 
+    }
+    
+
+
+
 
     /* Project */
     .project-section-container .section-title {
@@ -785,7 +871,7 @@ ol li, ul li {
 
     /* Universal */
     .responsive-container {
-        
+
     }
 
     .gif {
@@ -801,6 +887,7 @@ ol li, ul li {
     /* Home */
     .home-nav {
         margin-top: 34px;
+        padding-top:0;
         z-index: 888;
         position: relative;
     }
@@ -815,7 +902,7 @@ ol li, ul li {
 
     }
     .home-nav .responsive-container .home-text {
-        font-size: 24px;
+        font-size: 34px;
         margin-top: 34px;
     }
     .home-nav .responsive-container a {
@@ -842,10 +929,37 @@ ol li, ul li {
         
     }
 
+    .projects-div .responsive-container {
+        flex-direction: column;
+    }
+
     .projects-div .responsive-container .project .project-content img {
         width: 60vw;
         height: auto;
     }
+
+    .projects-div .responsive-container .project:nth-of-type(1) .project-content img {
+        top: 5%;
+        bottom: auto;
+    }
+    .projects-div .responsive-container .project:nth-of-type(2) .project-content img {
+        top: 20%;
+        bottom: auto;
+    }
+    .projects-div .responsive-container .project:nth-of-type(3) .project-content img {
+        top: 0;
+        bottom: 0;
+    }
+    .projects-div .responsive-container .project:nth-of-type(4) .project-content img {
+        top: auto;
+        bottom: 20%;
+    }
+    .projects-div .responsive-container .project:nth-of-type(5) .project-content img {
+        top: auto;
+        bottom: 5%;
+    }
+
+    
     
     .projects-div .responsive-container .project .project-content .project-link {
         flex-direction: row;
@@ -858,7 +972,7 @@ ol li, ul li {
     
     .projects-div .responsive-container .project .project-content .project-link .title {
         flex-basis: auto;
-        font-size: 16px;
+        font-size: 24px;
     }
 
     .projects-div .responsive-container .project .project-content .project-link .company {
@@ -870,7 +984,7 @@ ol li, ul li {
 
     .projects-div .responsive-container .project .project-content .project-link .role {
         flex-basis: 100%;
-        font-size: 14px;
+        font-size: 12px;
     }
     
 

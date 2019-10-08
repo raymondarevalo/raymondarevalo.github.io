@@ -46,6 +46,30 @@
 }
 
 @font-face {
+  font-family: 'FreightDisp Pro';
+  src: url('..fonts/FreightDispProLight-Regular.eot'); /* IE9 Compat Modes */
+  src: url('..fonts/FreightDispProLight-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/FreightDispProLight-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/FreightDispProLight-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/FreightDispProLight-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FreightDisp Pro';
+  src: url('..fonts/FreightDispProLight-Italic.eot'); /* IE9 Compat Modes */
+  src: url('..fonts/FreightDispProLight-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/FreightDispProLight-Italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/FreightDispProLight-Italic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/FreightDispProLight-Italic.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: 200;
+  font-style: italic;
+}
+
+
+
+@font-face {
   font-family: 'GT America Extended';
   src: url('..fonts/GT-America-Regular.OTF');
   src: url('..fonts/GT-America-Extended-Regular.eot'); /* IE9 Compat Modes */
