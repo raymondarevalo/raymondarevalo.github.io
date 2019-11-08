@@ -230,7 +230,6 @@ ul li {
   bottom: 0;
   margin: auto;
   width: 100%;
-  background-color: red;
   height: 100px;
 }
 
@@ -702,7 +701,6 @@ ul li {
   width: auto;
   margin: auto auto;
   height: 70vh;
-  background-color: red;
 }
 
 .home-nav .responsive-container .home-text span {
