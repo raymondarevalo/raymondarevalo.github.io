@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Thu Jan 23 2020 01:48:42 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Fri Feb 14 2020 07:04:35 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="5de753e325af69550367a17a" data-wf-site="5d7472887149d51ab8033be9">
 <head>
   <meta charset="utf-8">
@@ -17,37 +17,116 @@
   <link href="images/webclip.png" rel="apple-touch-icon">
 </head>
 <body class="body-2">
-  <div style="display:flex" class="loadingline"></div>
-  <div style="display:flex" class="preloader"></div>
-  <div data-collapse="small" data-animation="default" data-duration="400" id="work-nav" class="navbar-2 w-nav">
+  <div class="html-embed w-embed">
+    <style>
+.link-block-2:hover .work-projectname, .link-block-2:hover .work-projectcompany {
+position:relative;
+z-index: 1100;
+}
+</style>
+  </div>
+  <div style="height:0%" class="overlay"></div>
+  <div class="loadingline"></div>
+  <div class="preloader"></div>
+  <div data-collapse="small" data-animation="default" data-duration="600" data-easing="ease-in-quint" data-easing2="ease-in-sine" class="navbar-2 w-nav">
     <div class="container-5 w-container">
       <nav role="navigation" class="nav-menu-2 w-clearfix w-nav-menu">
-        <div class="div-block-4"><a href="work.html" class="nav-link-2 w-nav-link w--current">Work</a><a href="more.html" data-w-id="68368bf6-8394-777d-78b0-c78c6a8162ba" class="nav-link-2 w-nav-link">More</a></div>
-        <div class="div-block-4 home-block"><a href="index.html" data-w-id="68368bf6-8394-777d-78b0-c78c6a8162bd" class="nav-link-2 home-link w-nav-link">home</a></div>
-        <div class="div-block-5"><a href="contact.html" data-w-id="68368bf6-8394-777d-78b0-c78c6a8162c0" class="nav-link-2 w-nav-link">Contact</a><a href="about.html" data-w-id="68368bf6-8394-777d-78b0-c78c6a8162c2" class="nav-link-2 w-nav-link">About</a></div>
-        <div class="div-block-6"><a href="index.html" class="mobile-link">Home</a><a href="#" class="mobile-link">Work</a><a href="more.html" class="mobile-link">More</a><a href="contact.html" class="mobile-link">Contact</a><a href="about.html" class="mobile-link">About</a></div>
+        <div class="div-block-4 w-clearfix"><a href="work.html" class="nav-link-2 x-hover w-nav-link w--current">Work</a><a href="more.html" data-w-id="6c11055c-6411-5db4-ed7f-8a7a0c6fc140" class="nav-link-2 x-hover w-nav-link">More</a>
+          <div class="div-block-4 home-block"><a href="index.html" data-w-id="79005d6b-ad6b-216f-d9de-b09c975ab5bf" class="nav-link-2 home-link w-nav-link">home</a></div>
+        </div>
+        <div class="div-block-5"><a href="contact.html" data-w-id="6c11055c-6411-5db4-ed7f-8a7a0c6fc143" class="nav-link-2 w-nav-link">Contact</a><a href="about.html" data-w-id="6c11055c-6411-5db4-ed7f-8a7a0c6fc145" class="nav-link-2 w-nav-link">About</a></div>
+        <div id="home-nav-overlay" class="div-block-6"><a href="index.html" class="mobile-link navigation-item">Home</a><a style="opacity:0" href="work.html" class="mobile-link w--current">Work</a><a href="more.html" class="mobile-link navigation-item">More</a><a href="contact.html" class="mobile-link navigation-item">Contact</a><a href="about.html" class="mobile-link navigation-item">About</a>
+          <div class="div-block-15"><a style="opacity:0" href="mailto:arevalo.raymond@gmail.com" class="link-8">arevalo.raymond@gmail.com</a><a style="opacity:0" href="https://twitter.com/RaymondFArevalo" target="_blank" class="link-8">Twitter</a><a style="opacity:0" href="https://www.instagram.com/raymondfrankarevalo/" target="_blank" class="link-8">Instagram</a></div>
+        </div>
       </nav>
-      <div id="work-nav" class="menu-button w-nav-button">
-        <div class="icon w-icon-nav-menu"></div>
+      <div id="menu-button" data-w-id="6c11055c-6411-5db4-ed7f-8a7a0c6fc159" class="menu-button w-nav-button">
+        <div style="display:block" class="text-block-16"> Menu</div>
+        <div style="display:none;opacity:0" class="text-block-17">Close<br></div>
       </div>
     </div>
   </div>
   <div class="w-layout-grid grid-2">
-    <a data-w-id="f8e337d0-4159-9f0b-7cec-6005a33ba839" href="checkout.html" class="link-block-2 w-inline-block">
+    <a data-w-id="f8e337d0-4159-9f0b-7cec-6005a33ba839" href="checkout.html" class="link-block-2 navigation-item w-inline-block">
       <div class="work-projectname">Checkout*</div>
-      <div class="work-projectcompany">yumi</div><img src="images/MacBook-Pro-3.png" srcset="images/MacBook-Pro-3-p-500.png 500w, images/MacBook-Pro-3-p-800.png 800w, images/MacBook-Pro-3-p-1080.png 1080w, images/MacBook-Pro-3-p-1600.png 1600w, images/MacBook-Pro-3-p-2000.png 2000w, images/MacBook-Pro-3.png 2880w" sizes="100vw" data-w-id="a7bbfaeb-527a-39d4-e868-652b3d4f2be7" style="opacity:0;-webkit-transform:translate3d(-50%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-50%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-50%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-50%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" alt="" class="image"></a>
-    <a data-w-id="d04c5b05-9fb3-957e-e1f2-a9d3986fb759" href="account.html" class="link-block-3 link-block-2 w-inline-block">
+      <div class="work-projectcompany">yumi</div>
+      <div style="-webkit-transform:translate3d(-50%, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-50%, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-50%, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-50%, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);display:none" class="work-projecttype">Product Design / Web Dev</div><img src="images/MacBook-Pro-3.png" srcset="images/MacBook-Pro-3-p-500.png 500w, images/MacBook-Pro-3-p-800.png 800w, images/MacBook-Pro-3-p-1080.png 1080w, images/MacBook-Pro-3-p-1600.png 1600w, images/MacBook-Pro-3-p-2000.png 2000w, images/MacBook-Pro-3.png 2880w" sizes="100vw" style="opacity:0;-webkit-transform:translate3d(-50%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-50%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-50%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-50%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" alt="" class="image"></a>
+    <a data-w-id="d04c5b05-9fb3-957e-e1f2-a9d3986fb759" href="account.html" class="link-block-3 link-block-2 navigation-item w-inline-block">
       <div class="work-projectname">Account*</div>
-      <div class="work-projectcompany">yumi</div><img src="images/building.png" srcset="images/building-p-500.png 500w, images/building-p-800.png 800w, images/building-p-1080.png 1080w, images/building.png 1440w" sizes="100vw" data-w-id="d04c5b05-9fb3-957e-e1f2-a9d3986fb75e" style="opacity:1;-webkit-transform:translate3d(-50%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-50%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-50%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-50%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" alt="" class="image"></a>
-    <a data-w-id="dd28a346-e214-fc04-895d-f1517438ffd5" href="helloyumi.html" class="link-block-2 w-inline-block">
+      <div class="work-projectcompany">yumi</div>
+      <div style="-webkit-transform:translate3d(-50%, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-50%, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-50%, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-50%, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);display:none" class="work-projecttype">Product Design</div><img src="images/building.png" srcset="images/building-p-500.png 500w, images/building-p-800.png 800w, images/building-p-1080.png 1080w, images/building.png 1440w" sizes="100vw" style="opacity:0;-webkit-transform:translate3d(-50%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-50%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-50%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-50%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" alt="" class="image"></a>
+    <a data-w-id="dd28a346-e214-fc04-895d-f1517438ffd5" href="helloyumi.html" class="link-block-2 navigation-item w-inline-block">
       <div class="work-projectname">Helloyumi.com*</div>
-      <div class="work-projectcompany">yumi</div><img src="images/fromthe.png" srcset="images/fromthe-p-500.png 500w, images/fromthe-p-800.png 800w, images/fromthe-p-1080.png 1080w, images/fromthe-p-1600.png 1600w, images/fromthe-p-2000.png 2000w, images/fromthe.png 2880w" sizes="100vw" data-w-id="dd28a346-e214-fc04-895d-f1517438ffda" style="-webkit-transform:translate3d(-50%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-50%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-50%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-50%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0.49" alt="" class="image"></a>
-    <a data-w-id="ae5af88a-7131-ed0e-ddf9-589874e5f927" href="21below.html" class="link-block-2 w-inline-block">
-      <div class="work-projectname">21 Below*</div><img src="images/snowflake.png" srcset="images/snowflake-p-500.png 500w, images/snowflake-p-800.png 800w, images/snowflake-p-1080.png 1080w, images/snowflake-p-1600.png 1600w, images/snowflake-p-2000.png 2000w, images/snowflake.png 2880w" sizes="100vw" data-w-id="ae5af88a-7131-ed0e-ddf9-589874e5f92c" style="-webkit-transform:translate3d(-50%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-50%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-50%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-50%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" alt="" class="image"></a>
+      <div class="work-projectcompany">yumi</div>
+      <div style="-webkit-transform:translate3d(-50%, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-50%, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-50%, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-50%, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);display:none" class="work-projecttype">UX / UI</div><img src="images/fromthe.png" srcset="images/fromthe-p-500.png 500w, images/fromthe-p-800.png 800w, images/fromthe-p-1080.png 1080w, images/fromthe-p-1600.png 1600w, images/fromthe-p-2000.png 2000w, images/fromthe.png 2880w" sizes="100vw" style="opacity:0;-webkit-transform:translate3d(-50%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-50%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-50%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-50%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" alt="" class="image"></a>
+    <a data-w-id="ae5af88a-7131-ed0e-ddf9-589874e5f927" href="21below.html" class="link-block-2 navigation-item w-inline-block">
+      <div class="work-projectname">21 Below*</div>
+      <div style="-webkit-transform:translate3d(-50%, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-50%, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-50%, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-50%, 100%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);display:none" class="work-projecttype">UX / UI / Web Dev</div><img src="images/snowflake.png" srcset="images/snowflake-p-500.png 500w, images/snowflake-p-800.png 800w, images/snowflake-p-1080.png 1080w, images/snowflake-p-1600.png 1600w, images/snowflake-p-2000.png 2000w, images/snowflake.png 2880w" sizes="100vw" style="opacity:0;-webkit-transform:translate3d(-50%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-50%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-50%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-50%, -20%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" alt="" class="image"></a>
   </div>
   <div class="regular w-clearfix"><a href="https://twitter.com/RaymondFArevalo" class="nav-link">Twitter</a><a href="https://www.instagram.com/raymondfrankarevalo/" class="nav-link">Instagram</a><a href="https://dribbble.com/raymondarevalo" class="nav-link">Dribbble</a></div>
+  <div class="w-embed">
+    <style>
+.w-nav-overlay {
+top: 0;
+}
+</style>
+  </div>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+  <style>
+  .w-nav-overlay {
+top: 0;
+}
+</style>
+  <script>
+$('.nav-link-2').click(function (e) {
+    e.preventDefault();
+    var goTo = this.getAttribute("href");
+    setTimeout(function(){
+         window.location = goTo;
+    },1000);       
+});
+  $('.navigation-item').click(function (e) {
+    e.preventDefault();
+    var goTo = this.getAttribute("href");
+    setTimeout(function(){
+         window.location = goTo;
+    },1000);       
+});
+</script>
+  <script>
+  /*
+  function settimer () {
+ if($("#menu-button").hasClass('w--open')) {
+	console.log("opened");
+              var all = document.getElementsByClassName('navbar-2');
+      for (var i = 0; i < all.length; i++) {
+        all[i].style.backgroundColor = 'blue';
+        all[i].removeAttribute("data-duration");
+        all[i].setAttribute("data-duration", "600");
+      }
+               var todos = document.getElementsByClassName('nav-menu-2');
+      for (var t = 0; t < todos.length; t++) {
+      }
+  }
+    else {
+      	console.log("closed");
+          var all = document.getElementsByClassName('navbar-2');
+      for (var i = 0; i < all.length; i++) {
+        all[i].style.backgroundColor = 'red';
+        all[i].removeAttribute("data-duration");
+        all[i].setAttribute("data-duration", "600");
+      }
+            var todos = document.getElementsByClassName('nav-menu-2');
+      for (var t = 0; t < todos.length; t++) {
+      }
+    }
+  }
+  settimer();
+  document.getElementById("menu-button").onclick = function() {
+  setTimeout( function () {settimer()}, 100);
+  };
+  */
+</script>
 </body>
 </html>

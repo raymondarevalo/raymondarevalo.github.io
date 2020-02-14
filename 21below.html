@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Thu Jan 23 2020 01:48:42 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Fri Feb 14 2020 07:04:35 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="5de9496a49103c0e2f93671e" data-wf-site="5d7472887149d51ab8033be9">
 <head>
   <meta charset="utf-8">
@@ -17,21 +17,9 @@
   <link href="images/webclip.png" rel="apple-touch-icon">
 </head>
 <body class="body-3">
-  <div style="display:flex" class="loadingline"></div>
-  <div style="display:flex" class="preloader"></div>
-  <div data-collapse="small" data-animation="default" data-duration="400" class="navbar-2 w-nav">
-    <div class="container-5 w-container">
-      <nav role="navigation" class="nav-menu-2 w-clearfix w-nav-menu">
-        <div class="div-block-4"><a href="work.html" class="nav-link-2 w-nav-link">Work</a><a href="more.html" class="nav-link-2 w-nav-link">More</a></div>
-        <div class="div-block-4 home-block"><a href="index.html" class="nav-link-2 home-link w-nav-link">home</a></div>
-        <div class="div-block-5"><a href="contact.html" class="nav-link-2 w-nav-link">Contact</a><a href="about.html" class="nav-link-2 w-nav-link">About</a></div>
-        <div class="div-block-6"><a href="index.html" class="mobile-link">Home</a><a href="work.html" class="mobile-link">Work</a><a href="more.html" class="mobile-link">More</a><a href="contact.html" class="mobile-link">Contact</a><a href="about.html" class="mobile-link">About</a></div>
-      </nav>
-      <div class="menu-button w-nav-button">
-        <div class="icon w-icon-nav-menu"></div>
-      </div>
-    </div>
-  </div>
+  <div class="overlay"></div>
+  <div class="loadingline"></div>
+  <div class="preloader"></div>
   <div class="hero-section">
     <div class="container-4 w-container">
       <div class="hero-label">case study</div>
@@ -43,7 +31,7 @@
       <div class="hero-body">Role: UX / UI Designer, Web Developer</div>
       <div class="hero-body">Credits: Shreeman Hariharan, Shiva Sharma, Troy Young, Ji-Eun Park</div>
     </div><a href="#Checkout-Under" data-w-id="6d69cd4e-19c5-f423-094c-45c4485f8ad8" class="button w-button">Read More</a></div><img src="images/21large.png" id="Checkout-Under" srcset="images/21large-p-500.png 500w, images/21large-p-800.png 800w, images/21large-p-1080.png 1080w, images/21large-p-1600.png 1600w, images/21large-p-2000.png 2000w, images/21large.png 3200w" sizes="(max-width: 479px) 90vw, (max-width: 991px) 96vw, 100vw" alt="" class="section-image hero-image">
-  <div data-w-id="3bd0d30b-fbcc-e090-be0f-c28e5aa764cb" class="responsive-section">
+  <div class="responsive-section">
     <div class="about-project">The project is a working prototype of a functional website for 21 Below, a dessert shop located in San Diego, CA. We wanted to design a website that understood the goals and needs of both the client and potential customers in order to create a functional website that met and exceeded the client&#x27;s expectations. The challenge our team faced was that the current marketplace of Yelp already existed as a platform for businesses to gain recognition. What would a website offer that Yelp didn&#x27;t already offer? <br><br>This project was designed along with 3 other students in COGS 187B, a UX course at UC San Diego. Throughout the 10 week process, my team and I conducted primary and secondary research through think aloud interviews and competitive analysis, created a creative brief, mood boards, wireframes, and functional prototypes through the use of HTML, CSS, JavaScript, and Bootstrap.</div>
   </div>
   <div class="responsive-section table-section">
@@ -61,8 +49,87 @@
   <div id="Checkout-Solutions" class="responsive-section">
     <div class="section-title">Outcome</div>
     <div class="section-body">Through many iterations and user testing of our wireframes, we were able to conclude on a final prototype. We started off by looking for a template that centered around the menu, since it was crucial for us to present the menu items in a simple way. We liked the tabs for various item categories, which is the style we had in mind for the menu originally. However, the template was a single-page site, so we split it up into five pages, because a one-pager is not efficient for a mobile-focused design, because it would have too much information on one screen. Our navigation bar consists of &quot;Home&quot;, &quot;About Us,&quot; &quot;Menu,&quot; &quot;FAQs,&quot; and &quot;Contact Us.&quot;Overall, this project proved to be challenging and rewarding. It was my first design-based project working with a client. Working with our client was difficult because of the complicated social dynamics that arose when having a mutual understanding of what was best for the site. But it proved to be very beneficial. At the end of the project I had developed a basic technical competence in the different stages of professional website creation.</div><img src="images/21outcome.png" srcset="images/21outcome-p-500.png 500w, images/21outcome-p-800.png 800w, images/21outcome-p-1080.png 1080w, images/21outcome-p-1600.png 1600w, images/21outcome-p-2000.png 2000w, images/21outcome-p-2600.png 2600w, images/21outcome.png 2880w" sizes="(max-width: 479px) 92vw, (max-width: 767px) 95vw, (max-width: 991px) 96vw, 100vw" alt="" class="section-image last"></div>
+  <div data-collapse="small" data-animation="default" data-duration="600" data-easing="ease-in-quint" data-easing2="ease-in-sine" class="navbar-2 w-nav">
+    <div class="container-5 w-container">
+      <nav role="navigation" class="nav-menu-2 w-clearfix w-nav-menu">
+        <div class="div-block-4 w-clearfix"><a href="work.html" data-w-id="170640fb-2167-7097-ca36-549f1e8593a1" class="nav-link-2 x-hover w-nav-link">Work</a><a href="more.html" data-w-id="170640fb-2167-7097-ca36-549f1e8593a3" class="nav-link-2 x-hover w-nav-link">More</a>
+          <div class="div-block-4 home-block"><a href="index.html" data-w-id="170640fb-2167-7097-ca36-549f1e8593a6" class="nav-link-2 home-link w-nav-link">home</a></div>
+        </div>
+        <div class="div-block-5"><a href="contact.html" data-w-id="170640fb-2167-7097-ca36-549f1e8593a9" class="nav-link-2 w-nav-link">Contact</a><a href="about.html" data-w-id="170640fb-2167-7097-ca36-549f1e8593ab" class="nav-link-2 w-nav-link">About</a></div>
+        <div id="home-nav-overlay" class="div-block-6"><a href="index.html" class="mobile-link navigation-item">Home</a><a href="work.html" class="mobile-link navigation-item">Work</a><a href="more.html" class="mobile-link navigation-item">More</a><a href="contact.html" class="mobile-link navigation-item">Contact</a><a href="about.html" class="mobile-link navigation-item">About</a>
+          <div class="div-block-15"><a style="opacity:0" href="mailto:arevalo.raymond@gmail.com" class="link-8">arevalo.raymond@gmail.com</a><a style="opacity:0" href="https://twitter.com/RaymondFArevalo" target="_blank" class="link-8">Twitter</a><a style="opacity:0" href="https://www.instagram.com/raymondfrankarevalo/" target="_blank" class="link-8">Instagram</a></div>
+        </div>
+      </nav>
+      <div id="menu-button" data-w-id="170640fb-2167-7097-ca36-549f1e8593bf" class="menu-button w-nav-button">
+        <div style="display:block" class="text-block-16"> Menu</div>
+        <div style="display:none;opacity:0" class="text-block-17">Close<br></div>
+      </div>
+    </div>
+  </div>
+  <div class="w-embed">
+    <style>
+.w-nav-overlay {
+top: 0;
+}
+</style>
+  </div>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+  <style>
+  .w-nav-overlay {
+top: 0;
+}
+</style>
+  <script>
+$('.nav-link-2').click(function (e) {
+    e.preventDefault();
+    var goTo = this.getAttribute("href");
+    setTimeout(function(){
+         window.location = goTo;
+    },1000);       
+});
+  $('.navigation-item').click(function (e) {
+    e.preventDefault();
+    var goTo = this.getAttribute("href");
+    setTimeout(function(){
+         window.location = goTo;
+    },1000);       
+});
+</script>
+  <script>
+  /*
+  function settimer () {
+ if($("#menu-button").hasClass('w--open')) {
+	console.log("opened");
+              var all = document.getElementsByClassName('navbar-2');
+      for (var i = 0; i < all.length; i++) {
+        all[i].style.backgroundColor = 'blue';
+        all[i].removeAttribute("data-duration");
+        all[i].setAttribute("data-duration", "600");
+      }
+               var todos = document.getElementsByClassName('nav-menu-2');
+      for (var t = 0; t < todos.length; t++) {
+      }
+  }
+    else {
+      	console.log("closed");
+          var all = document.getElementsByClassName('navbar-2');
+      for (var i = 0; i < all.length; i++) {
+        all[i].style.backgroundColor = 'red';
+        all[i].removeAttribute("data-duration");
+        all[i].setAttribute("data-duration", "600");
+      }
+            var todos = document.getElementsByClassName('nav-menu-2');
+      for (var t = 0; t < todos.length; t++) {
+      }
+    }
+  }
+  settimer();
+  document.getElementById("menu-button").onclick = function() {
+  setTimeout( function () {settimer()}, 100);
+  };
+  */
+</script>
 </body>
 </html>
